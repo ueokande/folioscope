@@ -13,11 +13,11 @@
   </head>
   <body>
 
-    <div id="main" role="main">
+    <article class='main' role="main">
       <%= yield %>
-    </div>
+    </article>
 
-    <aside>
+    <aside class='aside' role='complementary'>
       <h2>Recent Articles</h2>
       <ol>
         <% blog.articles[0...10].each do |article| %>
