@@ -1,13 +1,66 @@
 @charset "utf-8";
 @import "normalize";
 
-.main {
+$text-color: #333;
+$link-color: #00acdf;
+
+body {
+  line-height: 1.5;
+  font-size: 14px;
+  color: $text-color;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $link-color;
+  }
+}
+
+.articles {
   display: table-cell;
   width: 100%;
   min-width: 720px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
+.article {
+  .date {
+    line-height: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .8rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 4px;
+    padding-bottom: 16px;
+    border-bottom-color: #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    a {
+      color: $text-color;
+    }
+  }
+}
+
 .aside {
   display: table-cell;
   min-width: 240px;
   max-width: 240px;
+
+  h2 {
+    font-size: 1rem;
+  }
 }
