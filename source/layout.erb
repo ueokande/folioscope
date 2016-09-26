@@ -12,6 +12,13 @@
     <%= javascript_include_tag :all %>
   </head>
   <body>
+    <header class='header'>
+      <h1>Folioscope</h1>
+      <h2>We love simple</h2>
+
+      <%= partial 'service-icons' %>
+    </header>
+
     <div class='main-container'>
       <div class='articles'>
         <%= yield %>
@@ -45,5 +52,9 @@
         </aside>
       </div>
     </div>
+
+    <footer class='footer'>
+      <%= partial 'service-icons' %>
+    </footer>
   </body>
 </html>

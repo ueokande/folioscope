@@ -16,6 +16,11 @@ $link-color: #00acdf;
   vertical-align: top;
 }
 
+@mixin banner {
+  text-align: center;
+  padding: 24px;
+}
+
 body {
   line-height: 1.5;
   font-size: 14px;
@@ -37,9 +42,53 @@ a {
   }
 }
 
+.header {
+  @include banner;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.footer {
+  @include banner;
+}
+
+.service-icons {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+
+  .service-icon {
+    display: inline-block;
+    a {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 16px;
+      border: 1px solid #eee;
+
+      &:hover, &:active {
+        background-color: #efefef;
+      }
+    }
+  }
+}
+
 .main-container {
   background-color: #eee;
   display: table;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .articles {
