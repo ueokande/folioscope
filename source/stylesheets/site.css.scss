@@ -86,16 +86,38 @@ a {
 
   .service-icon {
     display: inline-block;
+    margin: 0 4px;
+
     a {
       display: inline-block;
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
       line-height: 32px;
       border-radius: 16px;
       border: 1px solid #eee;
+      box-sizing: border-box;
 
-      &:hover, &:active {
-        background-color: #efefef;
+      svg {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        path {
+          fill: #ccc;
+        }
+      }
+    }
+
+    a:hover, a:active {
+      &.twitter { background-color: #55acee; }
+      &.facebook { background-color: #3B5998; }
+      &.github { background-color: #231f20; }
+      &.qiita { background-color: #59bb0c; }
+      &.email { background-color: #ee5353; }
+
+      border-color: transparent;
+
+      path {
+        fill: white;
       }
     }
   }
