@@ -21,9 +21,26 @@ $link-color: #00acdf;
   padding: 24px;
 }
 
+@mixin aside-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid #efefef;
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
+}
+
+html {
+  font-size: 14px;
+}
+
 body {
   line-height: 1.5;
-  font-size: 14px;
   color: $text-color;
   text-align: justify;
 }
@@ -128,7 +145,7 @@ a {
 .asides {
   @include column;
 
-  min-width: 240px;
+  min-width: 320px;
   max-width: 240px;
 
   h2 {
@@ -138,4 +155,25 @@ a {
 
 .aside {
   @include block;
+}
+
+.recent-articles {
+  @include aside-list;
+
+  .recent-article {
+    .recent-article-date {
+      margin: 0;
+      font-size: .8rem;
+      margin-bottom: 6px;
+    }
+    .recent-article-title {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+  }
+}
+
+.category-items {
+  @include aside-list;
 }
