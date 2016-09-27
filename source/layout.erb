@@ -12,52 +12,16 @@
     <%= javascript_include_tag :all %>
   </head>
   <body>
-    <header class='header'>
-      <h1>Folioscope</h1>
-      <h2>We love simple</h2>
-
-      <%= partial 'service-icons' %>
-    </header>
+    <%= partial 'partials/header' %>
 
     <div class='main-container'>
       <div class='articles'>
         <%= yield %>
       </div>
 
-      <div class='asides'>
-        <aside class='aside'>
-          <h2>Recent Articles</h2>
-          <ol class='recent-articles'>
-            <% blog.articles[0...10].each do |article| %>
-              <li class='recent-article'>
-                <p class='recent-article-date'><%= article.date.strftime('%Y-%m-%d') %></p>
-                <p class='recent-article-title'><%= link_to article.title, article %></p>
-              </li>
-            <% end %> </ol>
-        </aside>
-
-        <aside class='aside'>
-          <h2>Tags</h2>
-          <ol class='category-items'>
-            <% blog.tags.each do |tag, articles| %>
-              <li class='articles-item'><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-            <% end %>
-          </ol>
-        </aside>
-
-        <aside class='aside'>
-          <h2>By Year</h2>
-          <ol class='category-items'>
-            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-              <li class='articles-item'><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-            <% end %>
-          </ol>
-        </aside>
-      </div>
+      <%= partial 'partials/asides' %>
     </div>
 
-    <footer class='footer'>
-      <%= partial 'service-icons' %>
-    </footer>
+    <%= partial 'partials/footer' %>
   </body>
 </html>
