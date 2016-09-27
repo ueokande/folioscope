@@ -77,6 +77,28 @@ a {
 
 .footer {
   @include banner;
+
+  background-color: #333;
+  .service-icons .service-icon {
+    a {
+      border: 1px solid #222;
+    }
+
+    a:link, a:visited {
+      svg {
+        path {
+          fill: #888;
+        }
+      }
+    }
+    a:hover, a:active {
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
 }
 
 .service-icons {
