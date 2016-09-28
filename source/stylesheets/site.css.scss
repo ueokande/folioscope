@@ -21,7 +21,7 @@ $link-color: #00acdf;
   padding: 24px;
 }
 
-@mixin aside-list {
+@mixin plane-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -186,6 +186,31 @@ a {
   }
 }
 
+.summaries {
+  @include block;
+
+  .summary-items {
+    @include plane-list;
+    .summary-item {
+      .date {
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: .8rem;
+      }
+      .title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .body {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .asides {
   @include column;
 
@@ -202,7 +227,7 @@ a {
 }
 
 .recent-articles {
-  @include aside-list;
+  @include plane-list;
 
   .recent-article {
     .recent-article-date {
@@ -219,5 +244,5 @@ a {
 }
 
 .category-items {
-  @include aside-list;
+  @include plane-list;
 }
