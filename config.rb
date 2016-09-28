@@ -1,3 +1,5 @@
+require 'lib/article_helpers'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -19,7 +21,7 @@ page '/*.txt', layout: false
 ###
 # Helpers
 ###
-
+helpers ArticleHelpers
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
