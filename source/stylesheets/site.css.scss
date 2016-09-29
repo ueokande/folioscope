@@ -37,12 +37,20 @@ $link-color: #00acdf;
 
 html {
   font-size: 14px;
+  height: 100%;
 }
 
 body {
   line-height: 1.5;
   color: $text-color;
   text-align: justify;
+  min-height: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-bottom: 128px;
 }
 
 a {
@@ -62,6 +70,9 @@ a {
 .header {
   @include banner;
 
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8;
+
   h1 {
     font-size: 1.8rem;
     font-weight: normal;
@@ -79,6 +90,11 @@ a {
   @include banner;
 
   background-color: #333;
+  border-top: 1px solid #e8e8e8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   .service-icons .service-icon {
     a {
@@ -147,10 +163,7 @@ a {
 }
 
 .main-container {
-  background-color: #eee;
   display: table;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
 }
 
 .articles {
