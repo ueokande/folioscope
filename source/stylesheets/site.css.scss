@@ -79,6 +79,7 @@ a {
   @include banner;
 
   background-color: #333;
+
   .service-icons .service-icon {
     a {
       border: 1px solid #222;
@@ -203,6 +204,10 @@ a {
         line-height: 2rem;
         margin-top: 4px;
         margin-bottom: 4px;
+
+        a {
+          color: $text-color;
+        }
       }
       .body {
         margin-top: 0;
