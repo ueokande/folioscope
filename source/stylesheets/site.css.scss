@@ -35,9 +35,14 @@ $link-color: #00acdf;
   }
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
 html {
   font-size: 14px;
   height: 100%;
+  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", "YuGothic",“"ヒラギノ角ゴ ProN W3",“"Hiragino Kaku Gothic ProN",“"メイリオ", Meiryo, sans-serif;
 }
 
 body {
@@ -64,6 +69,7 @@ a {
   &:hover,
   &:active {
     color: $link-color;
+    text-decoration: underline;
   }
 }
 
@@ -74,9 +80,12 @@ a {
   border-bottom: 1px solid #e8e8e8;
 
   h1 {
-    font-size: 1.8rem;
-    font-weight: normal;
-    margin: 0;
+    font-size: 2.8rem;
+    margin: 4px 0;
+
+    a {
+      color: $text-color;
+    }
   }
 
   h2 {
@@ -186,7 +195,7 @@ a {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2rem;
     margin-top: 4px;
     padding-bottom: 16px;
@@ -197,6 +206,13 @@ a {
     a {
       color: $text-color;
     }
+  }
+  h2 {
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  h2:first-of-type {
+    margin-top: 0;
   }
 }
 
