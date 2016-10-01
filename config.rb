@@ -27,9 +27,9 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
-  # blog.permalink = "{year}/{month}/{day}/{title}.html"
+  blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "{year}/{month}/{day}/{title}.html"
   # blog.taglink = "tags/{tag}.html"
   blog.layout = :post_layout
   blog.summary_separator = /READMORE/
@@ -62,6 +62,9 @@ end
 # end
 
 activate :directory_indexes
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 # Build-specific configuration
 configure :build do
