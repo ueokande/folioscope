@@ -73,6 +73,12 @@ a {
   }
 }
 
+code {
+  background-color: #F0F0F0;
+  padding: 2px;
+  border-radius: 3px;
+}
+
 .header {
   @include banner;
 
@@ -280,3 +286,8 @@ a {
 .category-items {
   @include plane-list;
 }
+
+.hljs {
+  padding: 16px;
+}
+
