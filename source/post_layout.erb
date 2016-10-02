@@ -20,7 +20,11 @@
 
     <div class='main-container'>
       <div class='articles'>
-        <%= partial 'partials/article', locals: { article: current_article } %>
+        <article class='article'>
+          <p class='date'><%= current_article.date.strftime('%Y-%m-%d') %></p>
+          <h1><%= link_to current_article.title, current_article %></h1>
+          <%= current_article.body %>
+        </article>
       </div>
 
       <%= partial 'partials/asides' %>
