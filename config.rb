@@ -1,3 +1,5 @@
+require 'lib/article_helpers'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -19,6 +21,7 @@ page '/*.txt', layout: false
 ###
 # Helpers
 ###
+helpers ArticleHelpers
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -28,8 +31,8 @@ activate :blog do |blog|
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
-  # blog.summary_separator = /(READMORE)/
+  blog.layout = :post_layout
+  blog.summary_separator = /READMORE/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
@@ -40,16 +43,16 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/{num}"
 end
 
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -57,6 +60,8 @@ page "/feed.xml", layout: false
 #     "Helping"
 #   end
 # end
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do

@@ -1,0 +1,9 @@
+<% if paginate %>
+  <div class='pager'>
+    <span class='pager-link'><%= link_to '<', prev_page if prev_page %></span>
+
+    <span class='pager-status'>Page <%= page_number %> of <%= num_pages %></span>
+
+    <span class='pager-link'><%= link_to '>', next_page if next_page %></span>
+  </div>
+<% end %>

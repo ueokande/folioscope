@@ -1,67 +1,310 @@
 @charset "utf-8";
 @import "normalize";
 
-body {
-  background: #ECC561;
+$text-color: #333;
+$link-color: #00acdf;
+
+@mixin block {
+  background-color: white;
+  padding: 16px;
+  border: 1px solid #e8e8e8;
+  margin: 8px;
+}
+
+@mixin column {
+  display: table-cell;
+  vertical-align: top;
+}
+
+@mixin banner {
   text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  padding: 24px;
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
-}
-
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
+@mixin plane-list {
+  list-style: none;
   margin: 0;
+  padding: 0;
+
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid #efefef;
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
 
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
+html {
+  font-size: 14px;
+  height: 100%;
+  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", "YuGothic",“"ヒラギノ角ゴ ProN W3",“"Hiragino Kaku Gothic ProN",“"メイリオ", Meiryo, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  color: $text-color;
+  text-align: justify;
+  min-height: 100%;
+  background-color: #eee;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-bottom: 128px;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+
+code {
+  background-color: #F0F0F0;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.header {
+  @include banner;
+
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8;
+
+  h1 {
+    font-size: 2.8rem;
+    margin: 4px 0;
+
+    a {
+      color: $text-color;
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.footer {
+  @include banner;
+
+  background-color: #333;
+  border-top: 1px solid #e8e8e8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .service-icons .service-icon {
+    a {
+      border: 1px solid #222;
+    }
+
+    a:link, a:visited {
+      svg {
+        path {
+          fill: #888;
+        }
+      }
+    }
+    a:hover, a:active {
+      svg {
+        path {
+          fill: white;
+        }
+      }
     }
   }
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+.service-icons {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+
+  .service-icon {
+    display: inline-block;
+    margin: 0 4px;
+
+    a {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      line-height: 32px;
+      border-radius: 16px;
+      border: 1px solid #eee;
+      box-sizing: border-box;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        path {
+          fill: #ccc;
+        }
+      }
+    }
+
+    a:hover, a:active {
+      &.twitter { background-color: #55acee; }
+      &.facebook { background-color: #3B5998; }
+      &.github { background-color: #231f20; }
+      &.qiita { background-color: #59bb0c; }
+      &.email { background-color: #ee5353; }
+
+      border-color: transparent;
+
+      path {
+        fill: white;
+      }
+    }
+  }
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
+.main-container {
+  display: table;
+  padding: 16px 16px;
+}
+
+.articles {
+  @include column;
+
+  width: 100%;
+  min-width: 640px;
+}
+
+.article {
+  @include block;
+
+  .date {
+    line-height: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .8rem;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 4px;
+    padding-bottom: 16px;
+    border-bottom-color: #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+    a {
+      color: $text-color;
+    }
   }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
+  h2 {
+    margin-top: 36px;
+    margin-bottom: 12px;
   }
-  to {
-    -webkit-transform: scale(1);
+  h2:first-of-type {
+    margin-top: 0;
   }
 }
+
+.summaries {
+  @include block;
+
+  .summary-items {
+    @include plane-list;
+    .summary-item {
+      .date {
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: .8rem;
+      }
+      .title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+        a {
+          color: $text-color;
+        }
+      }
+      .body {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.asides {
+  @include column;
+
+  min-width: 320px;
+  max-width: 240px;
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+.aside {
+  @include block;
+}
+
+.recent-articles {
+  @include plane-list;
+
+  .recent-article {
+    .recent-article-date {
+      margin: 0;
+      font-size: .8rem;
+      margin-bottom: 6px;
+    }
+    .recent-article-title {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+  }
+}
+
+.category-items {
+  @include plane-list;
+}
+
+.pager-block {
+  @include block;
+}
+
+.pager {
+  text-align: center;
+
+  .pager-link {
+    width: 96px;
+    display: inline-block;
+  }
+
+  .pager-status {
+    width: 96px;
+    display: inline-block;
+  }
+}
+
+.hljs {
+  padding: 16px;
+}
+
