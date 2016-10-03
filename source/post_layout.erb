@@ -8,10 +8,6 @@
     <title><%= current_article.title + ' - ' unless current_article.nil? %>Folioscope</title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
   </head>
