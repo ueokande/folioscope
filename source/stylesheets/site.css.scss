@@ -287,6 +287,24 @@ code {
   @include plane-list;
 }
 
+.pager-block {
+  @include block;
+}
+
+.pager {
+  text-align: center;
+
+  .pager-link {
+    width: 96px;
+    display: inline-block;
+  }
+
+  .pager-status {
+    width: 96px;
+    display: inline-block;
+  }
+}
+
 .hljs {
   padding: 16px;
 }
