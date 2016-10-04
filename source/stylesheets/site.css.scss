@@ -74,10 +74,19 @@ a {
 }
 
 code {
-  background-color: #F0F0F0;
-  padding: 2px;
+  padding: .2em;
   border-radius: 3px;
 }
+
+.highlight {
+  padding: 16px;
+  border-radius: 3px;
+
+  code {
+    padding: 0;
+  }
+}
+
 
 .header {
   @include banner;
