@@ -10,11 +10,12 @@ tags:
 
 チートシートとしてはもちろん, ポスターとしてもお使いいただけます.
 
-Michael Goerz氏のVIM QUICK REFERENCE CARDを元に作りました.<br />[http://michaelgoerz.net/refcards/](http://michaelgoerz.net/refcards/)
+Michael Goerz氏のVIM QUICK REFERENCE CARDを元に作りました.  
+[http://michaelgoerz.net/refcards/](http://michaelgoerz.net/refcards/)
 
 元はTeXで作られていたため, 印刷用にカラーで作り直し, また一部編集をしました.
 
-自分はスーパーVim-erではないので間違えているところがあるかもしれません.<br />
+自分はスーパーVim-erではないので間違えているところがあるかもしれません.  
 コメントや意見をいただけると幸いです.
 
 ### Vim cheat sheet Version 1.0
