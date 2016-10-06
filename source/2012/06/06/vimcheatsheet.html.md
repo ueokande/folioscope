@@ -4,7 +4,7 @@ date: 2012-06-06 00:32:50 JST
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="http://cdn-ak.f.st-hatena.com/images/fotolife/i/ibenza/20120606/20120606001622.png" alt="f:id:ibenza:20120606001622p:plain,right" title="f:id:ibenza:20120606001622p:plain,right" class="hatena-fotolife hatena-image-right" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="//cdn-ak.f.st-hatena.com/images/fotolife/i/ibenza/20120606/20120606001622.png" alt="f:id:ibenza:20120606001622p:plain,right" title="f:id:ibenza:20120606001622p:plain,right" class="hatena-fotolife hatena-image-right" itemprop="image"></span>
 
 自分用にVimチートシートを作成しましたので公開しておきます.
 
