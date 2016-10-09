@@ -22,7 +22,7 @@ READMORE
 さてこの日に起こったことを振り返ってみます。
 
   
-<span class="deco" style="font-weight:bold;">4/1 00:06 <a class="keyword" href="http://d.hatena.ne.jp/keyword/Twitter">Twitter</a>にて告知</span>  
+<span class="deco" style="font-weight:bold;">4/1 00:06 Twitterにて告知</span>  
 
 
 > Apple便座型デバイス"iBenza" 発売 / iBenza - 進化した便座が始まります。 [roo.tc/ibenza/](http://t.co/QSYS13JH)
@@ -59,5 +59,5 @@ Replyが飛んでくるのが面倒なので寝る。
 画面の前の君も頑張れ（笑）
 
   
-<span class="deco" style="font-size:small;">PS. <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A4%CF%A4%C6%A4%CA%A5%C0%A5%A4%A5%A2%A5%EA%A1%BC">はてなダイアリー</a>だと<a class="keyword" href="http://d.hatena.ne.jp/keyword/Twitter">Twitter</a>埋めこめれないのでしょうか</span>
+<span class="deco" style="font-size:small;">PS. はてなダイアリーだとTwitter埋めこめれないのでしょうか</span>
 
