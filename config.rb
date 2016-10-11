@@ -10,7 +10,7 @@ require 'lib/article_helpers'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/github.html', layout: false
+page '/github.html', layout: :external_service
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
