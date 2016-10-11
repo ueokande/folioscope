@@ -8,7 +8,7 @@ body {
   padding: 16px;
 
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin: 0;
     padding: 0;
   }
@@ -24,7 +24,18 @@ body {
     line-height: 32px;
   }
   .cite-block {
-    height: 32px;
-    line-height: 32px;
+    margin-top: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 24px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.github {
+  .cite-block {
+    background-image: image-url("external_service/github.png");
   }
 }
