@@ -25,11 +25,11 @@ READMORE
 <span class="deco" style="font-weight:bold;">4/1 00:06 Twitterにて告知</span>  
 
 
-> Apple便座型デバイス"iBenza" 発売 / iBenza - 進化した便座が始まります。 [roo.tc/ibenza/](http://t.co/QSYS13JH)
+> Apple便座型デバイス"iBenza" 発売 / iBenza \- 進化した便座が始まります。 [roo\.tc/ibenza/](http://t.co/QSYS13JH)
 > 
-> — iBenza (@iBenza) [March 31, 2012](https://twitter.com/iBenza/status/186107242800619523)
+> — iBenza \(@iBenza\) [March 31, 2012](https://twitter.com/iBenza/status/186107242800619523)
 
-その後ツイートがみるみるうちに拡散....するのを見ないまま  
+その後ツイートがみるみるうちに拡散\.\.\.\.するのを見ないまま  
 Replyが飛んでくるのが面倒なので寝る。
 
   
@@ -43,12 +43,12 @@ Replyが飛んでくるのが面倒なので寝る。
 何気なく"iBenza"で[Twitetr検索](https://twitter.com/#!/search/realtime/iBenza)すると, [GIGAZINE](http://gigazine.net/)さんに取り上げられていた  
 
 
-> エイプリルフールまとめに川越シェフ・SOUNDVOLTEX・iBenza・ポイントモンキー・5050.jpを追加 [gigaz.in/1NXS0N](http://t.co/uuj8IL8Q)
+> エイプリルフールまとめに川越シェフ・SOUNDVOLTEX・iBenza・ポイントモンキー・5050\.jpを追加 [gigaz\.in/1NXS0N](http://t.co/uuj8IL8Q)
 > 
-> — gigazine (@gigazine) [April 1, 2012](https://twitter.com/gigazine/status/186280505803673601)
+> — gigazine \(@gigazine\) [April 1, 2012](https://twitter.com/gigazine/status/186280505803673601)
 
   
-...と同時に, Twitter検索でiBenzaが, ダラダラと流れだす。  
+\.\.\.と同時に, Twitter検索でiBenzaが, ダラダラと流れだす。  
 自分の知らないところでiBenzaがひとり歩き。  
 そして日が変わる前に10000アクセス突破
 
