@@ -63,7 +63,6 @@ code {
   }
 }
 
-
 .header {
   @include banner;
 
@@ -287,6 +286,12 @@ code {
     width: 96px;
     display: inline-block;
   }
+}
+
+.external-service-frame {
+  width: 320px;
+  height: 96px;
+  border: 1px solid lightgray;
 }
 
 .hljs {
