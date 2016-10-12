@@ -1,8 +1,6 @@
 @charset "utf-8";
 @import "normalize";
-
-$text-color: #333;
-$link-color: #00acdf;
+@import "base";
 
 @mixin block {
   background-color: white;
@@ -35,14 +33,8 @@ $link-color: #00acdf;
   }
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: normal;
-}
-
 html {
-  font-size: 14px;
   height: 100%;
-  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", "YuGothic",“"ヒラギノ角ゴ ProN W3",“"Hiragino Kaku Gothic ProN",“"メイリオ", Meiryo, sans-serif;
 }
 
 body {
@@ -56,21 +48,6 @@ body {
   left: 0;
   right: 0;
   padding-bottom: 128px;
-}
-
-a {
-  text-decoration: none;
-
-  &:link,
-  &:visited {
-    color: $link-color;
-  }
-
-  &:hover,
-  &:active {
-    color: $link-color;
-    text-decoration: underline;
-  }
 }
 
 code {
@@ -87,6 +64,9 @@ code {
   }
 }
 
+iframe {
+  margin: 16px 0;
+}
 
 .header {
   @include banner;
@@ -311,6 +291,12 @@ code {
     width: 96px;
     display: inline-block;
   }
+}
+
+.external-service-frame {
+  width: 320px;
+  height: 96px;
+  border: 1px solid lightgray;
 }
 
 .hljs {

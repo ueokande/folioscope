@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <base target="_top">
+    <%= stylesheet_link_tag :external_service %>
+  </head>
+  <body class='github'>
+    <%= yield %>
+    <%= javascript_include_tag :external_service %>
+  </body>
+</html>
