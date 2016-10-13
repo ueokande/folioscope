@@ -13,7 +13,7 @@
   <aside class='aside'>
     <h2>Tags</h2>
     <ol class='category-items'>
-      <% blog.tags.each do |tag, articles| %>
+      <% blog.tags.sort_by{|tag, articles| articles.size }.reverse.each do |tag, articles| %>
         <li class='articles-item'><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
       <% end %>
     </ol>
