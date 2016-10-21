@@ -68,6 +68,18 @@ iframe {
   margin: 16px 0;
 }
 
+blockquote {
+  margin: 16px 0;
+  padding-left: 24px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-left: 4px solid lightgray;
+
+  cite {
+    text-decoration: italic;
+  }
+}
+
 .header {
   @include banner;
 
