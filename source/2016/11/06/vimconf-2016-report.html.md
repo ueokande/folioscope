@@ -36,6 +36,7 @@ dotfilesをissue駆動で管理しているというのは面白かったです�
 
 ## Denite.nvim ~The next generation of unite~
 
+[Denite.nvim ~The next generation of unite~](https://gist.github.com/Shougo/7c78b3a1725f70c1435d004ed14f2558)
 from [Shougo](https://github.com/Shougo)
 
 Dark poweredなプラグインは早いです。Python3で書くことで早くなります。NeoVimだけでなくVim 8.0でも動くのでみんなが嬉しい。
