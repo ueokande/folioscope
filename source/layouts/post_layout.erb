@@ -17,9 +17,21 @@
     <div class='main-container'>
       <div class='articles'>
         <article class='article'>
-          <p class='date'><%= current_article.date.strftime('%Y-%m-%d') %></p>
-          <h1><%= link_to current_article.title, current_article %></h1>
-          <%= current_article.body %>
+          <div class='article-header'>
+            <p class='date'><%= current_article.date.strftime('%Y-%m-%d') %></p>
+            <h1><%= link_to current_article.title, current_article %></h1>
+          </div>
+          <div class='article-body'>
+            <%= current_article.body %>
+          </div>
+          <div class='article-footer'>
+            <% if current_article.next_article %>
+              <%= link_to "« #{current_article.next_article.title}", current_article.next_article, class: 'next-article' %>
+            <% end %>
+            <% if current_article.previous_article %>
+              <%= link_to "#{current_article.previous_article.title} »", current_article.previous_article, class: 'prev-article' %>
+            <% end %>
+          </div>
         </article>
       </div>
 
