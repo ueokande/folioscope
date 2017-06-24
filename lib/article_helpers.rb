@@ -8,6 +8,20 @@ module ArticleHelpers
     text
   end
 
+  def first_paragraph_text(article)
+    rendered = article.render(layout: false, keep_separator: false)
+    Nokogiri::HTML.parse(rendered).css('p').first.text
+  end
+
+  def first_img_href(article)
+    rendered = article.render(layout: false, keep_separator: false)
+    img = Nokogiri::HTML.parse(rendered).css('img').first
+    return nil unless img
+
+    src = img.attribute("src").value
+    URI.join(config[:endpoint], src).to_s
+  end
+
   def href(article)
     URI.join(config[:endpoint], article.path).to_s
   end
