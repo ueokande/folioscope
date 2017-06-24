@@ -10,7 +10,9 @@ module ArticleHelpers
 
   def first_paragraph_text(article)
     rendered = article.render(layout: false, keep_separator: false)
-    Nokogiri::HTML.parse(rendered).css('p').first.text
+    tags = Nokogiri::HTML.parse(rendered).css('p')
+    text = tags.map(&:text).find {|content| !content.empty? }
+    text ? text.delete("\n") : article.title
   end
 
   def first_img_href(article)

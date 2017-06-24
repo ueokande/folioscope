@@ -81,3 +81,4 @@ configure :build do
 end
 
 set :endpoint, 'https://i-beam.org/'
+set :twitter, '@ueokande'
