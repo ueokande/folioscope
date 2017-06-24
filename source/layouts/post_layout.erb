@@ -12,6 +12,7 @@
     <%= javascript_include_tag :all %>
   </head>
   <body>
+    <%= partial 'partials/facebook-sdk' %>
     <%= partial 'partials/header' %>
 
     <div class='main-container'>
@@ -25,6 +26,12 @@
             <%= current_article.body %>
           </div>
           <div class='article-footer'>
+            <div class='social-buttons'>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+	      <div class="fb-share-button" data-href="<%= href(current_article) %>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+            </div>
+
             <% if current_article.next_article %>
               <%= link_to "« #{current_article.next_article.title}", current_article.next_article, class: 'next-article' %>
             <% end %>
@@ -32,6 +39,7 @@
               <%= link_to "#{current_article.previous_article.title} »", current_article.previous_article, class: 'prev-article' %>
             <% end %>
           </div>
+
         </article>
       </div>
 
@@ -39,5 +47,7 @@
     </div>
 
     <%= partial 'partials/footer' %>
+
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
   </body>
 </html>

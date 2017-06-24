@@ -7,4 +7,8 @@ module ArticleHelpers
     end
     text
   end
+
+  def href(article)
+    URI.join(config[:endpoint], article.path).to_s
+  end
 end
