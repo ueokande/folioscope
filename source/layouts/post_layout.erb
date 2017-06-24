@@ -10,16 +10,38 @@
 
     <%= stylesheet_link_tag :site, :syntax %>
     <%= javascript_include_tag :all %>
+
+    <%= partial 'partials/article-meta' %>
   </head>
   <body>
+    <%= partial 'partials/facebook-sdk' %>
     <%= partial 'partials/header' %>
 
     <div class='main-container'>
       <div class='articles'>
         <article class='article'>
-          <p class='date'><%= current_article.date.strftime('%Y-%m-%d') %></p>
-          <h1><%= link_to current_article.title, current_article %></h1>
-          <%= current_article.body %>
+          <div class='article-header'>
+            <p class='date'><%= current_article.date.strftime('%Y-%m-%d') %></p>
+            <h1><%= link_to current_article.title, current_article %></h1>
+          </div>
+          <div class='article-body'>
+            <%= current_article.body %>
+          </div>
+          <div class='article-footer'>
+            <div class='social-buttons'>
+              <%= partial 'partials/twitter-share-button' %>
+              <%= partial 'partials/hatena-bookmark-button' %>
+              <%= partial 'partials/facebook-share-button' %>
+            </div>
+
+            <% if current_article.next_article %>
+              <%= link_to "« #{current_article.next_article.title}", current_article.next_article, class: 'next-article' %>
+            <% end %>
+            <% if current_article.previous_article %>
+              <%= link_to "#{current_article.previous_article.title} »", current_article.previous_article, class: 'prev-article' %>
+            <% end %>
+          </div>
+
         </article>
       </div>
 
@@ -27,5 +49,7 @@
     </div>
 
     <%= partial 'partials/footer' %>
+
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
   </body>
 </html>

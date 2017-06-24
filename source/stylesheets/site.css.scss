@@ -220,6 +220,31 @@ blockquote {
   h2:first-of-type {
     margin-top: 0;
   }
+
+  .article-footer {
+    border-top-color: #eee;
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding: 16px 0 32px;
+    min-height: 32px;
+
+    .social-buttons {
+      margin-bottom: 16px;
+
+      .fb-share-button {
+        vertical-align: top;
+        margin-top: -1px;
+      }
+    }
+    .next-article {
+      float: left;
+      max-width: 45%;
+    }
+    .prev-article {
+      float: right;
+      max-width: 45%;
+    }
+  }
 }
 
 .summaries {

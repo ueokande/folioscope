@@ -79,3 +79,6 @@ configure :build do
   activate :minify_html
   activate :gzip
 end
+
+set :endpoint, 'https://i-beam.org/'
+set :twitter, '@ueokande'
