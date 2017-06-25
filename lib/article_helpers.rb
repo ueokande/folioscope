@@ -25,6 +25,6 @@ module ArticleHelpers
   end
 
   def href(article)
-    URI.join(config[:endpoint], article.path).to_s
+    URI.join(config[:endpoint], article.url).to_s
   end
 end
