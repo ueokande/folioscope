@@ -22,7 +22,7 @@ set -e
 
 last_built=\$(date +'%Y-%m-%dT%H:%M:%S.%NZ')
 mv build \$last_built
-ln -s \$last_built current.tmp
+ln -sf \$last_built -T current.tmp
 mv -T current.tmp current
 
 rm -rf \$(ls -I current | head -n-5)
