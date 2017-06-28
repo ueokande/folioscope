@@ -4,7 +4,7 @@ date: 2017-06-28 12:00 JST
 ---
 
 このブログは[Middleman Blog](https://middlemanapp.com/basics/blogging/)で構築していますが、今更ながら**継続的デリバリー**できる仕組みを整えました。
-以前は手元で`middleman build`して生成物を温かみ有る手動scpでデプロイしてましたが、2017年にもなって自動化もできてないのは笑われるので、Travis CIから自分のVPSに自動デプロイできるようにしました。
+以前は手元で`middleman build`して温かみある手動scpでデプロイしてましたが、2017年にもなって自動化もできてないのは笑われるので、Travis CIから自分のVPSに自動デプロイできるようにしました。
 
 構成
 ----
@@ -12,10 +12,10 @@ date: 2017-06-28 12:00 JST
 ![Deployment Architecture](architecture.png)
 
 よくある感じです。GitHub上へmasterブランチがPushされると、Travis CIが自動でビルドしてProductionにデプロイします。
-Travis CIにSSHの秘密鍵、Productionに公開鍵を登録しておいて、その鍵を使って認証します。
+Travis CIにSSHの秘密鍵、Productionに公開鍵を登録しておいき、その鍵で認証します。
 
-本番環境にはデプロイされたファイルを時刻ごとにディレクトリを作り、`current` というシンボリックリンクが最新のディレクトリを指します。
-nginxは `current` をドキュメントのルートディレクトリになるよう設定します。
+デプロイされたファイルはタイムスタンプのディレクトリに格納され、`current` というシンボリックリンクが最新のディレクトリを指します。
+フロントのWebサーバは `current` をドキュメントのルートディレクトリになるよう設定します。
 
 ```console
 $ ls -l /home/www/
@@ -31,14 +31,13 @@ lrwxrwxrwx  1 www www   30 Jun 25 21:41 current -> 2017-06-25T21:41:16.808334145
 SSH鍵を作る
 -----------
 
-Travis CIからProductionにデプロイするためのSSH鍵を作ります。
+Travis CIからProductionに認証するためのSSH鍵を作ります。
 
 ```console
 $ ssh-keygen -t rsa -N '' -f deploy_key
 ```
 
-作った秘密鍵をTravis CIに登録します。
-Travis CIへのファイルの登録は公式で提供されているCLIツールからできます。
+秘密鍵をTravis CIが提供しているCLIツールから行います。
 ファイルは暗号化して保存され、リポジトリにひも付きます。
 詳しくは[公式ドキュメント][encrypting-files]をどうぞ。
 
@@ -54,8 +53,8 @@ $ travis encrypt-file deploy_key  -r organization/repository
 Web用のユーザを作る
 -------------------
 
-Production環境にWeb用のユーザを作ります。
-このユーザのホームディレクトリに、Webページを置きます。
+Productionにwwwユーザを作ります。
+このユーザのホームディレクトリに生成物がデプロイされます。
 
 ```console
 $ sudo sh <<EOF
@@ -66,7 +65,7 @@ $ sudo sh <<EOF
 EOF
 ```
 
-そして先ほど作成した公開鍵を埋め込みます。
+そして公開鍵を埋め込みます。
 
 ```console
 $ sudo -u www sh <<EOF
@@ -80,11 +79,11 @@ EOF
 デプロイスクリプトを書く
 ------------------------
 
-まずデプロイ先情報をデプロイスクリプトから受け取りたいので、Travis CIのRepository Settingsから `REMOTE_HOST`, `REMOTE_PORT`, `REMOTE_USER` を設定します。
-デプロイスクリプトに埋め込まないので、第三者からは見ることができません。
+デプロイ先情報はリポジトリではなくTravis CIに保存したいので、Travis CIのRepository Settingsから `REMOTE_HOST`, `REMOTE_PORT`, `REMOTE_USER` を設定します。
+これで第三者はデプロイ先を見ることができません。
 詳しくは[公式ドキュメント][variables]をどうぞ。
 
-デプロイスクリプトは、以下のようなシェルスクリプトです。
+次にデプロイスクリプトをシェルスクリプトで書きます。
 
 ```bash
 #!/bin/bash -e
@@ -139,8 +138,9 @@ deploy:
     branch: master
 ```
 
-デプロイされてProduction上に生成物が配置されて、`current`が更新されていたらOKです。
-念の為Travis CIのログに、見られたらいけない情報が流れていないかを念入りにチェックしましょう。
+以上で設定は終わりです。
+masterにpushしてみて、Productionに生成物が配置されて`current`が切り替わればOKです。
+念の為Travis CIのログに、見られたらいけない情報が流れていないかも念入りにチェックしましょう。
 
 [encrypting-files]: https://docs.travis-ci.com/user/encrypting-files/
 [variables]: https://docs.travis-ci.com/user/environment-variables/#Defining-Variables-in-Repository-Settings
