@@ -15,10 +15,6 @@ Vagrantfile/Dockerfile
 ----------------------
 
 まず次のような`Vagrantfile`を記述します。
-providerに`"docker"`を指定して、ブロック内にDockerの設定を行います。
-`build_dir`で`Dockerfile`を含むディレクトリのパスを指定して、`has_ssh`オプションでコンテナでSSHが走っているかどうかを指定します。
-`config.ssh`でSSHの認証情報を指定して、Vagrantがコンテナにログインして鍵の埋め込みなどを行えるようにします。
-他のオプションについては[公式ドキュメント][docker-configuration]をどうぞ。
 
 ```ruby
 Vagrant.configure("2") do |config|
@@ -30,16 +26,18 @@ Vagrant.configure("2") do |config|
   config.vm.define "hello-docker-provider" do |node|
     node.vm.provider "docker" do |docker|
       docker.build_dir = "."  # Dockerfileを含むディレクトリ
-      docker.has_ssh = true   # コンテナはSSHが走ってるか
+      docker.has_ssh = true   # コンテナはSSHが有効か
     end
   end
 end
 ```
 
+providerに`"docker"`を指定して、ブロック内にDockerの設定を行います。
+`build_dir`で`Dockerfile`を含むディレクトリを指定し、`has_ssh`でコンテナでSSHが有効かどうかを指定します。
+`config.ssh`でVagrantが鍵の埋め込みなどに使うための認証情報を指定します。
+この認証情報でログインできるようなコンテナを作る必要があります。
+
 続いて`Dockerfile`です。
-`openssh-server`と`sudo`をインストールします。
-そして`Vagrantfile`で指定したユーザとパスワードを設定して、`sudo`できるよう設定します。
-最後に、`sshd`を`CMD`で起動します。
 
 ```Dockerfile
 FROM ubuntu:16.04
@@ -53,6 +51,10 @@ RUN useradd --create-home --user-group vagrant && \
 RUN mkdir -p /var/run/sshd
 CMD /usr/sbin/sshd -D
 ```
+
+`openssh-server`と`sudo`をインストールします。
+そして`Vagrantfile`で設定したユーザを追加して`sudo`できるようにします。
+最後に、`sshd`を`CMD`で起動します。
 
 コンテナを立ち上げる
 --------------------
@@ -77,5 +79,3 @@ vagrant reload
 vagrant ssh hello-docker-provider -- whoami
 vagrant ssh hello-docker-provider -- sudo whoami
 ```
-
-[docker-configuration]: https://www.vagrantup.com/docs/docker/configuration.html
