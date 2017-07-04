@@ -17,15 +17,15 @@ Vagrant用が生成する`ssh_config`をAnsibleに渡すので、**Ansibleのinv
 
 この記事では、例としてAnsibleでElasticsearchクラスタを構築します。
 また高速化のためにaptキャッシュサーバも配置します。
-Vagrantfileによって以下のホストを作成します。
+`Vagrantfile`によって以下のホストを作成します。
 
 - `apt-cacher`: aptキャッシュサーバ
 - `elasticsearch-client` Elasticsearchのクライアントノードで、クラスタのエンドポイントとなる
 - `elasticsearch-master-{n}` Elasticsearchのマスターノード
 - `elasticsearch-data-{n}` Elasticsearchのデータノード
 
-`apt-cacher`の構築はAnsibleの対象ではないので、`Dockerfile`で環境を構築します。
-各Elasticsearchのノードは、Ansibleの対象として、ほぼ初期状態の環境を`Dockerfile`で作ります。
+`apt-cacher`の構築はAnsibleの対象ではないので、`Dockerfile`で環境を作ります。
+各Elasticsearchノードは、SSHができる環境を`Dockerfile`で作ります。
 
 コンテナを定義する
 ------------------
@@ -84,8 +84,8 @@ end
 
 さきほど作成したネットワークにコンテナを接続するために、`docker.create_args`に`--network=elasticsearch`を指定します。
 そしてコンテナ名を`docker.name`で指定して、ホスト名を`docker.create_args`に`--hostname=apt-cacher`を追加することで設定します。
-Elasticsearchノードのコンテナは、ヘルパメソッドを使ってガッと設定します。
-`elasticsearch-client`ノードは、唯一クラスタ外に公開するためのにポート9200をexposeしてます。
+今回はElasticsearchノードのコンテナをヘルパメソッドでガッと定義します。
+エンドポイントとなる`elasticsearch-client`ノードは、ポート9200をexposeします。
 
 ### `vanilla`コンテナの定義
 
