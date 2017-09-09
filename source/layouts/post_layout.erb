@@ -34,11 +34,11 @@
               <%= partial 'partials/facebook-share-button' %>
             </div>
 
-            <% if current_article.next_article %>
-              <%= link_to "« #{current_article.next_article.title}", current_article.next_article, class: 'next-article' %>
+            <% if current_article.article_next %>
+              <%= link_to "« #{current_article.article_next.title}", current_article.article_next, class: 'next-article' %>
             <% end %>
-            <% if current_article.previous_article %>
-              <%= link_to "#{current_article.previous_article.title} »", current_article.previous_article, class: 'prev-article' %>
+            <% if current_article.article_previous %>
+              <%= link_to "#{current_article.article_previous.title} »", current_article.article_previous, class: 'prev-article' %>
             <% end %>
           </div>
 
