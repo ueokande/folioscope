@@ -42,7 +42,7 @@ vim-goのプラグインの導入は、vim-goただ1つでよかったり、`:Go
 
 [@cocopon](https://twitter.com/cocopon)さんによる、lovelyなvim colorschemeを作るお話です。
 
-https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme
+[https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme](https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme)
 
 「コンセプトを決める」「基本カラーを元に色を増やす」などデザインとして大事な話から、どうVim colorschemeを書くかというお話でした。
 そしてきれいなcolorschemeを作るだけでなく、アクセシビリティや256color対応のお話もされてました（自分も`$TERM`は`xterm-256color`です）。
@@ -54,7 +54,7 @@ https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme
 
 [@t9md](https://twitter.com/t9md)さんによる、Atom上のVimプラグインのお話です。
 
-https://qiita.com/t9md/items/236d09fea9bcdfabdcea
+[https://qiita.com/t9md/items/236d09fea9bcdfabdcea](https://qiita.com/t9md/items/236d09fea9bcdfabdcea)
 
 Vimコマンドの「動詞句」「目的語」のお話どっかでも聞いたなーと思ってたら、[去年](https://qiita.com/t9md/items/0bc7eaff726d099943eb)もお話されてました。
 自分自体はしばらくAtomを使う予定は無いですが、内部処理のお話は楽しいですし、Atomならではの、ピカピカする感じがキレイでした。
@@ -64,7 +64,7 @@ Vimコマンドの「動詞句」「目的語」のお話どっかでも聞い�
 
 [@senopen](https://twitter.com/senopen)さんによる、どこでも動くVim scriptのお話です。
 
-http://lamsh.github.io/slide/2017/20171104_VimConf2017/index.html
+[http://lamsh.github.io/slide/2017/20171104_VimConf2017/index.html](http://lamsh.github.io/slide/2017/20171104_VimConf2017/index.html)
 
 現在はVim/Vim scriptが標準化されてないので、移植性が高いVim scriptを作るにはいろいろ頑張る必要があります。
 発表では「Write .vimrc Once, Work Vim Anytime/Anywhere」と言ってましたが、Vimプラグインを作ったときにも同じことを考える必要がありますね。
@@ -74,7 +74,7 @@ Vimバージョン固有の機能を使うときは、バージョン・パッ�
 
 [@ShougoMatsu](https://twitter.com/ShougoMatsu)さんによる、dark poweredなプラギンのおはなしです。
 
-https://www.slideshare.net/Shougo/neosnippetvim-deoppetnvim-in-vim-conf-2017
+[https://www.slideshare.net/Shougo/neosnippetvim-deoppetnvim-in-vim-conf-2017](https://www.slideshare.net/Shougo/neosnippetvim-deoppetnvim-in-vim-conf-2017)
 
 「snippet、よくわからないから作る」という行動力と実装力が羨ましいです。
 来年にはいい感じにスニペットができるそうです。
@@ -84,7 +84,8 @@ https://www.slideshare.net/Shougo/neosnippetvim-deoppetnvim-in-vim-conf-2017
 
 [@dice_zu](https://twitter.com/dice_zu)さんによる、Vimのコントリビュートのお話です。
 
-https://speakerdeck.com/daisuzu/how-ordinary-vim-user-contributed-to-vim
+[https://speakerdeck.com/daisuzu/how-ordinary-vim-user-contributed-to-vim](https://speakerdeck.com/daisuzu/how-ordinary-vim-user-contributed-to-vim)
+
 
 本人は謙遜気味でお話していましたが、Vimにパッチを送って取り込まれているという実績があるので、すごいなぁと思いました。
 またVimのバグの再現やコントリビュートまでの手順もしっかりとしていて、参考になりました。
@@ -93,7 +94,7 @@ https://speakerdeck.com/daisuzu/how-ordinary-vim-user-contributed-to-vim
 
 [@p_ck_](https://twitter.com/p_ck_)さんによる、Rubyの複雑な文法に対するシンタックスハイライトについてです。
 
-https://speakerdeck.com/pocke/the-new-syntax-highlighter-for-vim
+[https://speakerdeck.com/pocke/the-new-syntax-highlighter-for-vim](https://speakerdeck.com/pocke/the-new-syntax-highlighter-for-vim)
 
 Vimのシンタックスハイライトは、`start`とか`end`とかでマッチする条件を正規表現で記述できますが（自分も過去に[ちょっとだけ書いたことある](https://github.com/ueokande/balsa-vim/blob/master/syntax/balsa.vim)）、
 Rubyの複雑な文法ではうまく対応できないということでした。
@@ -105,7 +106,7 @@ Rubyの複雑な文法ではうまく対応できないということでした�
 
 [@lambdalisue](https://twitter.com/lambdalisue)さんによる、[Gina.vim](https://github.com/lambdalisue/gina.vim)のお話です。
 
-https://lambdalisue.github.io/vimconf2017/assets/player/KeynoteDHTMLPlayer.html
+[https://lambdalisue.github.io/vimconf2017/assets/player/KeynoteDHTMLPlayer.html](https://lambdalisue.github.io/vimconf2017/assets/player/KeynoteDHTMLPlayer.html)
 
 `git add`とか`git diff`とかのゴニョゴニョする処理を、Vimでできるプラグインです。
 たしかに自分の場合もgit commitする前の段階や、履歴を追うだけで妙に時間かかってました。
