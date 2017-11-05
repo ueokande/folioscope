@@ -113,8 +113,9 @@ blockquote {
   border-bottom: 1px solid #e8e8e8;
 
   h1 {
-    font-size: 2.8rem;
-    margin: 4px 0;
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+    font-family: 'Pacifico', cursive;
 
     a {
       color: $text-color;
@@ -123,8 +124,8 @@ blockquote {
 
   h2 {
     font-size: 1.2rem;
-    font-style: italic;
     font-weight: normal;
+    font-family: 'Pacifico', cursive;
     margin: 0;
   }
 }
