@@ -7,11 +7,20 @@
   padding: 16px;
   border: 1px solid #e8e8e8;
   margin: 8px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 960px) {
+    margin: 8px 0;
+  }
 }
 
 @mixin column {
   display: table-cell;
   vertical-align: top;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
 }
 
 @mixin banner {
@@ -35,6 +44,7 @@
 
 html {
   height: 100%;
+  word-break: break-all;
 }
 
 body {
@@ -42,7 +52,7 @@ body {
   color: $text-color;
   text-align: justify;
   min-height: 100%;
-  background-color: #eee;
+  background-image: url(az_subtle.png);
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -51,17 +61,33 @@ body {
 }
 
 code {
-  padding: .2em;
-  border-radius: 3px;
+  padding: .1rem;
+  border-radius: 2px;
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  font-size: .9rem;
+}
+
+p {
+  word-wrap: break-word;
 }
 
 .highlight {
-  padding: 16px;
+  padding: 0 8px;
   border-radius: 3px;
+  overflow-x: auto;
 
   code {
     padding: 0;
+    background-color: unset;
+    border: unset;
   }
+}
+
+.article-body > p > img {
+  display: block;
+  width: 100%;
 }
 
 iframe {
@@ -87,8 +113,9 @@ blockquote {
   border-bottom: 1px solid #e8e8e8;
 
   h1 {
-    font-size: 2.8rem;
-    margin: 4px 0;
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+    font-family: 'Pacifico', cursive;
 
     a {
       color: $text-color;
@@ -98,6 +125,7 @@ blockquote {
   h2 {
     font-size: 1.2rem;
     font-weight: normal;
+    font-family: 'Pacifico', cursive;
     margin: 0;
   }
 }
@@ -181,13 +209,24 @@ blockquote {
 .main-container {
   display: table;
   padding: 16px 16px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    padding: 16px 0;
+  }
 }
 
 .articles {
   @include column;
 
-  width: 100%;
+  max-width: 1024px;
   min-width: 640px;
+
+  @media screen and (max-width: 960px) {
+    max-width: unset;
+    min-width: unset;
+  }
 }
 
 .article {
@@ -278,17 +317,20 @@ blockquote {
 
 .asides {
   @include column;
-
-  min-width: 320px;
-  max-width: 240px;
-
-  h2 {
-    font-size: 1rem;
-  }
 }
 
 .aside {
   @include block;
+
+  width: 320px;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: unset;
+  }
 }
 
 .recent-articles {

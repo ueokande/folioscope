@@ -82,3 +82,12 @@ end
 
 set :endpoint, 'https://i-beam.org/'
 set :twitter, '@ueokande'
+
+after_configuration do
+  module TagPagesExtension
+    def link( tag )
+      apply_uri_template @tag_link_template, tag: URI.encode(tag)
+    end
+  end
+  Middleman::Blog::TagPages.prepend(TagPagesExtension)
+end
