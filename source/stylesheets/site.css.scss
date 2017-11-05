@@ -44,6 +44,7 @@
 
 html {
   height: 100%;
+  word-break: break-all;
 }
 
 body {
@@ -60,8 +61,12 @@ body {
 }
 
 code {
-  padding: .2em;
-  border-radius: 3px;
+  padding: .1rem;
+  border-radius: 2px;
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  font-size: .9rem;
 }
 
 p {
@@ -69,11 +74,14 @@ p {
 }
 
 .highlight {
-  padding: 16px;
+  padding: 0 8px;
   border-radius: 3px;
+  overflow-x: auto;
 
   code {
     padding: 0;
+    background-color: unset;
+    border: unset;
   }
 }
 
