@@ -7,11 +7,20 @@
   padding: 16px;
   border: 1px solid #e8e8e8;
   margin: 8px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 960px) {
+    margin: 8px 0;
+  }
 }
 
 @mixin column {
   display: table-cell;
   vertical-align: top;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
 }
 
 @mixin banner {
@@ -42,7 +51,7 @@ body {
   color: $text-color;
   text-align: justify;
   min-height: 100%;
-  background-color: #eee;
+  background-image: url(az_subtle.png);
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -55,6 +64,10 @@ code {
   border-radius: 3px;
 }
 
+p {
+  word-wrap: break-word;
+}
+
 .highlight {
   padding: 16px;
   border-radius: 3px;
@@ -62,6 +75,11 @@ code {
   code {
     padding: 0;
   }
+}
+
+.article-body > p > img {
+  display: block;
+  width: 100%;
 }
 
 iframe {
@@ -181,13 +199,24 @@ blockquote {
 .main-container {
   display: table;
   padding: 16px 16px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    padding: 16px 0;
+  }
 }
 
 .articles {
   @include column;
 
-  width: 100%;
+  max-width: 1024px;
   min-width: 640px;
+
+  @media screen and (max-width: 960px) {
+    max-width: unset;
+    min-width: unset;
+  }
 }
 
 .article {
@@ -278,17 +307,20 @@ blockquote {
 
 .asides {
   @include column;
-
-  min-width: 320px;
-  max-width: 240px;
-
-  h2 {
-    font-size: 1rem;
-  }
 }
 
 .aside {
   @include block;
+
+  width: 320px;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: unset;
+  }
 }
 
 .recent-articles {
