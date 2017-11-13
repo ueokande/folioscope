@@ -146,3 +146,11 @@ Vim Vixenは複数の検索エンジンをサポートしています。
 ```
 
 無効化されたプラグインは、<kbd>Shift</kbd>+<kbd>Esc</kbd>キーで再び有効化できます。
+
+### 最後に
+
+ここの情報は古くなる可能性があります。
+新しい情報は常にGitHubを見るようにしてください。
+
+<iframe src="/github/#ueokande/vim-vixen" title="ueokande/vim-vixen"
+        class='external-service-frame' scrolling="no"></iframe>
