@@ -1,6 +1,7 @@
 ---
 title: Vim Vixenというプラグインを作りました。
 date: 2017-10-19 21:00 JST
+tags: Vim Vixen
 ---
 
 Twitterでは何度も告知しているのですが、FirefoxでVi 風の操作ができる「Vim Vixen」というプラグインを作りました。
