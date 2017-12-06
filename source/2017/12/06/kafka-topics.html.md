@@ -291,6 +291,9 @@ in-syncレプリカとリーダーは、それぞれ
 ## まとめ
 
 この記事では、`kafka-topics.sh` 機能のうち、トピックの一覧表示、作成、削除、詳細表示する機能を、コードベースで読み解いてゆきました。
-この記事で紹介した実装は、Zookeeperにアクセスしていましたが、将来Kafka側にAPIが用意される可能性があります。
-実際Kafka 0.11.0.0から、トピックの作成と削除に関するAPIが追加されました
+分散システムの特性上KafkaはZookeeperにも多くのデータを残しているので、トラブル時にZookeeperを見ると障害対応の手がかりになります。
+
+この記事ではZookeeperを利用したトピックの操作を紹介しましたが、
+経由の実際Kafka 0.11.0.0から、トピックの作成と削除に関するAPIが追加されました
 （[CreateTopics API](https://kafka.apache.org/protocol#The_Messages_CreateTopics)、[DeleteTopics API](https://kafka.apache.org/protocol#The_Messages_DeleteTopics)）。
+今後もクライアント側はZookeeperへ依存しなくても、Kafkaのトピックの操作やその他の管理ができるようになるかも知れません。
