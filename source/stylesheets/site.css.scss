@@ -1,6 +1,29 @@
 @charset "utf-8";
 @import "normalize";
-@import "base";
+
+$text-color: #333;
+$link-color: #00acdf;
+
+html {
+  font-size: 15px;
+  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+
 
 @mixin block {
   background-color: white;
@@ -116,6 +139,7 @@ blockquote {
     font-size: 3.2rem;
     margin-bottom: 16px;
     font-family: 'Pacifico', cursive;
+    font-weight: normal;
 
     a {
       color: $text-color;
@@ -253,11 +277,8 @@ blockquote {
     }
   }
   h2 {
-    margin-top: 36px;
+    margin-top: 12px;
     margin-bottom: 12px;
-  }
-  h2:first-of-type {
-    margin-top: 0;
   }
 
   .article-footer {
