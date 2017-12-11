@@ -6,6 +6,8 @@ tags: scala, kafka
 
 この記事は [Distributed computing Advent Calendar 2017](https://qiita.com/advent-calendar/2017/distributed-computing) の13日目の記事です。
 
+![Apache Kafka Logo](kafka.png)
+
 Kafkaのブローカー間、あるいはブローカーとクライアント間の通信は、TCP経由のバイナリプロトコルです。
 それぞれの通信はAPIとして定義されており、どういうフォーマットのリクエスト・レスポンスなのかが定められています。
 
