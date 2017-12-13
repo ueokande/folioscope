@@ -64,6 +64,8 @@ kafka-1.myhost:9092 (id: 0 rack: null) -> (
 `usable` は現在のクライアントライブラリで利用可能なバージョンを指します。
 カッコ内の数字は API key と呼ばれるもので、各APIを識別する番号です。
 
+この記事では、`kafka-broker-api-versions.sh` を読んでいきたいと思います。
+
 ## BrokerApiVersionsCommand
 
 `kafka-broker-api-versions.sh` の実装は
