@@ -291,9 +291,11 @@ blockquote {
     .social-buttons {
       margin-bottom: 16px;
 
-      .fb-share-button {
-        vertical-align: top;
-        margin-top: -1px;
+      .share-button {
+        display: inline-block;
+        border-radius: 4px;
+        width: 32px;
+        height: 32px;
       }
     }
     .next-article {
