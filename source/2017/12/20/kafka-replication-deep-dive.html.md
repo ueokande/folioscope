@@ -50,9 +50,9 @@ Kafkaのレプリカは、どれか1つが**リーダー**となり、Producer�
 ProducerがKafkaに書き込んだデータは、Consumerはすぐに読み込めるというわけではありません。
 もしそれが可能なら、Consumer間で処理するデータの一貫性が失われるからです。
 
-Kafkaのキューには**high-water mark**という概念があります。
+Kafkaのキューには**high water mark**という概念があります。
 high water markは「ここまではデータが保証されている」という印で、Consumerはhigh water markまでのデータのみ取得できます。
-Producer書き込み時に、全てのin-sync replicaがメッセージを受け取ると、igh water markが進みます。
+Producer書き込み時に、全てのin-sync replicaがメッセージを受け取ると、high water markが進みます。
 そのとき存在が全てのin-sync replicaが書き込めたメッセージは**コミット**された、とよびます（オフセットのコミットとは異なるので注意）。
 
 ![High water mark](high-water-mark.png)  
@@ -60,14 +60,14 @@ Producer書き込み時に、全てのin-sync replicaがメッセージを受け
   Consumerはin-sync replicaに保存されたデータのみ取得できる (Kafka: The Definitive Guideより)
 </p>
 
-仮にConsumerがhigh-water mark以降のデータを取得できたとします。
-あるConsumer *C*が図中のreplica 0のMessage 4を取得できます。
+もしhigh water markという概念がないとどうなるでしょうか。
+あるConsumer *C*が図中のreplica 0のMessage 4を取得できたとします。
 その後Replica 0を持つBrokerがクラッシュしてデータが失われたとします。
 するとMessage 4が永久に失われ、結果として*C*と他のConsumerで取得できるメッセージで不整合が生じます。
-Kafkaはhigh-water markまでのメッセージを読み込めるようにすることで、Consumer間の一貫性を保ちます。
+Kafkaはhigh water markまでのメッセージを読み込めるようにすることで、Consumer間の一貫性を保ちます。
 
-ここで、あるレプリカのフォロワーが、ネットワーク遅延でin-sync replicaで無くなった状況を考えます。
-high-water markの定義に従うと、全てのin-sync replicaとはリーダーのみで、この時点でリーダーがメッセージを受け取るとコミットされます。
+ここで、あるレプリカのフォロワーが、ネットワーク遅延でin-sync replicaから外れた状況を考えます。
+high water markの定義に従うと、全てのin-sync replicaはリーダーのみとなり、リーダーがメッセージを受け取るとコミットされます。
 これは正しい動作ですが、そのメッセージを持つのはリーダーのみなので、信頼性を保証できません。
 これを防ぐために、ブローカーに **minimum in-sync replica** を設定します。
 
@@ -79,7 +79,7 @@ acks
 ----
 
 上記の話は、Producerは全てのin-sync replicaがメッセージを受け取るまで待ちます。
-この挙動は、 これはProducerの設定の `acks` で変更可能です。
+この挙動はProducerの設定の `acks` で変更可能です。
 
 `acks=all` が設定されていると、Producerは全ての in-sync replicaにメッセージが書かれるまで待ちます。
 そして、仮にin-sync replicaの数が `min.insync.replicas` に満たない時、Producerはデータを書き込むことができません。
@@ -99,10 +99,18 @@ Kafkaはブローカーは耐故障性と可用性のためにレプリケーシ
 Kafkaは他の分散システムのように、ブローカー死亡時したとき、別のノードに最レプリケーションは行われません。
 ブローカーが死亡したとしても、レプリカの配置情報は、ZooKeeperに残り続けます。
 なのでBrokerが復帰した時、続きをリーダーから取得すれば良いので、高速にクラスタを復帰できます。
-リーダーが死亡すると、残った別のin-sync replicaから、新たなノードが再選出されます。
+リーダーが死亡すると、残った別のin-sync replicaから、新たなリーダーが再選出されます。
 
-高信頼性のために
-----------------
+上記のin-sync replicaからのリーダー選出は、"clean"なリーダー選出と呼ばれ、データロスやデータの不整合は発生しません。
+他のin-sync replicaが存在しないときにリーダーが死亡すると、次のリーダーが選出されないのでパーティションは停止します。
+このときin-sync replicaだったレプリカが復活するまで、パーティションは停止したままです。
+可用性を優先する場合、in-syncではないレプリカからのリーダー再選出を許すことができます（これを"unclean"なリーダー選出と呼ぶ）。
+ブローカーに `unclean.leader.election.enable=true` を設定するとで有効にできます。
+ただし"unclean"なリーダー選出を有効にすると、データロスやConsumerごとのデータ不整合などが発生する可能性があります。
+なので可用性を優先しない限り有効化するべきでは無いです。
+
+信頼性の高いレプリケーションをするには
+--------------------------------------
 
 以上の設定は、Kafkaの信頼性や可用性を担保するために必要なパラメータです。
 システムの目的により、 これらのパラメータの値を調整する必要があります。
