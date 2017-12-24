@@ -35,7 +35,7 @@ module ArticleHelpers
 
   def hatena_share_href(article, length = nil, ellipsis='...')
     uri = URI.parse(href(article))
-    origin = uri.port == 80 ? uri.host : "#{uri.host}:#{uri.port}"
+    origin = [80, 443].include?(uri.port) ? uri.host : "#{uri.host}:#{uri.port}"
     "http://b.hatena.ne.jp/entry/s/#{origin}#{uri.path}"
   end
 
