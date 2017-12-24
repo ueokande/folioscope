@@ -1,15 +1,13 @@
 require 'redcarpet'
 require 'middleman-core/renderers/redcarpet'
 require 'active_support/core_ext/module/attribute_accessors'
+require 'lib/github/cached_github_api'
 
 module Middleman
   module Renderers
     module  FolioscopeMiddlemanRedcarpetHTML
       EXTENDED_TAG_REGEX = /!\[([^\]]*)\]\[([^\]]*)\]/
-
-      def initialize(options={})
-        super
-      end
+      GITHUB = GitHub::CachedGitHubApi.new()
 
       def preprocess(full_document)
         full_document.gsub(EXTENDED_TAG_REGEX) do |match|
@@ -33,9 +31,12 @@ module Middleman
           return link;
         end
 
-        href = "https://github.com/#{link}"
-        avatar_url = 'https://avatars1.githubusercontent.com/u/534166?v=4'
-        description = 'This ia github link.'
+        repo = GITHUB.repository(owner, repo)
+
+        href = repo["html_url"]
+        avatar_url = repo["owner"]["avatar_url"]
+        description = repo["description"]
+
 
         %(<a href="#{href}" class="markdown-extended-github">
             <img src="#{avatar_url}" />
