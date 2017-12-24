@@ -24,6 +24,21 @@ module ArticleHelpers
     URI.join(config[:endpoint], src).to_s
   end
 
+  def facebook_share_href(article, length = nil, ellipsis='...')
+    "https://www.facebook.com/share.php?u=#{href(article)}"
+  end
+
+  def twitter_share_href(article, length = nil, ellipsis='...')
+    text = URI.encode("#{article.title} - Folioscope #{href(article)}")
+    "https://twitter.com/intent/tweet?text=#{text}"
+  end
+
+  def hatena_share_href(article, length = nil, ellipsis='...')
+    uri = URI.parse(href(article))
+    origin = [80, 443].include?(uri.port) ? uri.host : "#{uri.host}:#{uri.port}"
+    "http://b.hatena.ne.jp/entry/s/#{origin}#{uri.path}"
+  end
+
   def href(article)
     URI.join(config[:endpoint], article.url).to_s
   end
