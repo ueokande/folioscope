@@ -38,10 +38,11 @@ module Middleman
         description = repo["description"]
 
 
-        %(<a href="#{href}" class="markdown-extended-github">
-            <img src="#{avatar_url}" />
-            <p class="markdown-extended-github-title">#{link}</p>
-            <p class="markdown-extended-github-description">#{description}</p>
+        %(<a href="#{href}" class="external-link-github">
+            <img class="external-link-github-avatar" src="#{avatar_url}" />
+            <span class="external-link-github-title">#{link}</span>
+            <span class="external-link-github-description">#{description}</span>
+            <span class="external-link-github-service">github.com</span>
           </a>)
       end
     end
