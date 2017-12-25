@@ -26,7 +26,8 @@ module GitHub
 
   class FileCache
     def initialize
-      @dir = Dir.mktmpdir("folioscope")
+      @dir = File.join(Middleman::Application.root, ".cache", "github")
+      FileUtils.mkdir_p(@dir)
     end
 
     def get_or_write(key)
@@ -40,8 +41,13 @@ module GitHub
       rescue => e
         File.open(path, File::RDWR | File::CREAT) do |f|
           f.flock(File::LOCK_EX)
-          content = yield(f)
-          f.write(content)
+          begin
+            content = yield(f)
+            f.write(content)
+          rescue => e
+            File.delete(path)
+            throw e
+          end
 
           return content
         end
