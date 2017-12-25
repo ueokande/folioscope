@@ -9,9 +9,7 @@ Twitterでは何度も告知しているのですが、FirefoxでVi 風の操作
 ![Screen shot 1](screenshot1.png)
 ![Screen shot 2](screenshot2.png)
 
-<iframe src="/github/#ueokande/vim-vixen" title="ueokande/vim-vixen"
-        class='external-service-frame' scrolling="no"></iframe>
-
+![github][ueokande/vim-vixen]
 
 ## 背景
 

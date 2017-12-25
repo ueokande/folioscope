@@ -8,7 +8,7 @@ tags: sh
 
 ![Screenshot of tegrep](/2016/10/24/tegrep/screenshot.gif)
 
-<iframe src="/github/#ueokande/tegrep" title="ueokande/tegrep" class="external-service-frame" scrolling="no"></iframe>
+![github][ueokande/tegrep]
 
 使い方
 ------

@@ -12,8 +12,7 @@ tags: Vim Vixen
 0.5ではページ内検索も備わって、いよいよまともに使えるプラグインとなってきました。
 もちろんこれからも開発は続いてゆきます。
 
-<iframe src="/github/#ueokande/vim-vixen" title="ueokande/vim-vixen"
-        class='external-service-frame' scrolling="no"></iframe>
+![github][ueokande/vim-vixen]
 
 MUSTな機能は大体実装できたので、ここで日本語による使い方の解説をしたいとおもいます。
 
@@ -152,5 +151,4 @@ Vim Vixenは複数の検索エンジンをサポートしています。
 ここの情報は古くなる可能性があります。
 新しい情報は常にGitHubを見るようにしてください。
 
-<iframe src="/github/#ueokande/vim-vixen" title="ueokande/vim-vixen"
-        class='external-service-frame' scrolling="no"></iframe>
+![github][ueokande/vim-vixen]

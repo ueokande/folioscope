@@ -12,9 +12,8 @@ Microsoft EdgeもWebExtensionsをサポートしているそうで、よりWebEx
 この記事ではwebpackとbabelを使ったモダンな、WebExtensionsの開発環境を構築する方法を紹介します。
 完成品はGitHubで公開してます。
 
-<iframe src="/github/#ueokande/web-extensions-tutorial/" title="ueokande/web-extensions-tutorial"
-        class='external-service-frame' scrolling="no"
-></iframe>
+![github][ueokande/web-extensions-tutorial]
+
 
 ビルド環境を整える
 ------------------
