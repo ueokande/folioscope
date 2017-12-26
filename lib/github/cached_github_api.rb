@@ -12,9 +12,19 @@ module GitHub
     def repository(owner, repo)
       url = Url::repository(owner, repo)
       content = @cache.get_or_write(url) do |f|
-        open(url).read
+        open(url, request_options).read
       end
       json = JSON.parse(content);
+    end
+
+    private
+
+    def request_options
+      request_options = {}
+      if ENV['GITHUB_AUTHORIZATION']
+        request_options[:http_basic_authentication] = ENV['GITHUB_AUTHORIZATION'].split(':')
+      end
+      request_options
     end
   end
 
