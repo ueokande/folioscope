@@ -11,9 +11,7 @@ Ansibleなどのプロビジョニングスクリプトを同じホストに何�
 Vagrant用が生成する`ssh_config`をAnsibleに渡すので、**Ansibleのinventoryファイルを編集せずにデプロイ先をコンテナに切り替える**ことができます。
 `Vagrantfile`およびAnsible playbooksはGitHubで公開しています。
 
-<iframe src="/github/#ueokande/ansible-vagrant-playground/" title="ueokande/ansible-vagrant-playground"
-        class='external-service-frame' scrolling="no"
-></iframe>
+![github][ueokande/ansible-vagrant-playground]
 
 この記事では、例としてAnsibleでElasticsearchクラスタを構築します。
 また高速化のためにaptキャッシュサーバも配置します。

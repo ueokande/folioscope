@@ -230,6 +230,63 @@ blockquote {
   }
 }
 
+.external-link-github {
+  .external-link-github-avatar {
+    float: left;
+    height: 80px;
+    margin-right: 8px;
+  }
+  .external-link-github-title {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: 96px;    // 8px + 80px + 8px
+  }
+  .external-link-github-description {
+    display: block;
+    font-size: .8rem;
+    margin-left: 96px;    // 8px + 80px + 8px
+  }
+  .external-link-github-service {
+    &:before {
+      content: '';
+      background-image: url(github_16x16.png);
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 4px;
+    }
+    display: block;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: right;
+    line-height: 16px;
+    margin-top: 1rem;
+  }
+
+  &:link,&:visited,&:hover,&:active {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &:hover,&:active {
+    .external-link-github-title {
+      text-decoration: underline;
+    }
+  }
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  display: block;
+  border: 1px solid lightgray;
+  padding: 8px;
+  max-width: 24rem;
+}
+
 .main-container {
   display: table;
   padding: 16px 16px;

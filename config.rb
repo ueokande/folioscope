@@ -1,4 +1,5 @@
 require 'lib/article_helpers'
+require 'lib/middleman/renderers/folioscope_middleman'
 
 ###
 # Page options, layouts, aliases and proxies

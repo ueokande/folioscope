@@ -7,9 +7,7 @@ date: 2017-03-20 21:00 JST
 
 ![screenshot.gif](hop.gif)
 
-<iframe src="/github/#ueokande/hop" title="ueokande/hop"
-        class='external-service-frame' scrolling="no"
-></iframe>
+![github][ueokande/hop]
 
 設定
 ----
