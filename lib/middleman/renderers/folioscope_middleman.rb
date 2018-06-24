@@ -7,7 +7,12 @@ module Middleman
   module Renderers
     module  FolioscopeMiddlemanRedcarpetHTML
       EXTENDED_TAG_REGEX = /!\[([^\]]*)\]\[([^\]]*)\]/
-      GITHUB = GitHub::CachedGitHubApi.new()
+      raise "environment variable 'GITHUB_USER' is not set" unless ENV['GITHUB_USER']
+      GITHUB = GitHub::CachedGitHubApi.new({
+        :github_user => ENV['GITHUB_USER'],
+        :github_token => ENV['GITHUB_TOKEN']
+      })
+      GITHUB.cache_user_repositories(ENV['GITHUB_USER'])
 
       def preprocess(full_document)
         full_document.gsub(EXTENDED_TAG_REGEX) do |match|

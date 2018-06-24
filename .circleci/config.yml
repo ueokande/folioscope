@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5.1-node
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - '{{ checksum "Gemfile.lock" }}'
+      - run: bundle install --path vendor/bundle
+      - save_cache:
+          key: '{{ checksum "Gemfile.lock" }}'
+          paths:
+            - "vendor/bundle"
+
+      - run: bundle exec middleman build
+      - run: '[ "${CIRCLE_BRANCH}" = "master" ] && ./bin/deploy || true'

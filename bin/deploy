@@ -6,7 +6,7 @@ fatal() {
 }
 
 remote() {
-  ssh -q -o "StrictHostKeyChecking no" -i deploy_key -l "$REMOTE_USER" -p "$REMOTE_PORT" "$REMOTE_HOST" $@
+  ssh -q -o "StrictHostKeyChecking no" -l "$REMOTE_USER" -p "$REMOTE_PORT" "$REMOTE_HOST" $@
 }
 
 [ -z "$REMOTE_HOST" ] && fatal 'REMOTE_HOST is not set'
