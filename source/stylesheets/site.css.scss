@@ -140,20 +140,37 @@ blockquote {
 
   h1 {
     font-size: 3.2rem;
-    margin-bottom: 16px;
-    font-family: 'Pacifico', cursive;
-    font-weight: normal;
+    margin-bottom: 0rem;
+    font-family: 'Galindo', cursive;
 
     a {
       color: $text-color;
+      text-decoration: none;
     }
   }
 
   h2 {
     font-size: 1.2rem;
     font-weight: normal;
-    font-family: 'Pacifico', cursive;
-    margin: 0;
+    font-family: 'Galindo', cursive;
+    margin: 0 1rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 12px 0 0;
+
+    h1 {
+      margin: .5rem;
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    h2 {
+    }
+
+    .service-icons .service-icon {
+      display: none;
+    }
   }
 }
 
@@ -295,7 +312,7 @@ blockquote {
 
   @media screen and (max-width: 960px) {
     display: block;
-    padding: 16px 0;
+    padding: 0px 0;
   }
 }
 
