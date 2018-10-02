@@ -1,12 +1,12 @@
 @charset "utf-8";
 @import "normalize";
 
-$text-color: #333;
+$text-color: #454545;
 $link-color: #00acdf;
 
 html {
-  font-size: 15px;
-  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 15.2px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,'Hiragino Kaku Gothic Pro',Meiryo,'MS PGothic',sans-serif;
 }
 
 a {
@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.7;
   color: $text-color;
   text-align: justify;
   min-height: 100%;
@@ -111,7 +111,9 @@ p {
 
 .article-body > p > img {
   display: block;
-  width: 100%;
+  width: 98%;
+  border: 1px solid lightgray;
+  padding: 8px;
 }
 
 iframe {
