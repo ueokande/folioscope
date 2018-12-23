@@ -132,7 +132,7 @@ $ ./hl2.sh -game portal
 
 これでPortalが起動します！
 
-![Portal](portal_screenshot.png)
+[![Portalのスクリーンショット](portal_screenshot_thumb.jpg)](portal_screenshot.png)
 
 自分の環境は4Kディスプレイなのですが、Portal程度ならGT 1030でも普通に遊べる程度でした（ただし10分ほどで3D酔をしたので長くは遊べません）。
 
