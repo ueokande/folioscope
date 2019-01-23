@@ -1,0 +1,84 @@
+---
+title: widget透過のまとめ
+date: 2011-01-04T01:09:31+09:00
+tags: [C/C++, Qt]
+---
+
+Qtでwidget透過の情報が少なかったので  
+中国のサイトより  
+QT下的几种透明效果 \- 悠然 \- 51CTO技术博客  
+[http://mypyg\.blog\.51cto\.com/820446/172661](http://mypyg.blog.51cto.com/820446/172661)
+
+#### その1 背景の無効化
+
+まずは背景の描画をOFFにする方法です
+
+```cpp
+widget->setAttribute(Qt::WA_TranslucentBackground, true);
+```
+
+この方法は前景色の色はそのままです
+
+
+
+#### その2 パレットの再設定
+
+パレットの再設定で透明色を指定する方法です
+
+```cpp
+QPalette plt(QPalette::Background, QColor(0, 0, 0, 128));
+widget->setPalette(plt);
+widget->setAutoFillBackground(true);
+```
+
+QWidget::setAutoFillBackground\(\)メソッドで, 自動で背景色をパレットで塗り潰すよう設定します
+
+  
+
+
+#### その3 paintEventのオーバーライド\(1\)
+
+QWidget::paintEvent\(\)をオーバーライドし, 背景に半透明な色を描画します
+
+```cpp
+void Widget::paintEvent( QPaintEvent* )
+{
+    QPainter p(this);
+    p.setCompositionMode( QPainter::CompositionMode_Clear );
+    p.fillRect( 10, 10, 300, 300, Qt::SolidPattern );
+}
+```
+
+\.\.\.とは書いてはあるのですが私の環境ではうまく動作しませんでした
+
+
+
+#### その4 paintEventのオーバーライド\(2\)
+
+かわりに次の例のようにカラーを指定すると半透明にできました
+
+```cpp
+void Widget::paintEvent(QPaintEvent *e)
+{
+    QPainter p(this);
+    p.fillRect(rect(), QColor(0, 255, 0, 128));
+}
+```
+
+なお, この方法は, 背景を無効化にしないと, 元ある色の上から塗りつぶしてしまうことになりますから, ブレンドされた色が表示されてしまいます  
+そのため, その1で書いたように, 背景を無効化しましょう
+
+```cpp
+widget->setAttribute(Qt::WA_TranslucentBackground, true);
+```
+
+#### その5 widget全体を透過
+
+widget全体を透過します
+
+```cpp
+widget->setWindowOpacity(0.5);
+```
+
+このメソッドはタイトルバーや文字を含むwidget全体を透過します
+

@@ -1,0 +1,48 @@
+---
+title: 正しくないクラス設計
+date: 2010-12-14T22:34:04+09:00
+tags: [C/C++]
+---
+
+過去に書いた変態的ソースコードを引っ張り出してきたいと思います
+
+```cpp
+#include <stdio.h>
+#include <math.h>
+
+class Sin {
+public:
+    Sin(double n) {
+        data = sin(n);
+    }
+
+    operator double() {
+        return data;
+    }
+private:
+    double data;
+};
+
+int main() {
+    double x = (Sin)1.56;
+    printf("%f\n", x);  // 0.001593
+    return 0;
+}
+```
+
+このプログラムは三角関数を型キャストのスタイルで計算しています\.
+
+  
+まず, main関数にて
+
+```cpp
+(Sin)1.56
+```
+
+でSinクラスにキャストします\.  
+内部では, Sinオブジェクトを生成し, コンストラクタにdouble型の1\.56が渡されます\.  
+そしてdouble型のxに再びキャストするため, Sinのoperator double\(\)をオーバーロードして, 内部のデータdataを返しています\.
+
+  
+柔軟なオーバーロードができるC\+\+っていいですね
+
