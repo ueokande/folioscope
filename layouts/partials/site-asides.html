@@ -1,0 +1,42 @@
+<div class='asides'>
+  <aside class='aside'>
+    <h2>Author</h2>
+    <div style='text-align:center'>
+      <img class='profile_img' alt='筆者のプロフィール写真' src='/images/profile.jpg'>
+    </div>
+    <h3>Shin'ya Ueoka (@ueokande)</h3>
+    <p>Webの会社のミドルウェアエンジニア。Java, Go, シェルスクリプト, WebExtensions, Vim</p>
+  </aside>
+
+  <aside class='aside'>
+    <h2>Recent Articles</h2>
+    <ol class='recent-articles'>
+      {{ range .Site.RegularPages.ByDate.Reverse | first 10 }}
+        <li class='recent-article'>
+          <p class='recent-article-date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
+          <p class='recent-article-title'><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        </li>
+      {{ end }}
+  </aside>
+
+  <aside class='aside'>
+    <h2>Tags</h2>
+    <ol class='category-items'>
+      {{ range .Site.Taxonomies.tags.ByCount }}
+        {{ $link := (replace .Name "/" "-") | urlize}}
+        <li class='articles-item'>
+          <a href="/tags/{{ $link }}"> {{ .Name }} <small>({{ .Count }})</small></a>
+        </li>
+      {{ end }}
+    </ol>
+  </aside>
+
+  <aside class='aside'>
+    <h2>By Year</h2>
+    <ol class='category-items'>
+      {{ range .Site.Sections.Reverse }}
+      <li class='articles-item'><a href="{{ .Permalink }}">{{ .Title }} <small>({{ len .Pages }})</small></a></li>
+      {{ end }}
+    </ol>
+  </aside>
+</div>

@@ -75,7 +75,7 @@ body {
   color: $text-color;
   text-align: justify;
   min-height: 100%;
-  background-image: url(az_subtle.png);
+  background-image: url(/images/az_subtle.png);
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -338,18 +338,23 @@ blockquote {
     font-size: .8rem;
   }
 
-  h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-top: 4px;
-    padding-bottom: 16px;
+  .article-header {
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+
+      a {
+        color: $text-color;
+      }
+    }
+    .tags {
+      margin: 0;
+      font-size: .8rem;
+    }
+
     border-bottom-color: #eee;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-
-    a {
-      color: $text-color;
-    }
   }
   h2 {
     margin-top: 12px;

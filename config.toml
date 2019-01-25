@@ -1,0 +1,4 @@
+baseURL = "https://i-beam.org/"
+languageCode = "ja-jp"
+title = "Folioscope"
+pygmentsCodeFences = true

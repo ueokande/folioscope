@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <article class='article'>
+    <div class='article-header'>
+      <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
+      <h1><a src="{{ .Permalink }}">{{ .Title }}</a></h1>
+      <p class="tags">
+        {{ range $name := .Params.tags }}
+          {{ $link := (replace $name "/" "-") | urlize}}
+          <a href="/tags/{{ $link }}">{{ $name }}</a>
+        {{ end }}
+      </p>
+    </div>
+    <div class='article-body'>
+      {{ .Content }}
+    </div>
+    <div class='article-footer'>
+      <div class='social-buttons'>
+        {{ block "share-button-twitter" . }}{{- partial "share-buttons/twitter.html" . -}}{{ end }}
+        {{ block "share-button-hatena" . }}{{- partial "share-buttons/hatena.html" . -}}{{ end }}
+        {{ block "share-button-facebook" . }}{{- partial "share-buttons/facebook.html" . -}}{{ end }}
+      </div>
+
+      {{ if .NextPage }}
+        <a class="next-article" href="{{.NextPage.Permalink}}">« {{ .NextPage.Title }}</a>
+      {{end}}.
+      {{ if .PrevPage }}
+        <a class="prev-article" href="{{.PrevPage.Permalink}}">{{ .PrevPage.Title }} » </a>
+      {{end}}.
+    </div>
+  </article>
+{{ end }}
