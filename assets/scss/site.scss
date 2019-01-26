@@ -97,15 +97,15 @@ p {
 }
 
 .highlight {
-  padding: 0 8px;
   border-radius: 3px;
   overflow-x: auto;
-  margin: .5rem 0;
-
-  code {
-    padding: 0;
-    background-color: unset;
-    border: unset;
+  pre {
+    padding: .8rem;
+    code {
+      padding: 0;
+      background-color: unset;
+      border: unset;
+    }
   }
 }
 
