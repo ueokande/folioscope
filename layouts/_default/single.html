@@ -2,7 +2,7 @@
   <article class='article'>
     <div class='article-header'>
       <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
-      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+      <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       <p class="tags">
         {{ range $name := .Params.tags }}
           {{ $link := (replace $name "/" "-") | urlize}}
@@ -21,10 +21,10 @@
       </div>
 
       {{ with .NextPage }}
-        <a class="next-article" href="{{.Permalink}}">« {{ .Title }}</a>
+        <a class="next-article" href="{{.RelPermalink}}">« {{ .Title }}</a>
       {{ end }}
       {{ with .PrevPage }}
-        <a class="prev-article" href="{{.Permalink}}">{{ .Title }} » </a>
+        <a class="prev-article" href="{{.RelPermalink}}">{{ .Title }} » </a>
       {{ end }}
     </div>
   </article>

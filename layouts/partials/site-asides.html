@@ -14,7 +14,7 @@
       {{ range .Site.RegularPages.ByDate.Reverse | first 10 }}
         <li class='recent-article'>
           <p class='recent-article-date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
-          <p class='recent-article-title'><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+          <p class='recent-article-title'><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
         </li>
       {{ end }}
   </aside>
@@ -35,7 +35,7 @@
     <h2>By Year</h2>
     <ol class='category-items'>
       {{ range .Site.Sections.Reverse }}
-      <li class='articles-item'><a href="{{ .Permalink }}">{{ .Title }} <small>({{ len .Pages }})</small></a></li>
+      <li class='articles-item'><a href="{{ .RelPermalink }}">{{ .Title }} <small>({{ len .Pages }})</small></a></li>
       {{ end }}
     </ol>
   </aside>

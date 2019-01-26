@@ -14,7 +14,7 @@
     {{- template "_internal/twitter_cards.html" . -}}
 
     {{ $styles := resources.Get "scss/site.scss" | toCSS }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
   </head>
   <body>

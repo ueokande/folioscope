@@ -1,6 +1,6 @@
 <figure>
   <img 
-    {{ $link := .Page.Permalink }}
+    {{ $link := .Page.RelPermalink }}
     {{- with .Get "src" }} src="{{ if not (strings.HasPrefix . "/") }}{{ $link }}{{ end }}{{ . }}"{{ end -}}
     {{- with .Get "alt" }} alt="{{.}}"{{ end -}}
   />
