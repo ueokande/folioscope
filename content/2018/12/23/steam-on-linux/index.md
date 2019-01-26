@@ -4,7 +4,7 @@ date: 2018-12-23T22:00:00+09:00
 tags: [Linux]
 ---
 
-![Portal Bundle](./portal_bundle.png)
+{{<img src="./portal_bundle.png" alt="Portal Bundle">}}
 
 PortalとPortal 2がセットで180円という電波を受信したので早速買いました。
 自分のマシンはArch Linuxということで、Linux環境でSteamをインストールしてゲームの起動までチャレンジしました。
@@ -133,7 +133,7 @@ $ ./hl2.sh -game portal
 
 これでPortalが起動します！
 
-[![Portalのスクリーンショット](portal_screenshot_thumb.jpg)](portal_screenshot.png)
+[{{<img src="portal_screenshot_thumb.jpg" alt="Portalのスクリーンショット">}}](portal_screenshot.png)
 
 自分の環境は4Kディスプレイなのですが、Portal程度ならGT 1030でも普通に遊べる程度でした（ただし10分ほどで3D酔をしたので長くは遊べません）。
 

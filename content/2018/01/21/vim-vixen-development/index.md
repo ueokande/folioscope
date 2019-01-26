@@ -74,7 +74,7 @@ Vim Vixenではユニットテストを努力して書いてますが、Karma上
 GitHub flaved Markdownでチェックリストが使えるので、リリースごとに[試験のPull Request](https://github.com/ueokande/vim-vixen/pull/314)を作って、本文に試験項目を貼ります。
 そのPull Request上で試験をして、問題があれば修正をして、全ての試験がパスすればPull Requestをマージします。
 
-![QA](qa.png)
+{{<img src="qa.png" alt="QA">}}
 
 
 ## Vim Vixenのこれから

@@ -4,7 +4,7 @@ date: 2015-01-17T22:50:33+09:00
 tags: 
 ---
 
-[![](http://farm1.staticflickr.com/205/493303882_b1d4f47b33.jpg)](http://www.flickr.com/photos/23642145@N00/493303882)  
+[{{<img src="http://farm1.staticflickr.com/205/493303882_b1d4f47b33.jpg" alt="">}}](http://www.flickr.com/photos/23642145@N00/493303882)  
 [photo by Accretion Disc](http://www.flickr.com/photos/23642145@N00/493303882)
 
 うちのデスクトップコンピュータが壊れた。おそらくマザーボードがお逝きになられた。ちょうど6年前に買ったのでそろそろ寿命だ。幸いラップトップがあるので、現在はそちらで作業している。次のコンピュータをどうしようかと周りの人に尋ねたら、もはやデスクトップを使っている人が少ない。自分もデスクトップコンピュータの在り方について少し考えてみた。

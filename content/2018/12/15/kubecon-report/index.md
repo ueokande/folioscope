@@ -6,7 +6,7 @@ date: 2018-12-15T22:00:00+09:00
 12月10日から13日の4日間、北アメリカのシアトルで[KubeCon + CloudNativeCon North America][kubecon]が開催されました。
 自分も今のチームメンバーと一緒に参加しました。
 
-![KubeConキーノート会場の様子](kubecon_keynote.jpeg)
+{{<img src="kubecon_keynote.jpeg" alt="KubeConキーノート会場の様子">}}
 
 イベント自体の報告は会社のブログで公開してるので、そちらを参考にしてください。
 
@@ -30,7 +30,7 @@ ESTAの申請はパスポートの情報や住所をポチポチ入力すると�
 
 シアトルはAmazonの本社もあるので、空港ではAWSの広告も見えました。
 
-![シアトル・タコマ空港のAWSの広告](seattle_tacoma_airport.jpeg)
+{{<img src="seattle_tacoma_airport.jpeg" alt="シアトル・タコマ空港のAWSの広告">}}
 
 ライドシェアの文化
 ------------------
@@ -50,7 +50,7 @@ Uber・Lyftの呼び出しから到着までも早くて、大体5分ほどで�
 シアトルは冬の雨季で、ほぼ毎日が雨でした。
 夜は日本の夜のように、イルミネーションが飾られてキレイでした。
 
-![シアトルの夜景](seattle_night.jpeg)
+{{<img src="seattle_night.jpeg" alt="シアトルの夜景">}}
 
 海外渡航で特に気になるのは現地の治安です。
 シアトルは比較的治安のよい都市だそうです。
@@ -67,7 +67,7 @@ Uber・Lyftの呼び出しから到着までも早くて、大体5分ほどで�
 Amazon Go
 ---------
 
-![Amazon Go](amazon_go.jpeg)
+{{<img src="amazon_go.jpeg" alt="Amazon Go">}}
 
 Amazonはコンピューター・ビジョンやディープ・ラーニングを使った次世代のスーパーマーケット「Amazon Go」を展開しています。
 シアトルにもその店舗があるということで行ってきました。

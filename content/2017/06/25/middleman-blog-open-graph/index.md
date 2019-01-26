@@ -11,7 +11,7 @@ Open Graph protocolとは
 Open Graph property (OGP) とは、Facebookが提案した、リンク先のWebページのの情報を表示してくれる仕組みです。
 現在ではTwitterやSlackもOGPに対応しています。
 
-![slack-open-graph](og-slack.png)  
+{{<img src="og-slack.png" alt="slack-open-graph">}}  
 
 TwitterはOGPだけでなく独自の[Twitter Cards](https://dev.twitter.com/cards/overview)にも対応しており、よりTwitterに特化した情報を記述できます。
 

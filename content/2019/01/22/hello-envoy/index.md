@@ -4,7 +4,7 @@ date: 2019-01-22T22:00:00+09:00
 tags: [Envoy Proxy]
 ---
 
-![Envoy Proxy](./envoyproxy.png)
+{{<img src="./envoyproxy.png" alt="Envoy Proxy">}}
 
 最近Kubernetes周りの技術をよく触るのですが、Envoy Proxy (Envoy)もよく耳にするので勉強しました。
 
@@ -67,7 +67,7 @@ Kubernetesなどでは、Envoyを各アプリケーションのサイドカー�
 アプリケーション自体が別のサービスのIPアドレスを知らなくとも、`localhost`にあるEnvoyのポートのみを知ればよいです。
 経路制御やサービスのIPアドレスが変わったときも、Envoyの設定を更新さえすれば、アプリケーションはネットワークで何が起こったかを知る必要がありません。
 
-![Envoyによるサイドカー](envoy_sidecar.png)
+{{<img src="envoy_sidecar.png" alt="Envoyによるサイドカー">}}
 
 ### 基本用語
 
@@ -106,7 +106,7 @@ xDS APIには以下のAPIが含まれます。
 
 これらのAPI毎に独立したgRPCストリームを利用できますが、Aggregated Discovery Services (ADS)を使うと単一のストリームで複数のxDS APIを利用できます。
 
-![EnvoyとxDSサーバー](envoy_xds.png)
+{{<img src="envoy_xds.png" alt="EnvoyとxDSサーバー">}}
 
 
 Envoyの利用例

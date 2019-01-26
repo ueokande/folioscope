@@ -4,7 +4,7 @@ date: 2014-07-09T23:25:14+09:00
 tags: 
 ---
 
-[![](http://farm1.staticflickr.com/99/271120032_7496977120.jpg)](http://www.flickr.com/photos/37136574@N00/271120032)  
+[{{<img src="http://farm1.staticflickr.com/99/271120032_7496977120.jpg" alt="">}}](http://www.flickr.com/photos/37136574@N00/271120032)  
 [photo by zopeuse](http://www.flickr.com/photos/37136574@N00/271120032)
 
 研究室で新しいマシンが降ってきたので、早速Linuxをインストール。

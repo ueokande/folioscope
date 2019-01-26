@@ -3,7 +3,7 @@ title: Vagrant Docker providerでSSHができるまで
 date: 2017-07-01T21:00:00+09:00
 ---
 
-![Vagrant and Docker](vagrant-and-docker.png)
+{{<img src="vagrant-and-docker.png" alt="Vagrant and Docker">}}
 
 [Vagrant Docker provider](https://www.vagrantup.com/docs/docker/)を使うと、VagrantからDockerコンテナを起動できます。
 VirtualBoxと違いオーバーヘッドが少ないので、もりもり環境を量産できて便利です。

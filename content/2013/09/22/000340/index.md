@@ -4,7 +4,7 @@ date: 2013-09-22T00:03:40+09:00
 tags: [コラム・雑談]
 ---
 
-[![Kensington SlimBlade Trackball](http://farm3.staticflickr.com/2747/4349245842_29f210b9dc_z.jpg)](http://www.flickr.com/photos/rockdoli/4349245842/)  
+[{{<img src="http://farm3.staticflickr.com/2747/4349245842_29f210b9dc_z.jpg" alt="Kensington SlimBlade Trackball">}}](http://www.flickr.com/photos/rockdoli/4349245842/)  
 <span style="font-size: 80%">Photo by <a href="http://www.flickr.com/photos/rockdoli/4349245842">Outsider.ne.kr</a></span>
 
 前々から欲しかった[Kensinton SlimBlade](http://www.nanayojapan.co.jp/products/tball/72327.html)をついに買ってしまった．

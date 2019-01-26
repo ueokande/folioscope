@@ -4,7 +4,7 @@ date: 2014-07-28T00:21:15+09:00
 tags: 
 ---
 
-[![](http://farm1.staticflickr.com/51/135751440_2f59574661.jpg)](http://www.flickr.com/photos/50109537@N00/135751440)  
+[{{<img src="http://farm1.staticflickr.com/51/135751440_2f59574661.jpg" alt="">}}](http://www.flickr.com/photos/50109537@N00/135751440)  
 [photo by afternoon\_sunlight](http://www.flickr.com/photos/50109537@N00/135751440)
 
 Rubyがその界隈で浸透してもう何年にもなりますが、今更Rubyの門を叩いてみました。

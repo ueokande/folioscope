@@ -5,7 +5,7 @@ date: 2017-03-20T21:00:00+09:00
 
 コマンド一発で、普段良く使うディレクトリに移動できる、コマンド「hop」を作りました。
 
-![screenshot.gif](hop.gif)
+{{<img src="hop.gif" alt="screenshot.gif">}}
 
 ![github][ueokande/hop]
 

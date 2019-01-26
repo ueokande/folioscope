@@ -6,7 +6,7 @@ date: 2018-07-28T21:00:00+09:00
 2018年8月3日に、オライリー・ジャパンから「Kafka: The Definitive Guide」の日本語訳が発売されます。
 自分はこの本で、監訳という形で出版に携わらせてもらいました。
 
-![Kafak books](kafka_books.jpg)
+{{<img src="kafka_books.jpg" alt="Kafak books">}}
 
 この本について
 --------------

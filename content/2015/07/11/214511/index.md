@@ -4,7 +4,7 @@ date: 2015-07-11T21:45:11+09:00
 tags: 
 ---
 
-[![](http://farm1.staticflickr.com/11/15612924_be0d9a3470.jpg)](http://www.flickr.com/photos/12149418@N00/15612924)  
+[{{<img src="http://farm1.staticflickr.com/11/15612924_be0d9a3470.jpg" alt="">}}](http://www.flickr.com/photos/12149418@N00/15612924)  
 [photo by e53](http://www.flickr.com/photos/12149418@N00/15612924)
 
 数週間前から、携帯キャリアの「通信の最適化」が話題となっている。具体的な内容は、送受信される画像の圧縮やメタ情報を削除して、通信するデータ量を減らそうというものである。

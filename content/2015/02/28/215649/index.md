@@ -4,7 +4,7 @@ date: 2015-02-28T21:56:49+09:00
 tags: [sh]
 ---
 
-[![](http://farm1.staticflickr.com/185/449958332_2a07a72aa3.jpg)](http://www.flickr.com/photos/73491156@N00/449958332)  
+[{{<img src="http://farm1.staticflickr.com/185/449958332_2a07a72aa3.jpg" alt="">}}](http://www.flickr.com/photos/73491156@N00/449958332)  
 [photo by Éole](http://www.flickr.com/photos/73491156@N00/449958332)
 
 # Itamae便利説

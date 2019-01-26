@@ -4,7 +4,7 @@ date: 2014-04-08T21:10:19+09:00
 tags: [コラム・雑談]
 ---
 
-[![](http://farm1.staticflickr.com/31/40854955_7ae9dc9e32.jpg)](http://www.flickr.com/photos/37996654902@N01/40854955)  
+[{{<img src="http://farm1.staticflickr.com/31/40854955_7ae9dc9e32.jpg" alt="">}}](http://www.flickr.com/photos/37996654902@N01/40854955)  
 [photo by Eric Rice](http://www.flickr.com/photos/37996654902@N01/40854955)
 
 院生活が始まり、スケジュール管理に追われる毎日である。

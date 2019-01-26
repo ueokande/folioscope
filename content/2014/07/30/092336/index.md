@@ -4,7 +4,7 @@ date: 2014-07-30T09:23:36+09:00
 tags: 
 ---
 
-[![](http://farm6.staticflickr.com/5297/5456498539_e056df92b3.jpg)](http://www.flickr.com/photos/34561917@N04/5456498539)  
+[{{<img src="http://farm6.staticflickr.com/5297/5456498539_e056df92b3.jpg" alt="">}}](http://www.flickr.com/photos/34561917@N04/5456498539)  
 [photo by isawnyu](http://www.flickr.com/photos/34561917@N04/5456498539)
 
 新しい言語も始めたことだし、自分が主に使っている言語を振り返ってみる。

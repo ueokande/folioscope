@@ -13,7 +13,7 @@ GitHubのEmojiが変更されました。自分の環境ではAppleColorEmojiで
 
 > [@github](https://twitter.com/github) has changed the emojis on site once again. These ones are looking pretty ugly though. :( [#github](https://twitter.com/hashtag/github?src=hash) [#emoji](https://twitter.com/hashtag/emoji?src=hash)
 >
-> ![new-gemoji](/2016/10/22/gemoji-and-apple-color-emoji/gemoji-and-apple-color-emoji/CuJ4poxVYAQnoab.jpg)
+> {{<img src="/2016/10/22/gemoji-and-apple-color-emoji/gemoji-and-apple-color-emoji/CuJ4poxVYAQnoab.jpg" alt="new-gemoji">}}
 >
 > <cite>[@amit\_merchant](https://twitter.com/amit_merchant/status/784322193853259776)</cite>
 

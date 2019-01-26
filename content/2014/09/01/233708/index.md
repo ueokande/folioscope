@@ -4,7 +4,7 @@ date: 2014-09-01T23:37:08+09:00
 tags: [Linux]
 ---
 
-[![](http://farm4.staticflickr.com/3178/2997336346_8025bc4b8c.jpg)](http://www.flickr.com/photos/10473890@N00/2997336346)  
+[{{<img src="http://farm4.staticflickr.com/3178/2997336346_8025bc4b8c.jpg" alt="">}}](http://www.flickr.com/photos/10473890@N00/2997336346)  
 [photo by Listen Missy\!](http://www.flickr.com/photos/10473890@N00/2997336346)
 
 MicroServerが届いたのでサーバ周りの整理をしています。

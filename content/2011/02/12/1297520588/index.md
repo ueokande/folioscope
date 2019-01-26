@@ -8,7 +8,7 @@ tags: [Qt]
 なので<span style="font-weight:bold;color:#755019;">お下品な方法</span>でQt Designerを使ってコンテキストメニューをデザインしたいと思います
 
 ここでは, Qtのヘルプを表示する"Help"と, アプリケーションを終了する"Exit"というアイテムを作成します  
-[![f:id:ibenza:20110212035202p:image](/2011/02/12/1297520588/20110212035202.png)](http://f.hatena.ne.jp/ibenza/20110212035202)
+[{{<img src="/2011/02/12/1297520588/20110212035202.png" alt="f:id:ibenza:20110212035202p:image">}}](http://f.hatena.ne.jp/ibenza/20110212035202)
 
 READMORE
 #### デザインする

@@ -6,7 +6,7 @@ date: 2017-11-04T22:00:00+09:00
 VimConf2017に行ってきました。
 日頃の感謝の意を込めて、**個人スポンサー**として参加しました。
 
-![VimConf2017](vimconf2017.jpg)
+{{<img src="vimconf2017.jpg" alt="VimConf2017">}}
 
 ## Vim, Me and Community
 

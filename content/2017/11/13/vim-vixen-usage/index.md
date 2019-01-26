@@ -4,7 +4,7 @@ date: 2017-11-13T22:00:00+09:00
 tags: [Vim Vixen, WebExtensions]
 ---
 
-![Screen shot 1](screenshot1.png)
+{{<img src="screenshot1.png" alt="Screen shot 1">}}
 
 本日Vim Vixen 0.5をリリースしました。  
 [Vim Vixen - Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/vim-vixen/)

@@ -4,7 +4,7 @@ date: 2014-07-05T22:43:36+09:00
 tags: 
 ---
 
-[![](http://farm5.staticflickr.com/4133/5087580520_b2cee7e306.jpg)](http://www.flickr.com/photos/35401556@N04/5087580520)  
+[{{<img src="http://farm5.staticflickr.com/4133/5087580520_b2cee7e306.jpg" alt="">}}](http://www.flickr.com/photos/35401556@N04/5087580520)  
 [photo by Varawut\.com](http://www.flickr.com/photos/35401556@N04/5087580520)
 
 Google Chrome/Chromiumのアドレスバーっぽい物、正式名書はOmnibox というそうです。

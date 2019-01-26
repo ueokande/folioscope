@@ -6,7 +6,7 @@ date: 2018-09-08T22:00:00+09:00
 builderscon2日目レポートです。
 今日も豪華なスピーカーが勢揃いで、最高の1日でした。
 
-![builderscon tokyo 2018 end day](builderscon-2nd-day.jpg)  
+{{<img src="builderscon-2nd-day.jpg" alt="builderscon tokyo 2018 end day">}}  
 ※ 画像はaphyrさんのスライドからです
 
 

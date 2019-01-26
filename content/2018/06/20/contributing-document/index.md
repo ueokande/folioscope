@@ -3,7 +3,7 @@ title: オープンソース活動はドキュメントの修正から始めら�
 date: 2018-06-20T21:00:00+09:00
 ---
 
-![Readme Patch](readme-patch.png)
+{{<img src="readme-patch.png" alt="Readme Patch">}}
 
 先日、Vim VixenでREADME修正のPull Req.をいただきました。
 

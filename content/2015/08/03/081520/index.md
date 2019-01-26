@@ -4,7 +4,7 @@ date: 2015-08-03T08:15:20+09:00
 tags: [Linux]
 ---
 
-[![](http://farm5.staticflickr.com/4034/4363850853_a3f044bab5.jpg)](http://www.flickr.com/photos/46200603@N06/4363850853)  
+[{{<img src="http://farm5.staticflickr.com/4034/4363850853_a3f044bab5.jpg" alt="">}}](http://www.flickr.com/photos/46200603@N06/4363850853)  
 [photo by kBoey pictures](http://www.flickr.com/photos/46200603@N06/4363850853)
 
 ThinkPadは、タッチパッドとポインティングスティック（赤乳首）の両方が搭載されてます。

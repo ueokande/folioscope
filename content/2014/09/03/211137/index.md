@@ -13,12 +13,12 @@ tags:
 どうすればいいかというと、線を引く時\(10,5, 10,5\) のように、0\.5pxずらして描画すればいいとのこと。
 どうしてその必要があるのかという言うと、例えばSVGやCanvasで\(1,1\)の地点から幅1pxの線を引くと、0\.5から1\.5の間に1pxの線が引かれます。
 
-[![http://i.stack.imgur.com/74fN7.png](http://i.stack.imgur.com/74fN7.png)](http://i.stack.imgur.com/74fN7.png)  
+[{{<img src="http://i.stack.imgur.com/74fN7.png" alt="http://i.stack.imgur.com/74fN7.png">}}](http://i.stack.imgur.com/74fN7.png)  
 Stack Overflowから抜粋
 
 したがって描画するためには2素子をグレーにする必要があり、これがぼやけて表示されているように見えるのです。
 確かに数学的な座標系と、コンピュータ上の素子との間にギャップがあるのが分かります。
 そのため0\.5pxずらすことで、1pxの線が画面上の1素子を使用するようになるのです。
 
-![f:id:ibenza:20140903210841p:plain](/2014/09/03/211137/20140903210841.png)
+{{<img src="/2014/09/03/211137/20140903210841.png" alt="f:id:ibenza:20140903210841p:plain">}}
 

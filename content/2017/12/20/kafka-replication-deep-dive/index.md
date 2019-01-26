@@ -6,7 +6,7 @@ tags: [Apache Kafka]
 
 この記事は [Distributed computing Advent Calendar 2017](https://qiita.com/advent-calendar/2017/distributed-computing) 20日目の記事です。
 
-![Apache Kafka Logo](kafka.png)
+{{<img src="kafka.png" alt="Apache Kafka Logo">}}
 
 Kafkaのレプリケーションは、高可用性と高信頼性を実現するための、重要な機能の1つです。
 この記事では、Kafkaのレプリケーションの仕組みについて紹介します。
@@ -54,7 +54,7 @@ high water markは「ここまではデータが保証されている」とい�
 Producer書き込み時に、全てのin-sync replicaがメッセージを受け取ると、high water markが進みます。
 そのとき全てのin-sync replicaが書き込めたメッセージは**コミット**された、とよびます（オフセットのコミットとは異なるので注意）。
 
-![High water mark](high-water-mark.png)  
+{{<img src="high-water-mark.png" alt="High water mark">}}  
 <p style='text-align: center; font-style:italic'>
   Consumerはin-sync replicaに保存されたデータのみ取得できる (Kafka: The Definitive Guideより)
 </p>

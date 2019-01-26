@@ -3,7 +3,7 @@ title: VagrantでAnsibleを加速させる
 date: 2017-07-04T21:00:00+09:00
 ---
 
-![Vagrant, Docker and Ansible](vagrant-docker-ansible.png)
+{{<img src="vagrant-docker-ansible.png" alt="Vagrant, Docker and Ansible">}}
 
 Ansibleなどのプロビジョニングスクリプトを同じホストに何度も適用していると、そのスクリプトが正しく動くのか怪しくなってきます。
 新規環境で流すと実は動かなかったりなんて。

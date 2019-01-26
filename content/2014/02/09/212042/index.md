@@ -4,7 +4,7 @@ date: 2014-02-09T21:20:42+09:00
 tags: [コラム・雑談]
 ---
 
-[![](http://farm1.staticflickr.com/143/337062435_ea9b24c5df.jpg)](http://www.flickr.com/photos/70259473@N00/337062435)  
+[{{<img src="http://farm1.staticflickr.com/143/337062435_ea9b24c5df.jpg" alt="">}}](http://www.flickr.com/photos/70259473@N00/337062435)  
 <span style="font-size:80%"><a href="http://www.flickr.com/photos/70259473@N00/337062435">photo by nebarnix</a></span>
 
 何があったかはタイトル通り。MacBook AirのMagSafeがもげた。

@@ -3,7 +3,7 @@ title: Builderscon Tokyo 2018 に行ってきた (1/2)
 date: 2018-09-07T22:00:00+09:00
 ---
 
-![Builderscon Tokyo 2018 1st Day](builderscon-1st-day.jpg)
+{{<img src="builderscon-1st-day.jpg" alt="Builderscon Tokyo 2018 1st Day">}}
 
 builderscon1日目に行ってきたので、忘れる前に参加レポートです。
 buildersconは弊社からもスポンサーをしており、その招待チケットを頂いたのでbuildersconに行くことにしました。

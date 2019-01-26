@@ -6,7 +6,7 @@ tags: [Scala, Apache Kafka]
 
 この記事は [Distributed computing Advent Calendar 2017](https://qiita.com/advent-calendar/2017/distributed-computing) の6日目の記事です。
 
-![Apache Kafka Logo](kafka.png)
+{{<img src="kafka.png" alt="Apache Kafka Logo">}}
 
 Apache Kafkaにはクラスタの管理ツールが含まれており、ユーザはこれらのツールを使ってトピックやオフセットを管理できます。
 コードは規模的にもあまり大きくないので、Kafkaの勉強にはちょうどいい教材です。

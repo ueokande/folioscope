@@ -4,7 +4,7 @@ date: 2018-02-25T17:00:00+09:00
 tags: [WebExtensions]
 ---
 
-![Running Screenshot](running-screenshot.gif)
+{{<img src="running-screenshot.gif" alt="Running Screenshot">}}
 
 Vim Vixenの開発では、開発スピードではなく品質を重視しており、毎リリース直前にフルリグレッションテストを行ってます。
 それらの試験を手動で行っており、各リリース前に[QA Pull Req.](https://github.com/ueokande/vim-vixen/pull/314)に試験結果を記録してます。
@@ -24,7 +24,7 @@ KarmaのFirefox launcher上で実行するJavaScriptは、ページにロード�
 Karmaで実行されるJavaScriptから、Vim Vixenのテストのセットアップや実行結果を取得するフローは次の図のようになります。
 Karma上のJavaScriptから、ambassadorアドオンを介して、タブの状態の取得や、他のタブのページの情報を取得します。
 
-![Architecture](architecture.png)
+{{<img src="architecture.png" alt="Architecture">}}
 
 ## ambassadorアドオン
 

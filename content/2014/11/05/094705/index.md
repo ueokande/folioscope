@@ -4,7 +4,7 @@ date: 2014-11-05T09:47:05+09:00
 tags: [Linux]
 ---
 
-[![](http://farm4.staticflickr.com/3258/2757978247_259c6d5464.jpg)](http://www.flickr.com/photos/70323761@N00/2757978247)  
+[{{<img src="http://farm4.staticflickr.com/3258/2757978247_259c6d5464.jpg" alt="">}}](http://www.flickr.com/photos/70323761@N00/2757978247)  
 [photo by wallyg](http://www.flickr.com/photos/70323761@N00/2757978247)
 
 openSUSE 13\.2がリリースされましたが、そろそろopenSUSEも飽きてきたので、Arch Linuxに移ってみようと思いました。

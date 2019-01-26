@@ -6,7 +6,7 @@ date: 2017-03-06T21:00:00+09:00
 自宅にスタンディングデスクを導入して1年が経ちます。
 オフィスでもスタンディングデスクが導入されつつあるので、これを機に感想を書いてみます。
 
-[![Standing Desk](standing-desk.jpg)](http://www.office-com.jp/products/detail.php?product_id=181898)
+[{{<img src="standing-desk.jpg" alt="Standing Desk">}}](http://www.office-com.jp/products/detail.php?product_id=181898)
 
 買ったのは1万円ちょっとの、安物のデスク。
 

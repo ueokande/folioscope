@@ -65,7 +65,7 @@ tags: [Vim Vixen, WebExtensions]
 そのためバージョンアップで新しい機能が入っても、それをユーザーに通知する術がありませんでした。。
 バージョン0.13以降では、ユーザーはVim Vixenの変更点や新しい機能にいち早く気づくことができます。
 
-![Update Notification](update-notification.png)
+{{<img src="update-notification.png" alt="Update Notification">}}
 
 ## `quit`/`bdelete`/`bdeletes`コマンドの追加
 
@@ -103,7 +103,7 @@ tags: [Vim Vixen, WebExtensions]
 まず、 `:open`, `:tabopen`, `:winopen` コマンドのURLを、ブックマークから補完するようにしました。
 コマンドの引数に適当なキーワードを入力すると、そのタイトルまたはURLにマッチするブックマークを表示します。
 
-![Bookmark Completions](bookmark-competions.png)
+{{<img src="bookmark-competions.png" alt="Bookmark Completions">}}
 
 また`addbookmark` コマンドで、ブックマークの作成に対応しました。
 

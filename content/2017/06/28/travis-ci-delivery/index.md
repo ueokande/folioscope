@@ -9,7 +9,7 @@ date: 2017-06-28T12:00:00+09:00
 構成
 ----
 
-![Deployment Architecture](architecture.png)
+{{<img src="architecture.png" alt="Deployment Architecture">}}
 
 よくある感じです。GitHub上へmasterブランチがPushされると、Travis CIが自動でビルドしてProductionにデプロイします。
 Travis CIにSSHの秘密鍵、Productionに公開鍵を登録しておいき、その鍵で認証します。

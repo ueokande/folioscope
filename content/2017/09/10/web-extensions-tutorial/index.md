@@ -3,7 +3,7 @@ title: webpack/babelでWebExtensionsの開発環境を整える
 date: 2017-09-10T21:00:00+09:00
 ---
 
-![webpack screenshort](webpack.png)
+{{<img src="webpack.png" alt="webpack screenshort">}}
 
 Firefoxはバージョン48からWebExtensionsのサポートを始め、そして2017年11月にリリースされるバージョン57で、旧APIを使ったAdd-onsのサポートを打ち切ります。
 この意向に嘆くFirefoxユーザも少なくないでしょうが、Mozillaも脆弱性の温床だった旧Add-ons APIを早く捨てたかったんじゃないでしょうか。

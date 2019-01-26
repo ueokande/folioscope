@@ -6,8 +6,8 @@ tags: [Vim Vixen, WebExtensions]
 
 Twitterでは何度も告知しているのですが、FirefoxでVi 風の操作ができる「Vim Vixen」というプラグインを作りました。
 
-![Screen shot 1](screenshot1.png)
-![Screen shot 2](screenshot2.png)
+{{<img src="screenshot1.png" alt="Screen shot 1">}}
+{{<img src="screenshot2.png" alt="Screen shot 2">}}
 
 ![github][ueokande/vim-vixen]
 

@@ -6,7 +6,7 @@ date: 2018-10-02T22:00:00+09:00
 DigitalOcean TIDE NYC 2018のセッションをなんとなく眺めていたら、「Livegrep」というソースコード検索ツールが紹介されました。
 面白そうだったので、手元にも構築してみました。
 
-![Livegrepのスクリーンショット](livegrep-screenshot.png)
+{{<img src="livegrep-screenshot.png" alt="Livegrepのスクリーンショット">}}
 
 Livegrepとは
 ------------
@@ -35,7 +35,7 @@ Livegrepは `codesearch` と呼ばれる検索エンジンと、`livegrep` と�
 
 以下のような構成でLivegrepを構築します。
 
-![Livegrepのアーキテクチャ](livegrep-architecture.png)
+{{<img src="livegrep-architecture.png" alt="Livegrepのアーキテクチャ">}}
 
 `codesearch` は2回利用します。
 1度目がソースコードからインデックスファイルを作るためです。

@@ -6,7 +6,7 @@ tags: [sh]
 
 シェル芸人初心者や、grepコマンド使うより手動で選んだほうがいいという状況のために、手grepツール `tegrep` を作りました。
 
-![Screenshot of tegrep](/2016/10/24/tegrep/tegrep/screenshot.gif)
+{{<img src="/2016/10/24/tegrep/tegrep/screenshot.gif" alt="Screenshot of tegrep">}}
 
 ![github][ueokande/tegrep]
 
