@@ -1,4 +1,16 @@
+{{ define "head" }}
+  {{ $images := .Page.Resources.ByType "image" }}
+  {{ if (len $images) gt 0 }}
+    {{ with index $images 0 }}
+      <meta property="og:image" content="{{ .Permalink }}">
+      <meta name="twitter:image" content="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ define "main" }}
+  {{ $images := .Page.Resources.ByType "image" }}
+  <meta content="{{ printf "%#v" $images }}">
   <article class='article'>
     <div class='article-header'>
       <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
