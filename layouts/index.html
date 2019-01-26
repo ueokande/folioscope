@@ -22,11 +22,9 @@
 
   <div class='pager-block'>
     <div class='pager'>
-
-      <span class='pager-link'>{{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL }}">&lt;</a>{{ end }}</span>
+      <span class='pager-link'>{{ with .Paginator.Prev }}<a href="{{ .URL }}">&lt;</a>{{ end }}</span>
       <span class='pager-status'>Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
-      <span class='pager-link'>{{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL }}">&gt;</a>{{ end }}</span>
-
+      <span class='pager-link'>{{ with .Paginator.Next }}<a href="{{ .URL }}">&gt;</a>{{ end }}</span>
     </div>
   </div>
 {{ end }}

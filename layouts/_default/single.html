@@ -20,12 +20,12 @@
         {{ block "share-button-facebook" . }}{{- partial "share-buttons/facebook.html" . -}}{{ end }}
       </div>
 
-      {{ if .NextPage }}
-        <a class="next-article" href="{{.NextPage.Permalink}}">« {{ .NextPage.Title }}</a>
-      {{end}}.
-      {{ if .PrevPage }}
-        <a class="prev-article" href="{{.PrevPage.Permalink}}">{{ .PrevPage.Title }} » </a>
-      {{end}}.
+      {{ with .NextPage }}
+        <a class="next-article" href="{{.Permalink}}">« {{ .Title }}</a>
+      {{ end }}
+      {{ with .PrevPage }}
+        <a class="prev-article" href="{{.Permalink}}">{{ .Title }} » </a>
+      {{ end }}
     </div>
   </article>
 {{ end }}
