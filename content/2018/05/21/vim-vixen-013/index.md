@@ -93,8 +93,8 @@ tags: [Vim Vixen, WebExtensions]
 またこのアイコンをクリックすることで、Vim Vixenの有効・無効状態を切り替えることができるようになりました。
 
 <div>
-  <img src="/2018/05/21/toolbar-enabled.png" alt="Toolbar enabled" />
-  <img src="/2018/05/21/toolbar-disabled.png" alt="Toolbar disabled" /></p>
+  <img src="/2018/05/21/vim-vixen-013/toolbar-enabled.png" alt="Toolbar enabled" />
+  <img src="/2018/05/21/vim-vixen-013/toolbar-disabled.png" alt="Toolbar disabled" /></p>
 </div>
 
 ## ブックマーク操作の対応

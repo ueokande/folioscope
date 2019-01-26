@@ -18,6 +18,6 @@ PowerPointでプレゼンテーションの作成が当たり前となってい�
 現代のプレゼンテーション環境で生きていくにはどうすればいいのか．  
 答えは，選択肢の狭いプレゼンテーションソフトに腹を立てるくらいなら，自分で作ればいいのである．  
 ということで作っています．リリース日は未定．  
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/25/20130225220356.png" alt="f:id:ibenza:20130225220356p:plain" title="f:id:ibenza:20130225220356p:plain" class="hatena-fotolife" itemprop="image"></span>  
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/25/220803/20130225220356.png" alt="f:id:ibenza:20130225220356p:plain" title="f:id:ibenza:20130225220356p:plain" class="hatena-fotolife" itemprop="image"></span>  
 ※画面は開発中のものです
 

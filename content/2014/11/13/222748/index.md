@@ -10,7 +10,7 @@ tags: [Linux, sh]
 
 <script src="https://gist.github.com/ueokande/69f1c5494d7fb3779fb7.js"> </script>
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/11/13/20141113212842.png" alt="f:id:ibenza:20141113212842p:plain" title="f:id:ibenza:20141113212842p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/11/13/222748/20141113212842.png" alt="f:id:ibenza:20141113212842p:plain" title="f:id:ibenza:20141113212842p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 あとはプロンプトに表示するもよし、figletに投げるもよし。
 

@@ -71,7 +71,7 @@ server {
 
 webalizerのページにアクセスするには，サーバにログインし[http://localhost:8080/](http://localhost:8080/)を開きます．  
 この図は，w3mで開いた時のスクリーンショットで，これでも十分に使えます．  
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/06/20130204131137.png" alt="f:id:ibenza:20130204131137p:plain" title="f:id:ibenza:20130204131137p:plain" class="hatena-fotolife" itemprop="image"></span>  
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/06/000527/20130204131137.png" alt="f:id:ibenza:20130204131137p:plain" title="f:id:ibenza:20130204131137p:plain" class="hatena-fotolife" itemprop="image"></span>  
 またsshでLocal Forwardを使って，ローカルホスト側で見る方法もあります．  
 次のようにsshのセッションを開始して，ローカルホストのブラウザでlocalhost:12321を開きます．
 

@@ -60,7 +60,7 @@ section {
 
 するとこんな感じの、スライドのような感じで表示されます。
 
-[<img style='min-width:800px; max-width:100%; height:auto' alt='Browser preview' src='/2017/07/24/browser.png' >](browser.png)
+[<img style='min-width:800px; max-width:100%; height:auto' alt='Browser preview' src='/2017/07/24/css-printing/browser.png' >](browser.png)
 
 これで1ページ1`section`で出力できるようにCSSを指定します。
 適用したCSSは次のような感じです。
@@ -96,4 +96,4 @@ section {
 
 Chromium/Google Chromiumで印刷ダイアログを表示して、1ページ1`section`のようにプレビューされればOKです。
 
-[<img style='width:768px; height:auto' alt='Print preview' src='/2017/07/24/print.png' >](print.png)
+[<img style='width:768px; height:auto' alt='Print preview' src='/2017/07/24/css-printing/print.png' >](print.png)

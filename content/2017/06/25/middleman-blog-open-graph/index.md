@@ -23,7 +23,7 @@ WebページをOGPに対応させるには、HTMLに`<meta>`タグでそのペ�
 <meta property="og:title" content="Middleman BlogでOpen Graph protocol">
 <meta property="og:description" content="このブログはMiddleman Blogで構築していますが、今更ながらOpen Graph protocol に対応しました。その設定方法についてまとめます。">
 <meta property="og:url" content="https://i-beam.org/2017/06/25/middleman-blog-open-graph/">
-<meta property="og:image" content="https://i-beam.org/2017/06/25/og-slack.png">
+<meta property="og:image" content="https://i-beam.org/2017/06/25/middleman-blog-open-graph/og-slack.png">
 ```
 
 少しのRubyコードを書くことで、Middleman Blogで`<meta>`タグページ内に埋め込むことができます。

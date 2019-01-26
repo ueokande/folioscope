@@ -4,7 +4,7 @@ date: 2016-01-24T22:31:13+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/01/24/20160123184048.gif" alt="f:id:ibenza:20160123184048g:plain" title="f:id:ibenza:20160123184048g:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/01/24/223113/20160123184048.gif" alt="f:id:ibenza:20160123184048g:plain" title="f:id:ibenza:20160123184048g:plain" class="hatena-fotolife" itemprop="image"></span>
 
 ElectronとGitを使って、エンジニア向けのノートアプリを作ってます。
 

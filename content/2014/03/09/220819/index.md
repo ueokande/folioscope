@@ -16,7 +16,7 @@ LaTeXの処理系は非常に複雑で、BibTeXを使おうものならもう大
 
 この処理をアクティビティ図で表すとこうですかね。
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/03/09/20140309220616.png" alt="f:id:ibenza:20140309220616p:plain" title="f:id:ibenza:20140309220616p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/03/09/220819/20140309220616.png" alt="f:id:ibenza:20140309220616p:plain" title="f:id:ibenza:20140309220616p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 アクティビティ図で表すとファイルの依存関係がはっきりするので、Makefileが書きやすくなります。MakefileはGitHubで公開していいます。
 

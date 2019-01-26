@@ -4,7 +4,7 @@ date: 2013-04-30T00:01:38+09:00
 tags: [Linux]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/04/30/20130429171312.png" alt="f:id:ibenza:20130429171312p:plain" title="f:id:ibenza:20130429171312p:plain" class="hatena-fotolife" itemprop="image"></span>  
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/04/30/000138/20130429171312.png" alt="f:id:ibenza:20130429171312p:plain" title="f:id:ibenza:20130429171312p:plain" class="hatena-fotolife" itemprop="image"></span>  
 ナウい開発環境だと，コンパイル時のエーラが別ウィンドウで表示される．  
 Vimでもできそうではあるが，Vimはあくまでも開発環境．  
 シェルの出力結果を別端末に表示したい．

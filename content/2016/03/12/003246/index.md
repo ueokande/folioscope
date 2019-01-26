@@ -4,7 +4,7 @@ date: 2016-03-12T00:32:46+09:00
 tags: [コラム・雑談]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/03/12/20160312002649.png" alt="f:id:ibenza:20160312002649p:plain" title="f:id:ibenza:20160312002649p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/03/12/003246/20160312002649.png" alt="f:id:ibenza:20160312002649p:plain" title="f:id:ibenza:20160312002649p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 Phenom IIマシンが動かなくなっておよそ1年、ついに新しいPCを組みました。
 構成は

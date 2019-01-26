@@ -4,7 +4,7 @@ date: 2012-06-06T00:32:50+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/06/06/20120606001622.png" alt="f:id:ibenza:20120606001622p:plain,right" title="f:id:ibenza:20120606001622p:plain,right" class="hatena-fotolife hatena-image-right" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/06/06/vimcheatsheet/20120606001622.png" alt="f:id:ibenza:20120606001622p:plain,right" title="f:id:ibenza:20120606001622p:plain,right" class="hatena-fotolife hatena-image-right" itemprop="image"></span>
 
 自分用にVimチートシートを作成しましたので公開しておきます\.
 

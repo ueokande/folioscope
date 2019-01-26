@@ -4,7 +4,7 @@ date: 2015-06-29T22:52:53+09:00
 tags: [Unicode]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2015/06/29/20150629221436.jpg" alt="f:id:ibenza:20150629221436j:plain" title="f:id:ibenza:20150629221436j:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2015/06/29/225253/20150629221436.jpg" alt="f:id:ibenza:20150629221436j:plain" title="f:id:ibenza:20150629221436j:plain" class="hatena-fotolife" itemprop="image"></span>
 
 [Unicode 8\.0](http://unicode.org/versions/Unicode8.0.0/) が6月17日に正式に仕様として発表されて、しばらく経つ。[人種差別問題](http://srad.jp/story/14/10/07/0924234/)へも、人の顔と肌の色を定義した制御文字を組合せて使うことで対応した。
 単純に言うと「か」と「゛」を組合せて「が」を表示する、いわば合成文字だ。

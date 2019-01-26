@@ -4,7 +4,7 @@ date: 2013-02-01T12:28:31+09:00
 tags: [Mac]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/01/20130201003652.png" alt="f:id:ibenza:20130201003652p:plain" title="f:id:ibenza:20130201003652p:plain" class="hatena-fotolife" itemprop="image"></span>  
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/02/01/122831/20130201003652.png" alt="f:id:ibenza:20130201003652p:plain" title="f:id:ibenza:20130201003652p:plain" class="hatena-fotolife" itemprop="image"></span>  
 自分の体温で結露するほど，朝のMacBookはキンキンに冷えていますが，朝Macで困ることが他にもあります．  
 それは充電できないといった問題です．  
 そこで自分の経験則に近い解決法を紹介したいと思います．

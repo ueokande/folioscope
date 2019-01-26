@@ -4,7 +4,7 @@ date: 2012-04-02T00:00:00+09:00
 tags: [コラム・雑談]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/ibenza/20120402001604" class="hatena-fotolife" itemprop="url"><img src="/2012/04/02/20120402001604.png" alt="f:id:ibenza:20120402001604p:image:w360:right" title="f:id:ibenza:20120402001604p:image:w360:right" class="hatena-fotolife hatena-image-right" style="width:360px" itemprop="image"></a></span>
+<span itemscope itemtype="http://schema.org/Photograph"><a href="http://f.hatena.ne.jp/ibenza/20120402001604" class="hatena-fotolife" itemprop="url"><img src="/2012/04/02/ibenza/20120402001604.png" alt="f:id:ibenza:20120402001604p:image:w360:right" title="f:id:ibenza:20120402001604p:image:w360:right" class="hatena-fotolife hatena-image-right" style="width:360px" itemprop="image"></a></span>
 
 4/2です。前日はエイプリルフールです。
 

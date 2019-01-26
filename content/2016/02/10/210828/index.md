@@ -4,7 +4,7 @@ date: 2016-02-10T21:08:28+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/02/10/20160210210411.png" alt="f:id:ibenza:20160210210411p:plain" title="f:id:ibenza:20160210210411p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2016/02/10/210828/20160210210411.png" alt="f:id:ibenza:20160210210411p:plain" title="f:id:ibenza:20160210210411p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 GUIプログラミングを始めた人が作りたいもの、
 そして中学2年生が見てワクワクするもの、

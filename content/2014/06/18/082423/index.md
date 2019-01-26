@@ -4,7 +4,7 @@ date: 2014-06-18T08:24:23+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/06/18/20140618082133.png" alt="f:id:ibenza:20140618082133p:plain" title="f:id:ibenza:20140618082133p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/06/18/082423/20140618082133.png" alt="f:id:ibenza:20140618082133p:plain" title="f:id:ibenza:20140618082133p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 Vromeと肩を並べるほど（と思っている）Vimiumに移行しました。
 VromeはVimiumよりカスタマイズ性が高くてイイ！！と思ってたのですが、どうも動作が不安定で\.\.\.

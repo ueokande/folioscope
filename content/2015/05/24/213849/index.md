@@ -4,7 +4,7 @@ date: 2015-05-24T21:38:49+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2015/05/24/20150524211613.png" alt="f:id:ibenza:20150524211613p:plain" title="f:id:ibenza:20150524211613p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2015/05/24/213849/20150524211613.png" alt="f:id:ibenza:20150524211613p:plain" title="f:id:ibenza:20150524211613p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 GitHubのcontributionsを編集できるChrome Extension作った
 

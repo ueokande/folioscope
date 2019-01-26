@@ -84,5 +84,5 @@ ffmpeg -f x11grab -s 320x240 -r 10 -i :0.0+0,0 -pix_fmt yuv420p -f yuv4mpegpipe 
 と実行すると, キャプチャが始まります\(320x240じゃないとUstreamで乱れるのでとりあえずの簡易設定\)  
 後は適当なビューアで見てみましょう
 
-[![f:id:ibenza:20110107002458p:image](/2011/01/06/20110107002458.png)](http://f.hatena.ne.jp/ibenza/20110107002458)
+[![f:id:ibenza:20110107002458p:image](/2011/01/06/1294328759/20110107002458.png)](http://f.hatena.ne.jp/ibenza/20110107002458)
 

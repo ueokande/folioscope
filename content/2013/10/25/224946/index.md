@@ -4,7 +4,7 @@ date: 2013-10-25T22:49:46+09:00
 tags: [C/C++]
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/25/20131025223741.png" alt="f:id:ibenza:20131025223741p:plain" title="f:id:ibenza:20131025223741p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/25/224946/20131025223741.png" alt="f:id:ibenza:20131025223741p:plain" title="f:id:ibenza:20131025223741p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 [先日買ったSlimBlade](http://folioscope.hatenablog.jp/entry/2013/09/22/000340)、せっかくなので面白いことがしたいと思った。
 真っ先に思いついたのが、[3Dconnexion](http://www.3dconnexion.jp/)のような3Dコントローラ。

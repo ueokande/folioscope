@@ -25,7 +25,7 @@ LaTeXでの<span style="font-family:monospace">\section</span>再定義にハマ
 \end{document}
 ```
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/11/28/20121125105750.png" alt="f:id:ibenza:20121125105750p:plain" title="f:id:ibenza:20121125105750p:plain" class="hatena-fotolife" itemprop="image"></span>  
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/11/28/134632/20121125105750.png" alt="f:id:ibenza:20121125105750p:plain" title="f:id:ibenza:20121125105750p:plain" class="hatena-fotolife" itemprop="image"></span>  
 これが期待している結果である．  
 しかしams系のパッケージを<span style="font-family:monospace">\usepackage</span>すると，たちまち表示が壊れる．
 
@@ -33,7 +33,7 @@ LaTeXでの<span style="font-family:monospace">\section</span>再定義にハマ
 \usepackage{amsmath}
 ```
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/11/28/20121125105744.png" alt="f:id:ibenza:20121125105744p:plain" title="f:id:ibenza:20121125105744p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2012/11/28/134632/20121125105744.png" alt="f:id:ibenza:20121125105744p:plain" title="f:id:ibenza:20121125105744p:plain" class="hatena-fotolife" itemprop="image"></span>
 
   
 どうやら<span style="font-family:monospace">\section</span>の再定義がよろしくなかったみたい．  

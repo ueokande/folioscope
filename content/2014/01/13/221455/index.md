@@ -44,5 +44,5 @@ $ platex example && dvipdfmx example
 
 pLaTeX/dvipdfmxを使っている人は、PDFのしおり機能で、宛名を一覧表示することができます。
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/01/13/20140113113848.png" alt="f:id:ibenza:20140113113848p:plain" title="f:id:ibenza:20140113113848p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/01/13/221455/20140113113848.png" alt="f:id:ibenza:20140113113848p:plain" title="f:id:ibenza:20140113113848p:plain" class="hatena-fotolife" itemprop="image"></span>
 

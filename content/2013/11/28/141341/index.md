@@ -35,5 +35,5 @@ function putPixel {
 
 実行結果はこちら．
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/11/28/20131128133230.png" alt="f:id:ibenza:20131128133230p:plain" title="f:id:ibenza:20131128133230p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/11/28/141341/20131128133230.png" alt="f:id:ibenza:20131128133230p:plain" title="f:id:ibenza:20131128133230p:plain" class="hatena-fotolife" itemprop="image"></span>
 

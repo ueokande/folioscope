@@ -43,7 +43,7 @@ Dark poweredなプラグインは早いです。Python3で書くことで早く�
 
 ## Go、C、Pythonのためのdeoplete.nvimのソースの紹介と、Neovim専用にpure Goでvim-goをスクラッチした話
 
-[<img style="width:480px" title="deoplete sources and nvim-go" src="/2016/11/06/vimconf-2016-report/deoplete-sources-and-nvim-go.png" />](http://go-talks.appspot.com/github.com/zchee/talks/vimconf2016.slide)  
+[<img style="width:480px" title="deoplete sources and nvim-go" src="/2016/11/06/vimconf-2016-report/vimconf-2016-report/deoplete-sources-and-nvim-go.png" />](http://go-talks.appspot.com/github.com/zchee/talks/vimconf2016.slide)  
 [Go、C、Pythonのためのdeoplete.nvimのソースの紹介と、Neovim専用にpure Goでvim-goをスクラッチした話](http://go-talks.appspot.com/github.com/zchee/talks/vimconf2016.slide)
 from [zchee](https://github.com/zchee)
 
@@ -65,7 +65,7 @@ Goの宣伝っぽかったけど、改めてGoの良さがわかった。
 
 ## vim-mode-plus for Atom editor
 
-[<img style="width:480px" title="vim-mode-plus for Atom editor" src="/2016/11/06/vimconf-2016-report/vim-mode-plus-for-atom-editor.png" />](http://qiita.com/t9md/items/0bc7eaff726d099943eb)  
+[<img style="width:480px" title="vim-mode-plus for Atom editor" src="/2016/11/06/vimconf-2016-report/vimconf-2016-report/vim-mode-plus-for-atom-editor.png" />](http://qiita.com/t9md/items/0bc7eaff726d099943eb)  
 [vim-mode-plus for Atom editor](http://qiita.com/t9md/items/0bc7eaff726d099943eb)
 from [https://github.com/t9md](t9md)
 
@@ -83,7 +83,7 @@ Vim日本語プロジェクトも、ユーザー数とコントリビュータ�
 
 ## Vim script parser written in Go
 
-[<img style="width:480px" title="Vim script parser written in Go" src="/2016/11/06/vimconf-2016-report/vim-script-parser-written-in-go.png" />](https://docs.google.com/presentation/d/1A6_A7XzPoHv_wG5N_R6zbgYKBX2ycii6BCzR-7b-nOw/pub?start=false&loop=false&slide=id.p)  
+[<img style="width:480px" title="Vim script parser written in Go" src="/2016/11/06/vimconf-2016-report/vimconf-2016-report/vim-script-parser-written-in-go.png" />](https://docs.google.com/presentation/d/1A6_A7XzPoHv_wG5N_R6zbgYKBX2ycii6BCzR-7b-nOw/pub?start=false&loop=false&slide=id.p)  
 [Vim script parser written in Go](https://docs.google.com/presentation/d/1A6_A7XzPoHv_wG5N_R6zbgYKBX2ycii6BCzR-7b-nOw/pub?start=false&loop=false&slide=id.p)
 from [haya14busa](https://github.com/haya14busa)
 

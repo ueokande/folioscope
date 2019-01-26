@@ -31,7 +31,7 @@ HTMLで図形を描く方法に、次のものがある。
 また文字のカーニングがわずかに違っています。
 そして一番の違いが出てきたのは、拡大時です。
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/08/25/20140825151432.png" alt="f:id:ibenza:20140825151432p:plain" title="f:id:ibenza:20140825151432p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/08/25/192823/20140825151432.png" alt="f:id:ibenza:20140825151432p:plain" title="f:id:ibenza:20140825151432p:plain" class="hatena-fotolife" itemprop="image"></span>
 
 どういうわけかCanvasタグが大きくぼやけている。
 おそらくパフォーマンス向上のためか、内部でラスタライズしている模様。

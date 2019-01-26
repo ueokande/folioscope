@@ -4,7 +4,7 @@ date: 2014-12-24T14:38:23+09:00
 tags: 
 ---
 
-<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/12/24/20141224143747.jpg" alt="f:id:ibenza:20141224143747j:plain" title="f:id:ibenza:20141224143747j:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2014/12/24/143823/20141224143747.jpg" alt="f:id:ibenza:20141224143747j:plain" title="f:id:ibenza:20141224143747j:plain" class="hatena-fotolife" itemprop="image"></span>
 
 > USBを伝わってデジタル信号でスピーカーに伝搬するので、音にメリハリが出ました。しかしボリュームコントロールがLinuxで動作しなかったので、星4つです<span style="color: #f9ce1d">★★★★☆</span>
 > 
