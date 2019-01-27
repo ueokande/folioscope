@@ -26,6 +26,17 @@
       {{ .Content }}
     </div>
     <div class='article-footer'>
+
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
+      <h3>あわせて読みたい</h3>
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
       <div class='social-buttons'>
         {{ block "share-button-twitter" . }}{{- partial "share-buttons/twitter.html" . -}}{{ end }}
         {{ block "share-button-hatena" . }}{{- partial "share-buttons/hatena.html" . -}}{{ end }}
