@@ -1,137 +1,137 @@
 {
   "jinzhu/vrome": {
     "avatar_url": "https://avatars3.githubusercontent.com/u/6843?v=4",
-    "url": "https://api.github.com/repos/jinzhu/vrome",
+    "url": "https://github.com/jinzhu/vrome",
     "description": "Vrome: Bringing Vim elegance to Chrome"
   },
   "kossnocorp/jquery.turbolinks": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/52201?v=4",
-    "url": "https://api.github.com/repos/kossnocorp/jquery.turbolinks",
+    "url": "https://github.com/kossnocorp/jquery.turbolinks",
     "description": "💀 Deprecated ⚠️ jQuery plugin for drop-in fix binded events problem caused by Turbolinks"
   },
   "livegrep/livegrep.com": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/7953784?v=4",
-    "url": "https://api.github.com/repos/livegrep/livegrep.com",
+    "url": "https://github.com/livegrep/livegrep.com",
     "description": "Configuration and scripts for GKE-based livegrep.com deployment"
   },
   "mdn/webextensions-examples": {
     "avatar_url": "https://avatars0.githubusercontent.com/u/7565578?v=4",
-    "url": "https://api.github.com/repos/mdn/webextensions-examples",
+    "url": "https://github.com/mdn/webextensions-examples",
     "description": "Example Firefox add-ons created using the WebExtensions API"
   },
   "tadyjp/rendezvous": {
     "avatar_url": "https://avatars0.githubusercontent.com/u/1818082?v=4",
-    "url": "https://api.github.com/repos/tadyjp/rendezvous",
+    "url": "https://github.com/tadyjp/rendezvous",
     "description": "OSS service for team collaboration."
   },
   "ueokande/VAIO-Care": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/caribe",
+    "url": "https://github.com/ueokande/caribe",
     "description": "Calibrate your computer"
   },
   "ueokande/adversaria": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/adversaria",
+    "url": "https://github.com/ueokande/adversaria",
     "description": "Git-base note app"
   },
   "ueokande/ansible-vagrant-playground": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/ansible-vagrant-playground",
+    "url": "https://github.com/ueokande/ansible-vagrant-playground",
     "description": "Elasticsearch ansible playbook powered by Vagrant"
   },
   "ueokande/balsa-vim": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/balsa-vim",
+    "url": "https://github.com/ueokande/balsa-vim",
     "description": "Vim Plugin for Vim"
   },
   "ueokande/bashtub": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/bashtub",
+    "url": "https://github.com/ueokande/bashtub",
     "description": "Tiny unittest framework for Bash."
   },
   "ueokande/bashvm": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/bashvm",
+    "url": "https://github.com/ueokande/bashvm",
     "description": "Bash Version Manager"
   },
   "ueokande/etcd-passwd": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/etcd-passwd",
+    "url": "https://github.com/ueokande/etcd-passwd",
     "description": "Linux user managerment on etcd"
   },
   "ueokande/everything-say": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/everything-say",
+    "url": "https://github.com/ueokande/everything-say",
     "description": "Front-end of say on OS X."
   },
   "ueokande/github-pseudo-contributions": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/github-pseudo-contributions",
+    "url": "https://github.com/ueokande/github-pseudo-contributions",
     "description": "GitHub Contributions Editor"
   },
   "ueokande/hop": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/hop",
+    "url": "https://github.com/ueokande/hop",
     "description": "Hops to your favorite and frequently used directories."
   },
   "ueokande/html-paper": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/html-paper",
+    "url": "https://github.com/ueokande/html-paper",
     "description": "A paper with HTML5 + CSS3 by using a Web browser."
   },
   "ueokande/jletteraddress": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/jletteraddress",
+    "url": "https://github.com/ueokande/jletteraddress",
     "description": "A document class of LaTeX for address side of the Japanese letter."
   },
   "ueokande/kadenz.js": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/kadenz.js",
+    "url": "https://github.com/ueokande/kadenz.js",
     "description": "The project had been ported to Scena.js"
   },
   "ueokande/matrix.scr": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/matrix.scr",
+    "url": "https://github.com/ueokande/matrix.scr",
     "description": "Matrix-like screen saver"
   },
   "ueokande/rifflepdf": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/rifflepdf",
+    "url": "https://github.com/ueokande/rifflepdf",
     "description": "A script to collate pages in PDF as a compact brochure."
   },
   "ueokande/shvm": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/shvm",
+    "url": "https://github.com/ueokande/shvm",
     "description": "A Version Manager for Shells"
   },
   "ueokande/src2tex": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/src2tex",
+    "url": "https://github.com/ueokande/src2tex",
     "description": "Src2teX is a script that bind source codes to a document file such as PDF, DVI, and HTML."
   },
   "ueokande/tegrep": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/tegrep",
+    "url": "https://github.com/ueokande/tegrep",
     "description": "hand-grep"
   },
   "ueokande/tex-makefile": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/tex-makefile",
+    "url": "https://github.com/ueokande/tex-makefile",
     "description": "Makefile to compile TeX document."
   },
   "ueokande/vim-vixen": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/vim-vixen",
+    "url": "https://github.com/ueokande/vim-vixen",
     "description": "Accelerate your browsing with Vim power!!"
   },
   "ueokande/web-animation": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/web-animation",
+    "url": "https://github.com/ueokande/web-animation",
     "description": "Web Animation Test"
   },
   "ueokande/web-extensions-tutorial": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://api.github.com/repos/ueokande/web-extensions-tutorial",
+    "url": "https://github.com/ueokande/web-extensions-tutorial",
     "description": "Web Extensions tutorial for Google Chrome/Chromium and Firefox."
   }
 }

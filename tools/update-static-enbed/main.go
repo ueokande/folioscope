@@ -100,7 +100,7 @@ func run(ctx context.Context) error {
 
 		data[src] = Data{
 			AvatarURL:   repo.Owner.GetAvatarURL(),
-			URL:         repo.GetURL(),
+			URL:         repo.GetHTMLURL(),
 			Description: repo.GetDescription(),
 		}
 	}
