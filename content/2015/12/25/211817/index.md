@@ -1,0 +1,123 @@
+---
+title: Bashのバージョン管理ツールを作りました
+date: 2015-12-25T21:18:17+09:00
+tags: 
+---
+
+開発環境を容易に構築するために、
+Node\.jsだと[nvm](https://github.com/creationix/nvm)、Rubyだと[rvm](https://rvm.io/)のような、
+各言語のインタプリタをローカルにインストールツールが多くあります。Bashでもそれがしたかったので、作りました。
+
+{{<github src="ueokande/bashvm">}}
+
+## インストール
+
+まずGitHbuのプロジェクトを `$HOME/.bashvm` にクローンします．
+
+```sh
+git clone https://github.com/ueokande/bashvm $HOME/.bashvm
+```
+
+そして `.bash_profile` に次の行を追加します。
+
+```sh
+source $HOME/.bashvm/bin/bashvm-init
+```
+
+## 使い方
+
+### Bashのバージョンをリスト化
+
+`list` サブコマンドに`local`を与えると、インストールされているBash一覧を取得します。
+
+```
+bashvm list local
+```
+
+`remote`オプションをつけると、インストール可能なBashバージョン一覧を表示します。
+
+```
+bashvm list remote
+```
+
+### バージョンの切り替え
+
+`use` サブコマンドで、現在使用しているBashのバージョンを切り替えることができます。
+
+```
+bashvm use X.Y
+```
+
+`use` サブコマンドは現在使用中のシェルのみに有効ですが、次回起動時にもそのバージョンを使用したいときは、 `--default` オプションを使用します。
+
+```
+bashvm use X.Y --default
+```
+
+バージョン`system` を指定すると、システムにインストールされているBashを使用します。
+
+```
+bashvm use system
+```
+
+ローカルにインストールされていないが、インストール可能なバージョンを使用するとき、 `--install` オプションでそのバージョンをインストールして切り替えます。
+
+```
+bashvm use X.Y --install
+```
+
+### インストール
+
+`install` サブコマンドを使用します。
+
+```
+bashvm install X.Y
+```
+
+### その他
+
+`help` サブコマンドを使用すると、利用可能なコマンドとヘルプが表示されます。
+
+```
+bashvm help
+```
+
+## Travis\-CIで利用する
+
+Travis\-CIの設定例を次に示します。
+
+```yaml
+sudo: false
+cache:
+  directories:
+  - .bashvm/usr
+env:
+- RUN_BASH_VERSION=3.1
+- RUN_BASH_VERSION=3.2
+- RUN_BASH_VERSION=4.0
+- RUN_BASH_VERSION=4.1
+- RUN_BASH_VERSION=4.2
+- RUN_BASH_VERSION=4.3
+install:
+- mkdir -p .bashvm
+- curl  https://codeload.github.com/ueokande/bashvm/tar.gz/master | tar zx
+- cp -r bashvm-master/* .bashvm/
+before_script:
+- export BASHVM_HOME=$(readlink -f  .bashvm)
+- source .bashvm/bin/bashvm-init
+- bashvm use --install $RUN_BASH_VERSION
+script:
+- bash your_test_script.sh
+```
+
+この例ではBashの各バージョンのビルド時間を短縮するために、Travis\-CIのコンテナベースインフラを有効化して[ディレクトリキャッシュ]([https://docs.travis-ci.com/user/caching/)を使用ます。
+この例ではビルド済みのBashが格納される `$TRAVIS_BUILD_DIR/.bashvm/usr` をキャッシュします。`install`ステップではキャッシュ利用時にソースコードを正常にダウンロードできるよう、git\-cloneの代わりにcurlを使用します。
+
+ビルドスクリプトは各`RUN_BASH_VERSION`変数のバージョンそれぞれで実行します。
+各Bashバージョンは、 `before_script` でインストールして切り替えます。
+
+## おわりに
+
+bashvm自体がbashで動いてますが、可能ならPOSIX shellで書き直したいですね。
+そして現在はbashのバージョン管理しかしませんが、ashやcshやkshやzshもインストールできれば素敵です。
+

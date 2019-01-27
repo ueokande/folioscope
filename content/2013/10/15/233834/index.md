@@ -1,0 +1,39 @@
+---
+title: Webページをも吹き飛ばす台風26号.js
+date: 2013-10-15T23:38:34+09:00
+tags: [HTML/CSS/JS, GomiScript]
+---
+
+
+
+> 台風26号がWebサイト撒き散らすJavaScript、Webエンジニアの方期待しています。
+> 
+> — キュア便座 \(@iBenza\) [October 15, 2013](https://twitter.com/iBenza/statuses/390089679409643521)
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>  
+  
+  
+  
+  
+  
+
+
+<span style="color:#cc0000;font-size:48px;font-weight:bold">作った．</span>
+
+次の「吹き飛ばす．」リンクのURLをコピーして，適当なWebページでコピーしたURLを開いてください．
+
+[吹き飛ばす．](javascript:ww=window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;wh=window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName('body')[0].clientHeight;tags=['span','p','img','li','a','h1','h2','h3','h4','h5','iframe'];eles=[];for(i=0;i<tags.length;++i){eles=eles.concat(Array.prototype.slice.call(document.getElementsByTagName(tags[i])));}for(i=0;i<eles.length;++i){ele=eles[i];x=(ww/4)*Math.cos(i)+(ww/2);y=(wh/4)*Math.sin(i)+(wh/2);ele.style.transitionProperty='transform position left top margin-left margin-top';ele.style.transitionDuration='4s';ele.style.transitionTimingFunction='linear';ele.style.transitionDelay=i*2+'ms';rot=1800+Math.random()*360;ele.style.transform='rotate('+rot+'deg)';ele.style.webkitTransform='rotate('+rot+'deg)';ele.style.left=-x+'px';ele.style.top=-y+'px';ele.style.marginLeft=-x+'px';ele.style.marginTop=-y+'px';}void{};
+)
+
+## 私の[Twitter](https://twitter.com/iBenza)も
+
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/15/233834/20131015232839.png" alt="f:id:ibenza:20131015232839p:plain" title="f:id:ibenza:20131015232839p:plain" class="hatena-fotolife" itemprop="image"></span>
+
+## 私のブログも
+
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/15/233834/20131015232851.png" alt="f:id:ibenza:20131015232851p:plain" title="f:id:ibenza:20131015232851p:plain" class="hatena-fotolife" itemprop="image"></span>
+
+## [気象庁](http://www.jma.go.jp/jma/index.html)も
+
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/15/233834/20131015232858.png" alt="f:id:ibenza:20131015232858p:plain" title="f:id:ibenza:20131015232858p:plain" class="hatena-fotolife" itemprop="image"></span>
+

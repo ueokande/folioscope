@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <div class='summaries'>
+    <h1>&ldquo;{{ .Title }}&rdquo; タグのついた記事</h1>
+    <ul class='summary-items'>
+      {{ range .Paginator.Pages }}
+        <li class='summary-item'>
+          <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
+          <h2 class='title'><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class='body'>{{ .Summary | truncate 250 }}</p>
+        </li>
+      {{ end }}
+    </ul>
+    <div class='pager'>
+      <span class='pager-link'>{{ with .Paginator.Prev }}<a href="{{ .URL }}">&lt;</a>{{ end }}</span>
+      <span class='pager-status'>Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+      <span class='pager-link'>{{ with .Paginator.Next }}<a href="{{ .URL }}">&gt;</a>{{ end }}</span>
+    </div>
+  </div>
+{{ end }}
+      

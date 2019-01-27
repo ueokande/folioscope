@@ -15,13 +15,13 @@ remote() {
 
 eval `ssh-agent`
 
-tar cvf - build | remote tar xvf -
+tar cvf - public | remote tar xvf -
 
 remote <<EOF
 set -e
 
 last_built=\$(date +'%Y-%m-%dT%H:%M:%S.%NZ')
-mv build \$last_built
+mv public \$last_built
 ln -sf \$last_built -T current.tmp
 mv -T current.tmp current
 

@@ -1,0 +1,37 @@
+---
+title: 不用意にKeynote 5.3で作ったファイルをKeynote 6.0で開いてはいけない
+date: 2013-10-24T22:00:30+09:00
+tags: [Mac]
+---
+
+エキサイティングな悲しみを、  
+保証します。
+
+これまでKeynote '09と呼ばれていた<span style="font-weight:bold;color:#800000">Keynote 5.3</span>と、先日にリリースされた新しい<span style="font-weight:bold;color:#000080">Keynote 6.0</span>。
+残念ながらこれらのソフトのファイル形式には互換性がない。
+それどころか、<span style="font-weight:bold;color:#800000">5.3</span>で作ったファイルを<span style="font-weight:bold;color:#000080">6.0</span>で開くと、MS OfficeとOOoのごとく再現性が低い。
+なお<span style="font-weight:bold;color:#000080">6.0</span>で作ったファイルは<span style="font-weight:bold;color:#800000">5.3</span>では開けない模様。
+
+例えば次のスライドの例。<span style="font-weight:bold;color:#800000">5.3</span>で左の画像のようなページを作る。
+これを<span style="font-weight:bold;color:#000080">6.0</span>で開くと右のようになる。
+明らかに別人である。
+
+<span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/24/220030/20131024153938.png" alt="f:id:ibenza:20131024153938p:plain" title="f:id:ibenza:20131024153938p:plain" class="hatena-fotolife minilife" itemprop="image"></span><span itemscope itemtype="http://schema.org/Photograph"><img src="/2013/10/24/20131024153947.png" alt="f:id:ibenza:20131024153947p:plain" title="f:id:ibenza:20131024153947p:plain" class="hatena-fotolife minilife" itemprop="image"></span>
+
+しかしここまでは、ソフトウェアのバージョンアップにはつきものの事象である。
+私が言いたいのはこんなことではなく、こんな程度では記事を起こさない。
+私が言いたいのはApple製のソフトウェアに伝統的な自動保存機能による障害である。
+
+Apple製のソフトウェアは自動保存機能が付いているものが多く、ファイルの変更が即ファイルに反映される。
+もちろん<span style="font-weight:bold;color:#000080">6.0</span>にも自動保存は付いている。
+つまり<span style="font-weight:bold;color:#800000">5.3</span>で作成したファイルを興味本位で<span style="font-weight:bold;color:#000080">6.0</span>で開き、
+オブジェクトを1pxでも移動しようものなら、即座に<span style="font-weight:bold;color:#000080">6.0</span>の形式でファイルに反映される。
+元のファイルは永久に戻ってこない。
+
+興味本位で新しいバージョンを試して、保存するつもりがなくても保存される。
+何より学会シーズン到来なので、この季節は多くのスライドが生産される。
+研究者の断末魔が一つでも減ることを私は祈る。
+
+目の覚めるような絶望が、  
+より身近に。
+

@@ -1,0 +1,30 @@
+{{ define "main" }}
+  {{ range .Paginator.Pages.ByDate.Reverse }}
+    <article class='article'>
+      <div class='article-header'>
+        <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        <p class="tags">
+          {{ range $name := .Params.tags }}
+            {{ $link := (replace $name "/" "-") | urlize}}
+            <a href="/tags/{{ $link }}">{{ $name }}</a>
+          {{ end }}
+        </p>
+      </div>
+      <div class='article-body'>
+        {{ .Content | safeHTML | truncate 500 }}
+
+        <a href="{{ .RelPermalink }}">もっと読む…</a>
+      </div>
+    </article>
+  {{ end }}
+
+
+  <div class='pager-block'>
+    <div class='pager'>
+      <span class='pager-link'>{{ with .Paginator.Prev }}<a href="{{ .URL }}">&lt;</a>{{ end }}</span>
+      <span class='pager-status'>Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+      <span class='pager-link'>{{ with .Paginator.Next }}<a href="{{ .URL }}">&gt;</a>{{ end }}</span>
+    </div>
+  </div>
+{{ end }}

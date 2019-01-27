@@ -1,0 +1,54 @@
+{{ define "head" }}
+  {{ $images := .Page.Resources.ByType "image" }}
+  {{ if (len $images) gt 0 }}
+    {{ with index $images 0 }}
+      <meta property="og:image" content="{{ .Permalink }}">
+      <meta name="twitter:image" content="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $images := .Page.Resources.ByType "image" }}
+  <meta content="{{ printf "%#v" $images }}">
+  <article class='article'>
+    <div class='article-header'>
+      <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
+      <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <p class="tags">
+        {{ range $name := .Params.tags }}
+          {{ $link := (replace $name "/" "-") | urlize}}
+          <a href="/tags/{{ $link }}">{{ $name }}</a>
+        {{ end }}
+      </p>
+    </div>
+    <div class='article-body'>
+      {{ .Content }}
+    </div>
+    <div class='article-footer'>
+
+      {{ $related := .Site.RegularPages.Related . | first 5 }}
+      {{ with $related }}
+      <h3>あわせて読みたい</h3>
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+      <div class='social-buttons'>
+        {{ block "share-button-twitter" . }}{{- partial "share-buttons/twitter.html" . -}}{{ end }}
+        {{ block "share-button-hatena" . }}{{- partial "share-buttons/hatena.html" . -}}{{ end }}
+        {{ block "share-button-facebook" . }}{{- partial "share-buttons/facebook.html" . -}}{{ end }}
+      </div>
+
+      {{ with .NextPage }}
+        <a class="next-article" href="{{.RelPermalink}}">« {{ .Title }}</a>
+      {{ end }}
+      {{ with .PrevPage }}
+        <a class="prev-article" href="{{.RelPermalink}}">{{ .Title }} » </a>
+      {{ end }}
+    </div>
+  </article>
+{{ end }}
