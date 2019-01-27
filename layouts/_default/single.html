@@ -2,6 +2,7 @@
   {{ $images := .Page.Resources.ByType "image" }}
   {{ if (len $images) gt 0 }}
     {{ with index $images 0 }}
+      <meta name="twitter:card" content="summary_large_image">
       <meta property="og:image" content="{{ .Permalink }}">
       <meta name="twitter:image" content="{{ .Permalink }}">
     {{ end }}
