@@ -4,3 +4,6 @@ title = "Folioscope"
 pygmentsCodeFences = true
 pluralizelisttitles = false
 pygmentsCodeFencesGuessSyntax = true
+
+[params]
+twitter = "@ueokande"

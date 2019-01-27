@@ -1,4 +1,17 @@
 {{ define "head" }}
+  <meta property="og:url" content="{{ .Permalink }}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="{{ .Title }}"/>
+  <meta property="og:description" content="{{ .Summary }}"/>
+
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Summary }}">
+
+  {{ with .Site.Params.twitter }}
+    <meta name="twitter:site" content="{{ . }}" />
+    <meta name="twitter:creator" content="{{ . }}" />
+  {{ end }}
+
   {{ $images := .Page.Resources.ByType "image" }}
   {{ if (len $images) gt 0 }}
     {{ with index $images 0 }}
@@ -10,8 +23,6 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ $images := .Page.Resources.ByType "image" }}
-  <meta content="{{ printf "%#v" $images }}">
   <article class='article'>
     <div class='article-header'>
       <p class='date'><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" >{{ .Date.Format "2006-01-02" }}<time></p>
