@@ -109,9 +109,9 @@ p {
   }
 }
 
-.article-body > p > img {
+.article-image {
   display: block;
-  width: 98%;
+  max-width: 100%;
   border: 1px solid lightgray;
   padding: 8px;
 }
