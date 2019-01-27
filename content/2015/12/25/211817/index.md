@@ -8,7 +8,7 @@ tags:
 Node\.jsだと[nvm](https://github.com/creationix/nvm)、Rubyだと[rvm](https://rvm.io/)のような、
 各言語のインタプリタをローカルにインストールツールが多くあります。Bashでもそれがしたかったので、作りました。
 
-![github][ueokande/bashvm]
+{{<github src="ueokande/bashvm">}}
 
 ## インストール
 

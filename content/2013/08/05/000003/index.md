@@ -8,7 +8,7 @@ tags:
 小冊子のように閉じるためには，印刷後の配置を考えてページを並び替える必要がある．  
 そんな，ページの並べかえをするスクリプトRifflePDF書いた．
 
-![github][ueokande/rifflepdf]
+{{<github src="ueokande/rifflepdf">}}
 
 #### RifflePDFとはいったい
 

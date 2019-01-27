@@ -6,7 +6,7 @@ tags: [sh]
 
 ソースツリーを\.texファイルにまとめられるスクリプトSrC2TeX書きました．
 
-![github][ueokande/src2tex]
+{{<github src="ueokande/src2tex">}}
 
   
 このスクリプトにソースツリーを指定すると，一つの\.texファイルを吐き出します．そこからPDFなりDVIなりに出力できます．

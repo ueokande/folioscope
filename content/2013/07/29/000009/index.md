@@ -19,7 +19,7 @@ Makefileをかけると作業が数倍に跳ね上がります．Makefilleの書
 
 TeXの場合も，コンパイルが複雑なのでMakefileを書く価値は十分あります．TeX用に作ったMakefileのテンプレートを置いておきます．  
 
-![github][ueokande/tex-makefile]
+{{<github src="ueokande/tex-makefile">}}
 
 以下，使い方です．
 

@@ -8,7 +8,7 @@ tags:
 
 ElectronとGitを使って、エンジニア向けのノートアプリを作ってます。
 
-![github][ueokande/adversaria]
+{{<github src="ueokande/adversaria">}}
 
 ノートアプリはたくさんあるけど、自分に合うノートアプリを作りました。
 主な機能は以下のとおりです。

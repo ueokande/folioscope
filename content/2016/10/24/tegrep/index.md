@@ -8,7 +8,7 @@ tags: [sh]
 
 {{<img src="/2016/10/24/tegrep/tegrep/screenshot.gif" alt="Screenshot of tegrep">}}
 
-![github][ueokande/tegrep]
+{{<github src="ueokande/tegrep">}}
 
 使い方
 ------

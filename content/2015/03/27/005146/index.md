@@ -70,7 +70,7 @@ DOMとCSSを階層で分けること。
 
 jquery\.turbolinksという便利なjQueryプラグインを使うと、
 
-![github][kossnocorp/jquery.turbolinks]
+{{<github src="kossnocorp/jquery.turbolinks">}}
 
 ページの遷移時に`$(document).ready()`が発火します。
 しかし何も考えずに`$(document).ready()`を配置すると、意図しないcontrollerやactionでも初期化処理が起こります。

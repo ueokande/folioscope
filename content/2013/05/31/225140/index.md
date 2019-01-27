@@ -12,4 +12,4 @@ BalsaはもっぱらVimで記述することが多いので，便利なVimのシ
 
 - Vim online \- [http://www\.vim\.org/scripts/script\.php?script\_id=4604](http://www.vim.org/scripts/script.php?script_id=4604)
 
-![github][ueokande/balsa-vim]
+{{<github src="ueokande/balsa-vim">}}

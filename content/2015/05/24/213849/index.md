@@ -8,7 +8,7 @@ tags:
 
 GitHubのcontributionsを編集できるChrome Extension作った
 
-![github][ueokande/github-pseudo-contributions]
+{{<github src="ueokande/github-pseudo-contributions">}}
 
 # インストール
 

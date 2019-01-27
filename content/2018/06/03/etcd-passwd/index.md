@@ -9,7 +9,7 @@ date: 2018-06-03T21:00:00+09:00
 しかしLDAPは重装備すぎるので、もっとlightweightなサービスができないかと考えてみました。
 そこでPoCですが、etcdをバックエンドにユーザー管理をしてみました。
 
-![github][ueokande/etcd-passwd]
+{{<github src="ueokande/etcd-passwd">}}
 
 ## NSSサービスを書く
 

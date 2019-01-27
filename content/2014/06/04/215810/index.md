@@ -18,7 +18,7 @@ Vimperatorにはいつもお世話になり、別れを告げるべきはFirefox
 
 現在はChromium上で[Vrome](https://github.com/jinzhu/vrome)というプラグインを使用している。
 
-![github][jinzhu/vrome]
+{{<github src="jinzhu/vrome">}}
 
 数年前、自分にVimperatorを教えてくれた友人には感謝している。
 そして今日、Vromeを教えることでその恩を返すことができた。

@@ -9,7 +9,7 @@ Twitterでは何度も告知しているのですが、FirefoxでVi 風の操作
 {{<img src="screenshot1.png" alt="Screen shot 1">}}
 {{<img src="screenshot2.png" alt="Screen shot 2">}}
 
-![github][ueokande/vim-vixen]
+{{<github src="ueokande/vim-vixen">}}
 
 ## 背景
 

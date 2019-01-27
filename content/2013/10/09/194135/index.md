@@ -10,7 +10,7 @@ Qtのサンプルの一つにAnimated Tiles Exampleがあり，個人的にす�
 HTML5の勉強がてらにCSS3の`transition`で実装してみました．
 コードはgithubにあります．  
 
-![github][ueokande/web-animation]
+{{<github src="ueokande/web-animation">}}
 
 ## プレビュー
 

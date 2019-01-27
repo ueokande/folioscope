@@ -7,7 +7,7 @@ date: 2017-03-20T21:00:00+09:00
 
 {{<img src="hop.gif" alt="screenshot.gif">}}
 
-![github][ueokande/hop]
+{{<github src="ueokande/hop">}}
 
 設定
 ----

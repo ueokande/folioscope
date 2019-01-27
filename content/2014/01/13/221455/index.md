@@ -11,7 +11,7 @@ TeXでの作成は、プレーンテキストベースのファイルなので�
 また途中で行われる処理も透明化するので、保守性も高い。TeXで宛名印刷してる人はWeb上で何人か見かけたが、
 自分の満足の行くものではなかったので自分でクラスファイルを作ることにした。
 
-![github][ueokande/jletteraddress]
+{{<github src="ueokande/jletteraddress">}}
 
 # 使い方
 

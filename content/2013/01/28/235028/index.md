@@ -7,7 +7,7 @@ tags: [Mac]
 Macの<span style="font-family:monospace">say</span>コマンドは，コンソールで使えるTTSコマンド．  
 用意されている全てのボイスに登場してもらうスクリプトを書いてみた
 
-![github][ueokande/everything-say]
+{{<github src="ueokande/everything-say">}}
 
 実行例
 

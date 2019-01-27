@@ -4,7 +4,7 @@ date: 2014-02-17T22:35:15+09:00
 tags: [HTML/CSS/JS]
 ---
 
-![github][ueokande/kadenz.js]
+{{<github src="ueokande/kadenz.js">}}
 
 HTMLのプレゼンテーションフレームワークつくりました。
 とりあえずプロトタイプ状態ですが、見せれる形になったので公開します。

@@ -8,4 +8,4 @@ tags: [コラム・雑談]
 
 これで今日から僕もGithubユーザw\(\*^o^\*\)w
 
-![github][ueokande/html-paper]
+{{<github src="ueokande/html-paper">}}

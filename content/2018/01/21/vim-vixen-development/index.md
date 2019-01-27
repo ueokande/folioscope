@@ -15,7 +15,7 @@ tags: [Vim Vixen, WebExtensions]
 この記事ではVim Vixenの開発について紹介します。
 Vim VixenはGitHub上で開発していおり、IssueやPull Requestは大歓迎です。
 
-![github][ueokande/vim-vixen]
+{{<github src="ueokande/vim-vixen">}}
 
 ## 開発環境
 
@@ -88,4 +88,4 @@ Issueも100個以上溜まっており、多くの機能の要望が溜まって
 
 またMozillaがブラウザ上でWebExtensionsをテストする方法を公開してるので、それを元にいまテストできてない部分もテストしてゆきたいと思ってます。
 
-![github][mdn/webextensions-examples]
+{{<github src="mdn/webextensions-examples">}}

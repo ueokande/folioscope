@@ -6,7 +6,7 @@ tags:
 
 TeX/LaTeXのややこしいビルド手順を、Makefileに起こして公開していましたが、TeX/LaTeXプロジェクトのテンプレートにPOWER UPしました。
 
-![github][ueokande/tex-makefile]
+{{<github src="ueokande/tex-makefile">}}
 
 ディレクトリ構造は、Middleman風に、ソースコードをsourceディレクトリに配置します。またローカルなtexmfにも対応しており、このプロジェクトでしか使わないような\.clsファイルや\.styファイルを、プロジェクトのディレクトリに内に配置することもできます。
 

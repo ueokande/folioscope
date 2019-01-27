@@ -20,4 +20,4 @@ LaTeXの処理系は非常に複雑で、BibTeXを使おうものならもう大
 
 アクティビティ図で表すとファイルの依存関係がはっきりするので、Makefileが書きやすくなります。MakefileはGitHubで公開していいます。
 
-![github][ueokande/tex-makefile]
+{{<github src="ueokande/tex-makefile">}}

@@ -184,7 +184,7 @@ Livegrepは良いツールだとは思うのですが。日本語の記事も英
 
 今回は全手動でdockerコマンドを叩いてLivegrepを構築しましたが、公式サイトのlivegrep.comはKubernetsでデプロイされてるようです。
 
-![github][livegrep/livegrep.com]
+{{<github src="livegrep/livegrep.com">}}
 
 [example]: https://github.com/livegrep/livegrep/blob/master/doc/examples/livegrep/index.json
 [Kafka]: https://github.com/apache/kafka

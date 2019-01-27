@@ -11,7 +11,7 @@ VAIO Proが届いて3日、Linuxを入れて快適に作業できています。
 ファイルを直接触ってもいいのですが、せっかくなのでリッチなdialogを区使った設定ツールを作りました。
 英語がひ弱なので、ぷるりく大歓迎です。
 
-![github][ueokande/VAIO-Care]
+{{<github src="ueokande/VAIO-Care">}}
 
 * * *
 

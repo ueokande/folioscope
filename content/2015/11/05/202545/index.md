@@ -6,7 +6,7 @@ tags: [sh]
 
 Bash用テストフレームワークに、[Bats](https://github.com/sstephenson/bats)や[shunit2](https://github.com/kward/shunit2)がありますが、イケてないなーと思ってたら、気づいたら自分で作ってました。
 
-![github][ueokande/bashtub]
+{{<github src="ueokande/bashtub">}}
 
 テストの結果はモダンなテストフレームワークのように、カラフルに表示します。
 

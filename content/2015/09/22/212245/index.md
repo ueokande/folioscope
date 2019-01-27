@@ -6,7 +6,7 @@ tags:
 
 チーム内での情報共有ツールの和製Railsアプリ、rendezvousを少し使ってみましたという記事です。
 
-![github][tadyjp/rendezvous]
+{{<github src="tadyjp/rendezvous">}}
 
 wikiなどは古典的な情報共有ツールとして使われていますが、使いやすいとは言い難いですし、モダンじゃないです。
 だからesa\.ioとかQiita:Teamとかがヒットしているんでしょうね。
