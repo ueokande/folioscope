@@ -96,6 +96,7 @@ func run(ctx context.Context) error {
 		if err != nil {
 			return err
 		}
+		log.Printf("Got repository: %s", src)
 
 		data[src] = Data{
 			AvatarURL:   repo.Owner.GetAvatarURL(),

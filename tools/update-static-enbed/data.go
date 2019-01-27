@@ -6,9 +6,9 @@ import (
 )
 
 type Data struct {
-	AvatarURL   string `json: "avatar_url"`
+	AvatarURL   string `json:"avatar_url"`
 	URL         string `json:"url"`
-	Description string `json::description"`
+	Description string `json:"description"`
 }
 
 func WriteData(path string, data map[string]Data) error {
