@@ -38,8 +38,7 @@
     </div>
     <div class='article-footer'>
 
-      {{ $related := .Site.RegularPages.Related . | first 5 }}
-      {{ with $related }}
+      {{ with $.Site.RegularPages.Related . | first 5 }}
       <h3>あわせて読みたい</h3>
       <ul>
         {{ range . }}
