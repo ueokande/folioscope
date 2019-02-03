@@ -11,7 +11,8 @@ Envoy Proxyは動的な設定とxDS APIが魅力的ですが、手始めに静�
 
 {{<img src="envoy-http-proxy.png" alt="Envoyで構築するHTTPプロキシの図">}}
 
-NGINXとApache httpdで構築した2つのクラスタを構築し、EnvoyをHTTPロードバランサーとして設定します。
+HTTPロードバランサーの後ろには、目的の異なる2つのクラスタがあります。
+今回はNGINXとApache httpdを使っています。
 それぞれのクラスタは`nginx.local`と`httpd.local`というホスト名（バーチャルホスト）で経路を分岐します。
 
 Envoyの設定ファイル
@@ -138,11 +139,11 @@ $ curl httpd.local
 
 `nginx.local` でアクセスすると「Welcome to nginx!」が表示され、`httpd.local`でアクセスすると「It works!」が表示されると思います。
 
-設定ファイルを読んでいく
-------------------------
+設定ファイルを眺める
+--------------------
 
-それでは準を追って設定ファイルを読んでいきましょう。
-設定では必要最低限なフィールドの値のみ設定しています。
+それでは順を追って設定ファイルを読んでいきましょう。
+上記の設定は必要最低限なフィールドのみ埋めています。
 それぞれのフィールドの定義は適宜ドキュメントへのリンクを貼ってあるので、必要に応じて参照してください。
 
 1行目の`static_resources` はその名の通り静的なリソースを記述できます（定義は[StaticResources][]にあります）。
@@ -164,7 +165,7 @@ static_resources:
     - filters:
 ```
 
-Listenerの設定には待ち受けるアドレス・ポートと、受け取ったパケットをどう処理するかを決定するFilterで設定します。
+Listenerの設定には待ち受けるアドレス・ポートと、受け取ったパケットをどう処理するかを決める**フィルター**を記述します。
 Listenerは[FilterChain][]の設定を持ち、さらにFilterChainが[Filter][]の設定を持ちます。
 
 ここでは1つのフィルターを定義しています。
@@ -180,20 +181,18 @@ Listenerは[FilterChain][]の設定を持ち、さらにFilterChainが[Filter][]
             virtual_hosts:
 ```
 
-`name` フィールドには利用するフィルターを指定します。
+`name` フィールドは利用するフィルターの種類です。
 `envoy.http_connection_manager`はEnvoyの組み込みフィルターで、HTTP (L7レイヤー) の情報に基づいて処理します。
-`envoy.http_connection_manager`を指定する場合は、`config`フィールドに、[HttpConnectionManager][] を指定します。
+`envoy.http_connection_manager`を指定する場合は、`config`フィールドに[HttpConnectionManager][] を指定します。
 
 `http_filters` フィールドはHTTP connection managerがどういうHTTPフィルタを行うかを指定します。
-ここでは `envoy.router` という経路制御をするフィルタを利用します。
+ここでは `envoy.router` という経路制御のためのHTTPフィルタを利用します。
 `stat_prefix` はモニタリング用途に使うメトリクス名のプレフィクスです。
 
-`envoy.router` を指定すると同時に `route_config` フィールドで[Route Configuration][]を設定します。
-`virtual_hosts` フィールドで[VirtualHost][route.VirtualHost]を設定します。
-
-ここではバーチャルホストで2つのクラスタに経路を設定します。
-経路はバーチャルホストやURLのパスなどから経路を設定できます。
-今回は2つのバーチャルホストに対して2つのクラスタに分岐するよう設定します。
+`envoy.router` では `route_config` フィールドで[Route Configuration][]を設定します。
+その中の `virtual_hosts` フィールドで[VirtualHost][route.VirtualHost]を設定します。
+ここではバーチャルホストに基づいて2つのクラスタに経路を設定します。
+他にもURLなどに基づいて経路を制御可能です。
 
 ```yaml
             - name: nginx_service
