@@ -4,3 +4,5 @@
 
 # Ignore cache
 /.cache
+
+/node_modules
