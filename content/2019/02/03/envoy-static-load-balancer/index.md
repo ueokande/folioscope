@@ -15,6 +15,8 @@ HTTPロードバランサーの後ろには、目的の異なる2つのクラス
 今回はNGINXとApache httpdを使っています。
 それぞれのクラスタは`nginx.local`と`httpd.local`というホスト名（バーチャルホスト）で経路を分岐します。
 
+- **2019-02-06追記 :** DEPRECATEDなプロパティを修正しました。
+
 Envoyの設定ファイル
 -------------------
 
@@ -93,16 +95,30 @@ static_resources:
     type: STRICT_DNS
     connect_timeout: 0.25s
     lb_policy: ROUND_ROBIN
-    hosts:
-      - socket_address: { address: nginx1, port_value: 80 }
-      - socket_address: { address: nginx2, port_value: 80 }
+    load_assignment:
+      cluster_name: nginx_cluster
+      endpoints:
+      - lb_endpoints:
+        - endpoint:
+            address:
+              socket_address: { address: nginx1, port_value: 80 }
+        - endpoint:
+            address:
+              socket_address: { address: nginx2, port_value: 80 }
   - name: httpd_cluster
     type: STRICT_DNS
     connect_timeout: 0.25s
     lb_policy: ROUND_ROBIN
-    hosts:
-      - socket_address: { address: httpd1, port_value: 80 }
-      - socket_address: { address: httpd2, port_value: 80 }
+    load_assignment:
+      cluster_name: httpd_cluster
+      endpoints:
+      - lb_endpoints:
+        - endpoint:
+            address:
+              socket_address: { address: httpd1, port_value: 80 }
+        - endpoint:
+            address:
+              socket_address: { address: httpd2, port_value: 80 }
 ```
 
 Envoyを起動
@@ -211,8 +227,12 @@ Listenerは[FilterChain][]の設定を持ち、さらにFilterChainが[Filter][]
                   cluster: httpd_cluster
 ```
 
-最後にClusterを定義します。
+最後に[Cluster][]を定義します。
 各Clusterにはそれぞれ2つのEndpointがあり、ラウンドロビンで接続先を決定します。
+
+以前はClusterの`hosts`フィールドが利用できてましたが、現在はDEPRECATEDになり、かわりに`load_assignment`を使います。
+`load_assignment`フィールドはEndpoint Discovery Service (EDS) が返す値と同じ構造をしており、`hosts`フィールドより細やかな設定ができます。
+いまはひとまず、2つのエンドポイントにロードバランシングします。
 
 ```yaml
   clusters:
@@ -220,16 +240,30 @@ Listenerは[FilterChain][]の設定を持ち、さらにFilterChainが[Filter][]
     type: STRICT_DNS
     connect_timeout: 0.25s
     lb_policy: ROUND_ROBIN
-    hosts:
-      - socket_address: { address: nginx1, port_value: 80 }
-      - socket_address: { address: nginx2, port_value: 80 }
+    load_assignment:
+      cluster_name: nginx_cluster
+      endpoints:
+      - lb_endpoints:
+        - endpoint:
+            address:
+              socket_address: { address: nginx1, port_value: 80 }
+        - endpoint:
+            address:
+              socket_address: { address: nginx2, port_value: 80 }
   - name: httpd_cluster
     type: STRICT_DNS
     connect_timeout: 0.25s
     lb_policy: ROUND_ROBIN
-    hosts:
-      - socket_address: { address: httpd1, port_value: 80 }
-      - socket_address: { address: httpd2, port_value: 80 }
+    load_assignment:
+      cluster_name: httpd_cluster
+      endpoints:
+      - lb_endpoints:
+        - endpoint:
+            address:
+              socket_address: { address: httpd1, port_value: 80 }
+        - endpoint:
+            address:
+              socket_address: { address: httpd2, port_value: 80 }
 ```
 
 まとめ
@@ -241,12 +275,14 @@ Envoyの真髄はクラウドネイティブなアプリケーションで利用
 それらの記事については追々書いていきたいと思います。
 
 
-[v2 API reference]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api
-[StaticResources]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/config/bootstrap/v2/bootstrap.proto#config-bootstrap-v2-bootstrap-staticresources
-[Listener]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/lds.proto#envoy-api-msg-listener
-[HttpConnectionManager]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/config/filter/network/http_connection_manager/v2/http_connection_manager.proto.html?highlight=http_connection_manager#config-filter-network-http-connection-manager-v2-httpconnectionmanager
-[FilterChain]: https://www.envoyproxy.io/docs/envoy/v1.8.0/api-v2/api/v2/listener/listener.proto#envoy-api-msg-listener-filterchain
-[Filter]: https://www.envoyproxy.io/docs/envoy/v1.8.0/api-v2/api/v2/listener/listener.proto#envoy-api-msg-listener-filter
-[Route Configuration]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/rds.proto#envoy-api-msg-routeconfiguration
-[route.VirtualHost]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/route/route.proto#envoy-api-msg-route-virtualhost
-[route.Route]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/route/route.proto#envoy-api-msg-route-route
+[v2 API reference]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api
+[StaticResources]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/config/bootstrap/v2/bootstrap.proto#config-bootstrap-v2-bootstrap-staticresources
+[Listener]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/lds.proto#envoy-api-msg-listener
+[HttpConnectionManager]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/config/filter/network/http_connection_manager/v2/http_connection_manager.proto.html?highlight=http_connection_manager#config-filter-network-http-connection-manager-v2-httpconnectionmanager
+[FilterChain]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/listener/listener.proto#envoy-api-msg-listener-filterchain
+[Filter]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/listener/listener.proto#envoy-api-msg-listener-filter
+[Cluster]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/cds.proto#cluster
+[ClusterLoadAssignment]: https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/eds.proto#envoy-api-msg-clusterloadassignment]
+[Route Configuration]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/rds.proto#envoy-api-msg-routeconfiguration
+[route.VirtualHost]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/route/route.proto#envoy-api-msg-route-virtualhost
+[route.Route]: https://www.envoyproxy.io/docs/envoy/v1.9.0/api-v2/api/v2/route/route.proto#envoy-api-msg-route-route
