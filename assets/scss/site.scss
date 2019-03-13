@@ -101,6 +101,8 @@ p {
   overflow-x: auto;
   pre {
     padding: .8rem;
+    tab-size: 8 !important;
+    -moz-tab-size: 8 !important;
     code {
       padding: 0;
       background-color: unset;
