@@ -1,4 +1,9 @@
 {
+  "envoyproxy/go-control-plane": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/30125649?v=4",
+    "url": "https://github.com/envoyproxy/go-control-plane",
+    "description": "Go implementation of data-plane-api"
+  },
   "jinzhu/vrome": {
     "avatar_url": "https://avatars3.githubusercontent.com/u/6843?v=4",
     "url": "https://github.com/jinzhu/vrome",
