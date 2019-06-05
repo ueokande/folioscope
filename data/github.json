@@ -24,6 +24,11 @@
     "url": "https://github.com/mdn/webextensions-examples",
     "description": "Example Firefox add-ons created using the WebExtensions API"
   },
+  "microsoft/tsyringe": {
+    "avatar_url": "https://avatars2.githubusercontent.com/u/6154722?v=4",
+    "url": "https://github.com/microsoft/tsyringe",
+    "description": "Lightweight dependency injection container for JavaScript/TypeScript"
+  },
   "tadyjp/rendezvous": {
     "avatar_url": "https://avatars0.githubusercontent.com/u/1818082?v=4",
     "url": "https://github.com/tadyjp/rendezvous",
