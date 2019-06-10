@@ -134,6 +134,23 @@ blockquote {
   }
 }
 
+table {
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+
+  th {
+    text-align: center;
+  }
+  td, th {
+    padding: .5rem 1rem;
+    border: 1px solid #ddd;
+  }
+
+  tr:nth-child(even) {
+    background: #f1f6f6;
+  }
+}
+
 .header {
   @include banner;
 
