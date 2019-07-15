@@ -5,7 +5,7 @@ $text-color: #454545;
 $link-color: #00acdf;
 
 html {
-  font-size: 15.2px;
+  font-size: 16x;
   font-family: 'Helvetica Neue',Helvetica,Arial,'Hiragino Kaku Gothic Pro',Meiryo,'MS PGothic',sans-serif;
 }
 
@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  line-height: 1.7;
+  line-height: 1.8;
   color: $text-color;
   text-align: justify;
   min-height: 100%;
@@ -149,6 +149,16 @@ table {
   tr:nth-child(even) {
     background: #f1f6f6;
   }
+}
+
+kbd {
+  font-size: 90%;
+  background-color: #fafafa;
+  padding: .1rem .2rem;
+  margin: .1rem .2rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #b0b0b0;
 }
 
 .header {
