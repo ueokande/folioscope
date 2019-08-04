@@ -64,6 +64,11 @@
     "url": "https://github.com/ueokande/bashvm",
     "description": "Bash Version Manager"
   },
+  "ueokande/bow": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
+    "url": "https://github.com/ueokande/bow",
+    "description": ""
+  },
   "ueokande/etcd-passwd": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/etcd-passwd",
@@ -103,6 +108,11 @@
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/kadenz.js",
     "description": "The project had been ported to Scena.js"
+  },
+  "ueokande/logbook": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
+    "url": "https://github.com/ueokande/logbook",
+    "description": "Another log viewer for Kubernetes"
   },
   "ueokande/matrix.scr": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
@@ -153,10 +163,5 @@
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/web-extensions-tutorial",
     "description": "Web Extensions tutorial for Google Chrome/Chromium and Firefox."
-  },
-  "ueokande/logbook": {
-    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
-    "url": "https://github.com/ueokande/logbook",
-    "description": "Another log viewer for Kubernetes "
   }
 }
