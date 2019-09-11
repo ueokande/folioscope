@@ -100,8 +100,9 @@ p {
   border-radius: 3px;
   overflow-x: auto;
   background-color: #272822;
+  margin: .4rem 0;
   pre {
-    padding: .8rem;
+    margin: 1rem .8rem;
     tab-size: 8 !important;
     -moz-tab-size: 8 !important;
     code {
