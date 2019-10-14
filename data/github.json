@@ -67,7 +67,7 @@
   "ueokande/bow": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/bow",
-    "description": ""
+    "description": "Exec a command on multiple pods for Kubernetes"
   },
   "ueokande/etcd-passwd": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
@@ -108,6 +108,11 @@
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/kadenz.js",
     "description": "The project had been ported to Scena.js"
+  },
+  "ueokande/lanthan": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
+    "url": "https://github.com/ueokande/lanthan",
+    "description": "A test framework for WebExtensions"
   },
   "ueokande/logbook": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
@@ -152,7 +157,7 @@
   "ueokande/vim-vixen": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/vim-vixen",
-    "description": "Accelerate your browsing with Vim power!!"
+    "description": "Accelerates your web browsing with Vim power!!"
   },
   "ueokande/web-animation": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
