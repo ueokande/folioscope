@@ -38,7 +38,7 @@ jobs:
       run: |
         $HOME/.local/bin/hugo
         if [ "$GITHUB_REF" = "refs/heads/master" ]; then
-          $HOME/.local/bin/aws s3 sync --only-show-error ./public "s3://${CONTENT_BUCKET_NAME}"
+          $HOME/.local/bin/aws s3 sync ./public "s3://${CONTENT_BUCKET_NAME}"
         else
-          $HOME/.local/bin/aws s3 sync --only-show-error --dryrun ./public "s3://${CONTENT_BUCKET_NAME}"
+          $HOME/.local/bin/aws s3 sync --dryrun ./public "s3://${CONTENT_BUCKET_NAME}"
         fi
