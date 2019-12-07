@@ -3,8 +3,7 @@ name: Deploy contents to Amazon S3
 on:
   push:
     branches:
-      - master
-      - hello-github-actions
+      - "*"
 
 jobs:
   deploy:
@@ -38,4 +37,8 @@ jobs:
         CONTENT_BUCKET_NAME: ${{ secrets.CONTENT_BUCKET_NAME }}
       run: |
         $HOME/.local/bin/hugo
-        $HOME/.local/bin/aws s3 sync --only-show-error ./public "s3://${CONTENT_BUCKET_NAME}"
+        if [ "$GITHUB_REF" = "refs/heads/master" ]; then
+          $HOME/.local/bin/aws s3 sync --only-show-error ./public "s3://${CONTENT_BUCKET_NAME}"
+        else
+          $HOME/.local/bin/aws s3 sync --only-show-error --dryrun ./public "s3://${CONTENT_BUCKET_NAME}"
+        fi
