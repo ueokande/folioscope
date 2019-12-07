@@ -25,7 +25,7 @@
       {{ range .Site.Taxonomies.tags.ByCount }}
         {{ $link := (replace .Name "/" "-") | urlize}}
         <li class='articles-item'>
-          <a href="/tags/{{ $link }}"> {{ .Name }} <small>({{ .Count }})</small></a>
+          <a href="/tags/{{ $link }}/"> {{ .Name }} <small>({{ .Count }})</small></a>
         </li>
       {{ end }}
     </ol>
