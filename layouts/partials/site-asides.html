@@ -34,7 +34,7 @@
   <aside class='aside'>
     <h2>By Year</h2>
     <ol class='category-items'>
-      {{ range .Site.Sections.Reverse }}
+      {{ range .Site.Sections }}
       <li class='articles-item'><a href="{{ .RelPermalink }}">{{ .Title }} <small>({{ len .Pages }})</small></a></li>
       {{ end }}
     </ol>
