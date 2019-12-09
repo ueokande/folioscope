@@ -2,6 +2,7 @@
 title: 図解 Go Slice Tricks
 date: 2019-12-09T09:00:00+09:00
 tags: [Go]
+cover: cover.png
 ---
 
 この記事は[Go7 Advent Calendar 2019][go7-advent-calendar-2019]の記事です。
