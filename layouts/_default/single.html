@@ -12,11 +12,18 @@
     <meta name="twitter:creator" content="{{ . }}" />
   {{ end }}
 
-  {{ with .Page.Resources.ByType "image" }}
-    {{ with index . 0 }}
-      <meta name="twitter:card" content="summary_large_image">
-      <meta property="og:image" content="{{ .Permalink }}">
-      <meta name="twitter:image" content="{{ .Permalink }}">
+
+  {{ with .Param "cover" }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ $.Permalink }}{{ . }}">
+    <meta name="twitter:image" content="{{ $.Permalink }}{{ urlize . }}">
+  {{ else }}
+    {{ with .Page.Resources.ByType "image" }}
+      {{ with index . 0 }}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image" content="{{ .Permalink }}">
+        <meta name="twitter:image" content="{{ .Permalink }}">
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
