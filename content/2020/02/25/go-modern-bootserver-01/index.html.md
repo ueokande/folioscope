@@ -8,6 +8,11 @@ tags: [Go]
 久々にブログ記事書くか〜〜〜と軽いノリで書き始めたら、思いの外長くなったので、不定期に連載します。
 この記事では、Goでブートサーバーを書く前に、ブートサーバーの基本について説明します。
 
+シリーズの記事は以下のリンクからどうぞ。
+
+- Goで作るモダン・ブートサーバー Day 1 - 基礎知識編 <strong style='color:#ff3200'>← この記事</strong>
+- [Goで作るモダン・ブートサーバー Day 2 - 環境構築編][day2]
+
 ## ネットワークブート
 
 個人のマシンや小規模なサーバー群なら、マシンに1台ずつOSをインストールしても大した手間ではありません。
@@ -95,3 +100,4 @@ QEMUを使った仮想マシンとLinuxの仮想ネットワークを使って�
 [Immutable Infrastructure]: http://chadfowler.com/2013/06/23/immutable-deployments.html
 [PXE]: http://www.pix.net/software/pxeboot/
 [iPXE]: https://ipxe.org/
+[day2]: /2020/03/01/go-modern-bootserver-02/
