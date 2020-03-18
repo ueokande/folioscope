@@ -12,6 +12,7 @@ tags: [Go]
 
 - Goで作るモダン・ブートサーバー Day 1 - 基礎知識編 <strong style='color:#ff3200'>← この記事</strong>
 - [Goで作るモダン・ブートサーバー Day 2 - 環境構築編][day2]
+- [Goで作るモダン・ブートサーバー Day 3 - 雑DHCPサーバー実装編][day3]
 
 ## ネットワークブート
 
@@ -101,3 +102,4 @@ QEMUを使った仮想マシンとLinuxの仮想ネットワークを使って�
 [PXE]: http://www.pix.net/software/pxeboot/
 [iPXE]: https://ipxe.org/
 [day2]: /2020/03/01/go-modern-bootserver-02/
+[day3]: /2020/03/18/go-modern-bootserver-03/
