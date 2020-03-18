@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="339.99994"
+   height="229.99998"
+   viewBox="0 0 89.958317 60.854162"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker1297"
+       style="overflow:visible">
+      <path
+         id="path1295"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ff2a2a;fill-opacity:1;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5628"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5626" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path4613"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5210"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5208" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5304"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5302" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5462"
+       style="overflow:visible">
+      <path
+         id="path5460"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5628-3"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5626-6" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4596"
+     d="m 13.229166,18.520833 1e-6,39.6875"
+     style="fill:none;fill-rule:evenodd;stroke:#c83737;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <use
+     style="stroke:#c83737;stroke-width:0.79374999;stroke-miterlimit:4;stroke-dasharray:none"
+     height="100%"
+     width="100%"
+     transform="translate(63.5)"
+     id="use4598"
+     xlink:href="#path4596"
+     y="0"
+     x="0" />
+  <path
+     id="path4602"
+     d="M 15.875,27.781249 H 74.083333"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="30.79837"
+     y="26.035404"
+     id="text5198"><tspan
+       id="tspan5196"
+       x="30.79837"
+       y="26.035404"
+       style="stroke-width:0.26458332px">① DHCPDISCOVER</tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5210)"
+     d="M 75.126153,30.427079 H 16.917819"
+     id="path5206" />
+  <text
+     id="text5262"
+     y="46.155846"
+     x="44.008286"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="13.289627"
+     y="15.720485"
+     id="text6356"><tspan
+       id="tspan6354"
+       x="13.289627"
+       y="15.720485"
+       style="text-align:center;text-anchor:middle;stroke-width:0.26458332px">クライアント</tspan></text>
+  <text
+     id="text6360"
+     y="15.720485"
+     x="76.719856"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="text-align:center;text-anchor:middle;stroke-width:0.26458332px"
+       y="15.720485"
+       x="76.719856"
+       id="tspan6358">DHCPサーバー</tspan></text>
+  <g
+     transform="translate(-38.364582,-171.3229)"
+     id="g6431">
+    <path
+       style="fill:#d5e5ff;fill-rule:evenodd;stroke:#162d50;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.625,175.29165 v 6.61458 l 2.645833,1.32292 5.291667,-1.32292 v -6.61458 l -2.645834,-1.32292 z"
+       id="path6423" />
+    <path
+       style="fill:#5f8dd3;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.625,175.29165 2.645833,1.32291 v 6.61459 L 47.625,181.90623 Z"
+       id="path6417" />
+    <path
+       style="fill:#3771c8;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.270833,176.61456 v 6.61459 l 5.291667,-1.32292 v -6.61458 z"
+       id="path6419" />
+    <path
+       style="fill:#5f8dd3;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.625,175.29165 2.645833,1.32291 5.291667,-1.32291 -2.645833,-1.32292 z"
+       id="path6421" />
+  </g>
+  <g
+     id="g6441"
+     transform="translate(25.13541,-171.3229)">
+    <path
+       id="path6433"
+       d="m 47.625,175.29165 v 6.61458 l 2.645833,1.32292 5.291667,-1.32292 v -6.61458 l -2.645834,-1.32292 z"
+       style="fill:#d5e5ff;fill-rule:evenodd;stroke:#162d50;stroke-width:0.79374999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path6435"
+       d="m 47.625,175.29165 2.645833,1.32291 v 6.61459 L 47.625,181.90623 Z"
+       style="fill:#5f8dd3;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path6437"
+       d="m 50.270833,176.61456 v 6.61459 l 5.291667,-1.32292 v -6.61458 z"
+       style="fill:#3771c8;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path6439"
+       d="m 47.625,175.29165 2.645833,1.32291 5.291667,-1.32291 -2.645833,-1.32292 z"
+       style="fill:#5f8dd3;fill-rule:evenodd;stroke:#d7e3f4;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <text
+     id="text4943"
+     y="34.502071"
+     x="33.836945"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.26458332px"
+       y="34.502071"
+       x="33.836945"
+       id="tspan4941">② DHCPOFFER</tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+     d="M 15.874999,46.302055 H 74.083332"
+     id="path4945" />
+  <text
+     id="text4949"
+     y="44.556206"
+     x="31.470421"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       style="stroke-width:0.26458332px"
+       y="44.556206"
+       x="31.470421"
+       id="tspan4947">③ DHCPREQUEST</tspan></text>
+  <path
+     id="path4951"
+     d="M 75.126152,48.947885 H 16.917818"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5210)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="35.833721"
+     y="53.022881"
+     id="text4955"><tspan
+       id="tspan4953"
+       x="35.833721"
+       y="53.022881"
+       style="stroke-width:0.26458332px">④ DHCPACK</tspan></text>
+</svg>
