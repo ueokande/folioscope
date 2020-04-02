@@ -4,7 +4,7 @@ date: 2020-04-02T20:00:00+09:00
 tags: []
 ---
 
-![日本の桜の画像](./japanese-cherry-trees.jpg)
+{{<img alt="日本の桜の画像" src="./japanese-cherry-trees.jpg">}}
 
 今年も退職エントリの季節です。今年も退職しませんでした。
 昨年の退職しませんエントリはこちら。
