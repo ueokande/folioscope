@@ -5,7 +5,7 @@ $text-color: #454545;
 $link-color: #00acdf;
 
 html {
-  font-size: 16x;
+  font-size: 16px;
   font-family: 'Helvetica Neue',Helvetica,Arial,'Hiragino Kaku Gothic Pro',Meiryo,'MS PGothic',sans-serif;
 }
 
@@ -24,6 +24,9 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
 
 @mixin block {
   background-color: white;
