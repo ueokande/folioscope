@@ -1,10 +1,17 @@
 {{ $name := .Get "src" }}
+{{ $tree := .Get "tree" }}
+
 {{ with index $.Site.Data.github $name }}
   {{ $fullname := index . "full-name" }}
   {{ $avatar_url := index . "avatar_url" }}
-  {{ $url := index . "url" }}
   {{ $description := index . "description" }}
-  <a href="{{ $url }}" class="external-link-github">
+
+  <a href="{{ if $tree -}}
+             https://github.com/{{ $name }}/tree/{{ $tree }}
+           {{- else -}}
+             https://github.com/{{ $name }}
+           {{- end }}"
+    class="external-link-github">
     <img class="external-link-github-avatar" src="{{ $avatar_url }}" />
     <span class="external-link-github-title">{{ $name }}</span>
     <span class="external-link-github-description">{{ $description }}</span>
