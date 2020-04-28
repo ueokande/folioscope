@@ -29,6 +29,11 @@
     "url": "https://github.com/microsoft/tsyringe",
     "description": "Lightweight dependency injection container for JavaScript/TypeScript"
   },
+  "rancher/os": {
+    "avatar_url": "https://avatars3.githubusercontent.com/u/9343010?v=4",
+    "url": "https://github.com/rancher/os",
+    "description": "Tiny Linux distro that runs the entire OS as Docker containers"
+  },
   "tadyjp/rendezvous": {
     "avatar_url": "https://avatars0.githubusercontent.com/u/1818082?v=4",
     "url": "https://github.com/tadyjp/rendezvous",
@@ -68,6 +73,11 @@
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/bow",
     "description": "Exec a command on multiple pods for Kubernetes"
+  },
+  "ueokande/building-boot-server": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
+    "url": "https://github.com/ueokande/building-boot-server",
+    "description": "Tutorial for building boot server"
   },
   "ueokande/etcd-passwd": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
