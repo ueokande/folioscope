@@ -13,6 +13,7 @@ tags: [Go]
 - [Goで作るモダン・ブートサーバー Day 1 - 基礎知識編][day1]
 - Goで作るモダン・ブートサーバー Day 2 - 環境構築編 <strong style='color:#ff3200'>← この記事</strong>
 - [Goで作るモダン・ブートサーバー Day 3 - 雑DHCPサーバー実装編][day3]
+- [Goで作るモダン・ブートサーバー Day 4 - PXEサーバー実装編][day4]
 
 ## 環境構築
 
@@ -160,3 +161,4 @@ sudo ./setup node --network br0
 
 [day1]: /2020/02/25/go-modern-bootserver-01/
 [day3]: /2020/03/18/go-modern-bootserver-03/
+[day4]: /2020/04/28/go-modern-bootserver-04/

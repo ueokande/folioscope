@@ -199,9 +199,6 @@ kbd {
       line-height: 1;
     }
 
-    h2 {
-    }
-
     .service-icons .service-icon {
       display: none;
     }
@@ -333,10 +330,9 @@ kbd {
     display: block;
   }
 
-  display: block;
+  display: inline-block;
   border: 1px solid lightgray;
   padding: 8px;
-  max-width: 24rem;
 }
 
 .main-container {
@@ -391,8 +387,8 @@ kbd {
     border-bottom-style: solid;
   }
   h2 {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .article-footer {
