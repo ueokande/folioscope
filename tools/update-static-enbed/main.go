@@ -48,7 +48,7 @@ func validate() error {
 func getSources() ([]string, error) {
 	sources := make(map[string]struct{})
 	err := filepath.Walk(params.root, func(path string, info os.FileInfo, err error) error {
-		if info.Name() != "index.md" {
+		if info.Name() != "index.md" && info.Name() != "index.html.md" {
 			return nil
 		}
 
