@@ -178,5 +178,10 @@
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/web-extensions-tutorial",
     "description": "Web Extensions tutorial for Google Chrome/Chromium and Firefox."
+  },
+  "umlaeute/v4l2loopback": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/214034?v=4",
+    "url": "https://github.com/umlaeute/v4l2loopback",
+    "description": "v4l2-loopback device "
   }
 }
