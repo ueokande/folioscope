@@ -1,7 +1,7 @@
 ---
 title: Goで作るモダン・ブートサーバー Day3 - 雑DHCPサーバー実装編
 date: 2020-03-18T22:00:00+09:00
-tags: [Go]
+tags: [Go, モダン・ブートサーバーシリーズ]
 ---
 
 この記事は「Goで作るモダン・ブートサーバー」の3日目の記事です。
@@ -14,6 +14,7 @@ tags: [Go]
 - [Goで作るモダン・ブートサーバー Day 2 - 環境構築編][day2]
 - Goで作るモダン・ブートサーバー Day 3 - 雑DHCPサーバー実装編 <strong style='color:#ff3200'>← この記事</strong>
 - [Goで作るモダン・ブートサーバー Day 4 - PXEサーバー実装編][day4]
+- [Goで作るモダン・ブートサーバー Day 5 - iPXEサーバー実装編][day5]
 
 今回はDHCPサーバーを実装できればと思い記事を書きましたが、仕様の説明だけで長くなり（仕様も全部説明できなかった）、きちんとしたDHCPサーバーの実装まで至りませんでした。
 そのためDHCPサーバーの実装も数段階に分けて進めたいと思います。
@@ -257,6 +258,7 @@ DHCPといえばなんとなくネットワークの設定をするものだと�
 [day1]: /2020/02/25/go-modern-bootserver-01/
 [day2]: /2020/03/01/go-modern-bootserver-02/
 [day4]: /2020/04/28/go-modern-bootserver-04/
+[day5]: /2020/05/25/go-modern-bootserver-05/
 [RFC 951]: https://tools.ietf.org/html/rfc951
 [RFC 2131]: https://tools.ietf.org/html/rfc2131
 [RFC 2132]: https://tools.ietf.org/html/rfc2132

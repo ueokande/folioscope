@@ -7,7 +7,7 @@
         <p class="tags">
           {{ range $name := .Params.tags }}
             {{ $link := (replace $name "/" "-") | urlize}}
-            <a href="/tags/{{ $link }}">{{ $name }}</a>
+            <a href="/tags/{{ $link }}/">{{ $name }}</a>
           {{ end }}
         </p>
       </div>
