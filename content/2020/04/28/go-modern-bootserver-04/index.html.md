@@ -13,6 +13,7 @@ tags: [Go, モダン・ブートサーバーシリーズ]
 - [Goで作るモダン・ブートサーバー Day 2 - 環境構築編][day2]
 - [Goで作るモダン・ブートサーバー Day 3 - 雑DHCPサーバー実装編][day3]
 - Goで作るモダン・ブートサーバー Day 4 - PXEサーバー実装編 <strong style='color:#ff3200'>← この記事</strong>
+- [Goで作るモダン・ブートサーバー Day 5 - iPXEサーバー実装編][day5]
 
 PXEブートは古くからあるネットワークブートの規格の1つです。
 この記事では前回実装したDHCPサーバーを元に、新たにTFTPサーバーを実装します。
@@ -293,6 +294,7 @@ sudo ./bin/setup node --network br0
 [day1]: /2020/02/25/go-modern-bootserver-01/
 [day2]: /2020/03/01/go-modern-bootserver-02/
 [day3]: /2020/03/18/go-modern-bootserver-03/
+[day5]: /2020/05/25/go-modern-bootserver-05/
 [RFC 951]: https://tools.ietf.org/html/rfc951
 [RFC 1350]: https://tools.ietf.org/html/rfc1350
 [RFC 2131]: https://tools.ietf.org/html/rfc2131
