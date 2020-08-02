@@ -144,6 +144,11 @@
     "url": "https://github.com/ueokande/rifflepdf",
     "description": "A script to collate pages in PDF as a compact brochure."
   },
+  "ueokande/sanscadre": {
+    "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
+    "url": "https://github.com/ueokande/sanscadre",
+    "description": "An online-aware media player helping your screen sharing with a frameless window."
+  },
   "ueokande/shvm": {
     "avatar_url": "https://avatars1.githubusercontent.com/u/534166?v=4",
     "url": "https://github.com/ueokande/shvm",
