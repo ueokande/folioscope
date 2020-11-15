@@ -28,6 +28,14 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  text-align: center;
+  * {
+    font-weight: normal;
+    font-size: .8rem;
+  }
+}
+
 @mixin block {
   background-color: white;
   padding: 16px;
