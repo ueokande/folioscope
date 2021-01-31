@@ -7,6 +7,8 @@ tags: [GitHub, WebExtensions]
 [FirefoxをセットアップするGitHub Actions][setup-firefox-article]を先日作りました。
 これに加えて、ChromiumとMicrosoft EdgeをセットアップするGitHub Actionsも作りました。
 
+{{<img src="./setup-chromium-screenshot.png" alt="setup-chromiumの実行結果">}}
+
 ## Firefox
 
 [setup-firefox][]はFirefoxをセットアップするActionです。
