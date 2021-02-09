@@ -32,7 +32,7 @@ initコンテナがネットワークを設定することで、サービスが�
 App Mesh上にデプロイするPodは、Egress（Pod外への通信）とIngress（Podへの通信）の両方がサイドカーコンテナのEnvoy Proxyを経由します。
 initコンテナは、Pod外への通信をEnvoy ProxyのEgressポートに流し、Podへの通信をEnvoy ProxyのIngressポートに流すよう初期化します。
 
-このコンテナの内部ではシェルスクリプトで、 `iptables` や `ip` コマンドによってPod内のネットワークを設定します。
+このコンテナの内部ではシェルスクリプトで、 `iptables` コマンドによってPod内のネットワークを設定します。
 スクリプト全体は[こちら][sidecar-proxy-route-manager.sh]から確認できます。
 このスクリプトは主に3つの処理をします。
 
